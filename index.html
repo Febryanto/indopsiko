@@ -78,6 +78,13 @@ License: You must have a valid license purchased only from themeforest(the above
 		<link href="assets/vendors/custom/vendors/flaticon/flaticon.css" rel="stylesheet" type="text/css" />
 		<link href="assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
 		<link href="assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="assets/css/demo5/pages/pricing/pricing-1.css">
+		<!-- UIkit CSS -->
+<link rel="stylesheet" href="assets/css/uikit/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
 
 		<!--end:: Global Optional Vendors -->
 
@@ -109,7 +116,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
 			<div class="kt-header-mobile__brand">
 				<a class="kt-header-mobile__logo" href="demo5/index.html">
-					<img alt="Logo" src="assets/images/logo2-3.png" width="202px" height="40px" />
+					<img alt="Logo" src="assets/images/logooo.png" width="202px" height="40px" />
 				</a>
 
 			</div>
@@ -127,27 +134,39 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="dropdown-menu dropdown-menu-fit dropdown-menu-md">
 							<ul class="kt-nav kt-nav--bold kt-nav--md-space kt-margin-t-20 kt-margin-b-20">
 								<li class="kt-nav__item">
-									<a class="kt-nav__link active" href="/">
+									<a class="kt-nav__link active" href="index.html">
 										<span class="kt-nav__link-icon"><i class="fa fa-home"></i></span>
-										<span class="kt-nav__link-text">Beranda</span>
+										<span class="kt-nav__link-text">HOME</span>
 									</a>
 								</li>
 								<li class="kt-nav__item">
-									<a class="kt-nav__link" href="/produk">
-										<span class="kt-nav__link-icon"><i class="fa fa-shopping-bag"></i></span>
-										<span class="kt-nav__link-text">Produk</span>
+									<a class="kt-nav__link" href="index.html#profil">
+										<span class="kt-nav__link-icon"><i class="fa fa-id-card"></i></span>
+										<span class="kt-nav__link-text">PROFIL</span>
 									</a>
 								</li>
 								<li class="kt-nav__item">
-									<a class="kt-nav__link">
-										<span class="kt-nav__link-icon"><i class="flaticon2-settings"></i></span>
-										<span class="kt-nav__link-text">informasi</span>
+									<a class="kt-nav__link" href="index.html#karir">
+										<span class="kt-nav__link-icon"><i class="fa fa-briefcase"></i></span>
+										<span class="kt-nav__link-text">KARIR</span>
 									</a>
 								</li>
 								<li class="kt-nav__item">
-									<a class="kt-nav__link" href="/persebaran">
-										<span class="kt-nav__link-icon"><i class="fa fa-map-marked-alt"></i></span>
-										<span class="kt-nav__link-text">Persebaran</span>
+									<a class="kt-nav__link" href="#">
+										<span class="kt-nav__link-icon"><i class="fa fa-info"></i></span>
+										<span class="kt-nav__link-text">PENGUMUMAN</span>
+									</a>
+								</li>
+								<li class="kt-nav__item">
+									<a class="kt-nav__link" href="index.html#klien">
+										<span class="kt-nav__link-icon"><i class="fa fa-users"></i></span>
+										<span class="kt-nav__link-text">KLIEN</span>
+									</a>
+								</li>
+								<li class="kt-nav__item">
+									<a class="kt-nav__link" href="index.html#kontak">
+										<span class="kt-nav__link-icon"><i class="fa fa-phone"></i></span>
+										<span class="kt-nav__link-text">KONTAK</span>
 									</a>
 								</li>
 							</ul>
@@ -172,33 +191,45 @@ License: You must have a valid license purchased only from themeforest(the above
 			<div class="kt-header__brand   kt-grid__item" id="kt_header_brand">
 				<div class="kt-header__brand-logo">
 					<a href="/">
-						<img alt="Logo" src="assets/images/logo2-3.png"  width="332px" height="60px"/>
+						<img alt="Logo" src="assets/images/logooo.png"  width="200px" height="60px"/>
 					</a>
 				</div>
 
 				<div class="kt-header__brand-nav">
 					<div class="dropdown"  style="padding:0 5px ;">
-						<a  href="/"><button type="button" class="btn btn-pill btn-default">
+						<a  href="index.html"><button type="button" class="btn btn-pill btn-default">
 							<i class="fa fa-home"></i>
-							Beranda
+							HOME
 						</button></a>
 					</div>
 					<div class="dropdown" style="padding:0 5px ;">
-						<a href="/produk"><button type="button" class="btn btn-pill btn-default">
-								<i class="fa fa-shopping-bag"></i>
-								Produk
+						<a href="index.html#profil"><button type="button" class="btn btn-pill btn-default">
+								<i class="fa fa-id-card"></i>
+								PROFIL
 							</button></a>
 					</div>
 					<div class="dropdown" style="padding:0 5px ;">
-						<a href="/informasi"><button type="button" class="btn btn-pill btn-default">
-								<i class="fa fa-info-circle"></i>
-								Informasi
+						<a href="index.html#klien"><button type="button" class="btn btn-pill btn-default">
+								<i class="fa fa-users"></i>
+								KLIEN
 							</button></a>
 					</div>
 					<div class="dropdown" style="padding:0 5px ;">
-						<a href="/persebaran"><button type="button" class="btn btn-pill btn-default">
-							<i class="fa fa-map-marked-alt"></i>
-							Persebaran
+						<a href="#"><button type="button" class="btn btn-pill btn-default">
+								<i class="fa fa-info"></i>
+								PENGUMUMAN
+							</button></a>
+					</div>
+					<div class="dropdown" style="padding:0 5px ;">
+						<a href="index.html#karir"><button type="button" class="btn btn-pill btn-default">
+							<i class="fa fa-briefcase"></i>
+							KARIR
+						</button></a>
+					</div>
+					<div class="dropdown" style="padding:0 5px ;">
+						<a href="index.html#kontak"><button type="button" class="btn btn-pill btn-default">
+							<i class="fa fa-phone"></i>
+							KONTAK
 						</button></a>
 					</div>
 				</div>
@@ -208,24 +239,24 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
 			<!-- begin:: Header Topbar -->
-			<div class="kt-header__topbar">
+		<!---->	<div class="kt-header__topbar">
 				<!--begin: User bar -->
 				<div class="kt-header__topbar-item kt-header__topbar-item--user">
-					<div class="kt-notification__custom kt-space-between" style="padding: 0 10px;">
+				<!--<div class="kt-notification__custom kt-space-between" style="padding: 0 10px;">
 								<a href="/masuk" class="btn btn-label btn-label-success btn-sm btn-bold" >Masuk</a>
-					</div>
+					</div>-->	
 					<!-- <div class="kt-notification__custom kt-space-between">
 								<a href="/daftar" class="btn btn-label btn-label-brand btn-sm btn-bold">Daftar</a>
 					</div> -->
 				</div>
 
 				<!--end: User bar -->
-			</div>
-			<div class="kt-header__brand-logo">
+		</div>
+		<!--	<div class="kt-header__brand-logo">
 				<a href="/">
 					<img alt="Logo" src="assets/images/logoSIUKE.png"  width="208px" height="60px"/>
 				</a>
-			</div>
+			</div>-->
 			<!-- end:: Header Topbar -->
 		</div>
 	</div>
@@ -316,13 +347,13 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 								  	<div class="carousel-inner">
 									    <div class="carousel-item active">
-									      	<img class="d-block w-100"  height="300px" src="assets/media/bg/slider4.png" alt="First slide">
+									      	<img class="d-block w-100"  height="400px" src="assets/images/bg1.jpeg" alt="First slide">
 									    </div>
 									    <div class="carousel-item">
-									      	<img class="d-block w-100"  height="300px" src="assets/media/bg/2.jpg" alt="Second slide">
+									      	<img class="d-block w-100"  height="400px" src="assets/images/bg2.jpeg" alt="Second slide">
 									    </div>
 									    <div class="carousel-item">
-									      	<img class="d-block w-100"  height="300px" src="assets/media/bg/1.jpg" alt="Third slide">
+									      	<img class="d-block w-100"  height="400px" src="assets/images/bg3.jpeg" alt="Third slide">
 									    </div>
 									    <!--Search -->
 										<div class="row align-self-center">
@@ -335,12 +366,12 @@ License: You must have a valid license purchased only from themeforest(the above
 															<div class="input-group input-group-lg">
 																<div class="input-group-prepend">
 																	<span class="input-group-text" id="basic-addon1">
-																		<svg xmlns:xlink="http://www.w3.org/1999/xlink" class="kt-svg-icon" height="24px" version="1.1" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><rect height="24" width="24" x="0" y="0"></rect><path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path><path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero"></path></g>
-																		</svg>
+																	<!--	<svg xmlns:xlink="http://www.w3.org/1999/xlink" class="kt-svg-icon" height="24px" version="1.1" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><rect height="24" width="24" x="0" y="0"></rect><path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path><path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero"></path></g>
+																		</svg>-->
 																	</span>
 																</div>
-																<input autocomplete="off" class="form-control mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid" placeholder="Masukkan NIK UEP Atau Nama KUBE" type="text" id="input_data" aria-invalid="false" aria-required="false">
-																	<button class="btn btn-warning btn-font-lg kt-margin-l-4" id="button" type="button">Cari</button>
+												<!--			<input autocomplete="off" class="form-control mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid" placeholder="Masukkan NIK UEP Atau Nama KUBE" type="text" id="input_data" aria-invalid="false" aria-required="false">
+																	<button class="btn btn-warning btn-font-lg kt-margin-l-4" id="button" type="button">Cari</button>-->	
 															</div>
 														</div><!----><!----><!---->
 													</div>
@@ -355,114 +386,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						</div>
 					</div>
 				</div>
-				<div id="tampildata" style="display:none;">
-																
-					<div class="row">
-						<div class="col-lg-12">	
-							<div class="kt-container  kt-grid__item kt-grid__item--fluid">
-								<div class="row">
-									<div class="col-lg-6">
-										<div class="kt-portlet">
-											<div class="kt-portlet__head">
-												<div class="kt-portlet__head-label">
-													<h3 class="kt-portlet__head-title">
-														Data UEP
-													</h3>
-												</div>
-											</div>
-											<div class="kt-portlet__body">
-												<div class="kt-section">
-													<div class="kt-section__content kt-section__content--border kt-section__content--fit">
-														<ul class="kt-nav">
-															<li class="kt-nav__item">
-																<a class="kt-nav__link">
-																	<i class="kt-nav__link-icon flaticon2-drop"></i>
-																	<span class="kt-nav__link-text">NIK</span>
-																	<span class="kt-nav__link-text" id="nik"></span>
-																</a>
-															</li>
-															<li class="kt-nav__item kt-nav__item--active">
-																<a class="kt-nav__link">
-																	<i class="kt-nav__link-icon flaticon2-rocket-2"></i>
-																	<span class="kt-nav__link-text">Nama</span>
-																	<span class="kt-nav__link-text" id="nama_uep"></span>
-																</a>
-															</li>
-															<li class="kt-nav__item">
-																<a class="kt-nav__link">
-																	<i class="kt-nav__link-icon flaticon2-calendar-8"></i>
-																	<span class="kt-nav__link-text">Status</span>
-																	<span class="kt-nav__link-text" id="status"></span>
-																</a>
-															</li>
-															<li class="kt-nav__item">
-																<a class="kt-nav__link">
-																	<i class="kt-nav__link-icon flaticon2-link"></i>
-																	<span class="kt-nav__link-text">Alamat</span>
-																	<span class="kt-nav__link-text" id="alamat_uep"></span>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="kt-portlet">
-											<div class="kt-portlet__head">
-												<div class="kt-portlet__head-label">
-													<h3 class="kt-portlet__head-title">
-														Data KUBE
-													</h3>
-												</div>
-											</div>
-											<div class="kt-portlet__body">
-												<div class="kt-section">
-													<div class="kt-section__content kt-section__content--border kt-section__content--fit">
-														<ul class="kt-nav">
-															<li class="kt-nav__item">
-																<a class="kt-nav__link">
-																	<i class="kt-nav__link-icon flaticon2-drop"></i>
-																	<span class="kt-nav__link-text">Nama KUBE</span>
-																	<span class="kt-nav__link-text" id="nama_kube"></span>
-																</a>
-															</li>
-															<li class="kt-nav__item kt-nav__item--active">
-																<a class="kt-nav__link">
-																	<i class="kt-nav__link-icon flaticon2-rocket-2"></i>
-																	<span class="kt-nav__link-text">Jenis Usaha</span>
-																	<span class="kt-nav__link-text" id="jenis_usaha"></span>
-																</a>
-															</li>
-															<li class="kt-nav__item kt-nav__item--active">
-																<a class="kt-nav__link">
-																	<i class="kt-nav__link-icon flaticon2-rocket-2"></i>
-																	<span class="kt-nav__link-text">bantuan modal</span>
-																	<span class="kt-nav__link-text" id="bantuan_modal"></span>
-																</a>
-															</li>
-															<li class="kt-nav__item">
-																<a class="kt-nav__link">
-																	<i class="kt-nav__link-icon flaticon2-link"></i>
-																	<span class="kt-nav__link-text">Alamat</span>
-																	<span class="kt-nav__link-text" id="alamat_kube"></span>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- UEP-KUBE Terbaik & Pendamping Terbaik-->
+				
 			<div class="kt-container  kt-grid__item kt-grid__item--fluid">
 				<div class="row">
 					<div class="col-xl-4 col-lg-6 order-lg-2 order-xl-1">
@@ -471,7 +395,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<div class="kt-portlet__head">
 								<div class="kt-portlet__head-label">
 									<h3 class="kt-portlet__head-title">
-										UEP-KUBE Terbaik
+										GALERI
 									</h3>
 								</div>
 							</div>
@@ -485,31 +409,31 @@ License: You must have a valid license purchased only from themeforest(the above
 									</ol>
 									<div class="carousel-inner">
 										<div class="carousel-item active">
-											<a href="/detail_terbaik"><img class="d-block w-100" width="450px" height="450px" src="assets/images/suminah.jpeg" alt="First slide">
+											<a href="/detail_terbaik"><img class="d-block w-100" width="450px" height="450px" src="assets/images/galeri1.jpg" alt="First slide">
 											<div class="carousel-caption d-none d-md-block">
-												<h5>UEP - Suminah</h5>
-												<p>Aneka Minuman</p>
+												<h5>INDOPSIKO</h5>
+												<p>Training Pengantar</p>
 											</div></a>
 										</div>
 										<div class="carousel-item">
-											<a href="/detail_terbaik"><img class="d-block w-100" width="450px" height="450px" src="assets/images/anggrek-9.jpg" alt="Second slide">
+											<a href="/detail_terbaik"><img class="d-block w-100" width="450px" height="450px" src="assets/images/galeri2.jpg" alt="Second slide">
 											<div class="carousel-caption d-none d-md-block">
-												<h5>KUBE - ANGGREK 9</h5>
-												<p>Kuliner</p>
+												<h5>INDOPSIKO</h5>
+												<p>Training Pengantar</p>
 											</div></a>
 										</div>
 										<div class="carousel-item">
-											<a href="/detail_terbaik"><img class="d-block w-100" width="450px" height="450px" src="assets/images/kube-flamboyan.jpg" alt="Third slide">
+											<a href="/detail_terbaik"><img class="d-block w-100" width="450px" height="450px" src="assets/images/galeri3.jpg" alt="Third slide">
 											<div class="carousel-caption d-none d-md-block">
-												<h5>KUBE - FLAMBOYAN</h5>
-												<p>Kuliner</p>
+												<h5>INDOPSIKO</h5>
+												<p>Training Pengantar</p>
 											</div></a>
 										</div>
 										<div class="carousel-item">
-											<a href="/detail_terbaik"><img class="d-block w-100" width="450px" height="450px" src="assets/images/sri.jpg" alt="fourth slide">
+											<a href="/detail_terbaik"><img class="d-block w-100" width="450px" height="450px" src="assets/images/galeri4.jpg" alt="fourth slide">
 											<div class="carousel-caption d-none d-md-block">
-												<h5>UEP - SRI</h5>
-												<p>Warung Klontong</p>
+												<h5>INDOPSIKO</h5>
+												<p>Training Pengantar</p>
 											</div></a>
 										</div>
 									</div>
@@ -526,111 +450,109 @@ License: You must have a valid license purchased only from themeforest(the above
 						</div>
 					</div>
 					<!-- Pendamping Terbaik -->
+					
 					<div class="col-xl-4 col-lg-6 order-lg-2 order-xl-1">
+					
+					<section id="profil">
 						<div class="kt-portlet kt-portlet--tabs kt-portlet--height-fluid">
 							<div class="kt-portlet__head">
 								<div class="kt-portlet__head-label">
 									<h3 class="kt-portlet__head-title">
-										Pendamping Terbaik Bulan Ini
+										PROFIL
 									</h3>
 								</div>
 								<div class="kt-portlet__head-toolbar">
 									<ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-brand" role="tablist">
 										<li class="nav-item">
 											<a class="nav-link active" data-toggle="tab" role="tab">
-											Periode November 2019
+											
 											</a>
 										</li>
 										
 									</ul>
 								</div>
-							</div>
-							<div class="kt-portlet__body">
-								<div class="tab-content">
-									<div class="tab-pane active" id="kt_widget4_tab1_content">
-										<div class="kt-widget4">
-											<div class="kt-widget4__item">
-												<div class="kt-widget4__pic kt-widget4__pic--pic">
-													<img src="/assets/media/users/u2.jpg" alt="">   
-												</div>
-												<div class="kt-widget4__info">
-													<a href="#" class="kt-widget4__username">
-														Siti Nur Rochmah
-													</a>
-													<p class="kt-widget4__text">
-														Pendamping Wilayah Jakarta Pusat
-													</p>							 		 
-												</div>						 
-																
-											</div>  
+						<!---->	</div>
+                         <div class="kt-portlet kt-portlet--height-fluid kt-widget19">
+    <div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
+        <div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(assets/images/profile.jpeg)">
+            <h3 class="kt-widget19__title kt-font-light">
+					
+				</h3>
+			<div class="kt-widget19__shadow"></div>
+			<div class="kt-widget19__labels">
+			<!--	<a href="#" class="btn btn-label-light-o2 btn-bold ">Recent</a> -->
+			</div>
+        </div>
+    </div>
+							 <div class="kt-portlet__body">
+        <div class="kt-widget19__wrapper">
+            <div class="kt-widget19__content">
+                <div class="kt-widget19__userpic">
+                    <img src="assets/images/logooo.png " alt="" >
+                </div>
+                <div class="kt-widget19__info">
+                   <!-- <a href="#" class="kt-widget19__username">
+						Anna Krox  
+					</a>
+                    <span class="kt-widget19__time">
+						UX/UI Designer, Google
+					</span> -->
+                </div>
+              <!--  <div class="kt-widget19__stats">
+                    <span class="kt-widget19__number kt-font-brand">
+						18
+					</span>
+                    <a href="#" class="kt-widget19__comment">
+						Comments
+					</a>
+                </div>-->
+            </div>
+            <div class="kt-widget19__text">
+               Pembangunan manusia seutuhnya. Demikian kalimat sakral yang telah menjadi komitmen dasar bagi Bangsa dan Negara. Aplikasinya menjadi kewajiban bersama, baik pemerintah maupun rakyatnya. <!--Arahnya adalah tercapainya kehidupan yang sejahtera, adil dan makmur, lahir maupun batin. Dalam kerangka itu orang beraktifitas menurut bidang dan keahlian masing-masing, dan satu aktifitas yang menghasilkan produk unggul pasti dikerjakan oleh tangan-tangan yang ahli dan profesional.
+Dengan semakin menyempitnya spesifikasi pengetahuan dan keilmuan, maka semakin terfokus pula orang terhadap bidang yang digelutinya. Sebuah perusahaan yang memproduksi satu barang memerlukan sekian banyak bidang keahlian, sehingga pengaturan sumber daya manusia menjadi satu hal tersendiri yang harus ditangani secara baik dan benar, matang dan profesional.
+PT.INDOPSIKO INDONESIA dengan mantap mengambil peran sebagai profesi di bidang Sumber Daya Manusia ini dengan maksud mampu mencakup multi manfaat. Satu sisi membantu dan mempersiapkan calon tenaga kerja dalam memasuki dunia kerja, pada sisi lain mempermudah dan membantu para pengusaha dalam mendapatkan tenaga-tenaga kerja yang dibutuhkannya, dan sisi yang lainnya lagi adalah merupakan bidang kerja/usaha yang menawarkan profit tersendiri.
+Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA telah menancapkan komitmennya dan terus berupaya untuk memberikan layanan yang terbaik serta menjadi rekanan yang terpercaya.-->
+            </div>
+        </div>
+        <div class="kt-widget19__action">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Selengkapnya
+  </button>
 
-											<div class="kt-widget4__item">
-												<div class="kt-widget4__pic kt-widget4__pic--pic">
-													<img src="/assets/media/users/u1.jpg" alt="">     
-												</div>
-												<div class="kt-widget4__info">
-													<a href="#" class="kt-widget4__username">
-														Anwar Sunarso
-													</a>
-													<p class="kt-widget4__text">
-														Pendamping Wilayah Jakarta Utara 
-													</p>							 		 
-												</div>						
-																		
-											</div> 
-
-											<div class="kt-widget4__item">
-												<div class="kt-widget4__pic kt-widget4__pic--pic">
-													<img src="/assets/media/users/u2.jpg" alt="">     
-												</div>
-												<div class="kt-widget4__info">
-													<a href="#" class="kt-widget4__username">
-														Rina Yuliani
-													</a>  
-													<p class="kt-widget4__text">
-														Pendamping Wilayah Jakarta Barat
-													</p>							 		 
-												</div>						
-																	
-											</div>
-
-											<div class="kt-widget4__item">
-												<div class="kt-widget4__pic kt-widget4__pic--pic">
-													<img src="/assets/media/users/u1.jpg" alt="">      
-												</div>
-												<div class="kt-widget4__info">
-													<a href="#" class="kt-widget4__username">
-														Akhmad Junaidi
-													</a>
-													<p class="kt-widget4__text">
-														Pendamping Wilayah Jakarta Selatan
-													</p>							 		 
-												</div>		
-																
-											</div> 
-
-											<div class="kt-widget4__item">
-												<div class="kt-widget4__pic kt-widget4__pic--pic">
-													<img src="/assets/media/users/u2.jpg" alt="">   
-												</div>
-												<div class="kt-widget4__info">
-													<a href="#" class="kt-widget4__username">
-														Lastri 
-													</a>
-													<p class="kt-widget4__text">
-														Pendamping Wilayah Jakarta Timur
-													</p>							 		 
-												</div>						
-																
-											</div>						 
-										</div>             
-									</div>
-
-								</div>
-							</div>
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Profil</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         Pembangunan manusia seutuhnya. Demikian kalimat sakral yang telah menjadi komitmen dasar bagi Bangsa dan Negara. Aplikasinya menjadi kewajiban bersama, baik pemerintah maupun rakyatnya. Arahnya adalah tercapainya kehidupan yang sejahtera, adil dan makmur, lahir maupun batin. Dalam kerangka itu orang beraktifitas menurut bidang dan keahlian masing-masing, dan satu aktifitas yang menghasilkan produk unggul pasti dikerjakan oleh tangan-tangan yang ahli dan profesional.
+Dengan semakin menyempitnya spesifikasi pengetahuan dan keilmuan, maka semakin terfokus pula orang terhadap bidang yang digelutinya. Sebuah perusahaan yang memproduksi satu barang memerlukan sekian banyak bidang keahlian, sehingga pengaturan sumber daya manusia menjadi satu hal tersendiri yang harus ditangani secara baik dan benar, matang dan profesional.
+PT.INDOPSIKO INDONESIA dengan mantap mengambil peran sebagai profesi di bidang Sumber Daya Manusia ini dengan maksud mampu mencakup multi manfaat. Satu sisi membantu dan mempersiapkan calon tenaga kerja dalam memasuki dunia kerja, pada sisi lain mempermudah dan membantu para pengusaha dalam mendapatkan tenaga-tenaga kerja yang dibutuhkannya, dan sisi yang lainnya lagi adalah merupakan bidang kerja/usaha yang menawarkan profit tersendiri.
+Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA telah menancapkan komitmennya dan terus berupaya untuk memberikan layanan yang terbaik serta menjadi rekanan yang terpercaya.
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+        </div>
+    </div>
 						</div>
 					</div>	
-				</div>
+					</section>
+				    </div>
+				
 			</div>
 
 			<!--Widget -->
@@ -642,18 +564,20 @@ License: You must have a valid license purchased only from themeforest(the above
 			                    <div class="kt-iconbox__body">
 			                        <div class="kt-iconbox__icon">
 										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
-										    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-										        <polygon points="0 0 24 0 24 24 0 24"/>
-										        <path d="M12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.3476862,4.32173209 11.9473121,4.11839309 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 Z" fill="#000000"/>
-										    </g>
-										</svg>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon points="0 0 24 0 24 24 0 24"/>
+        <path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+        <path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#000000" fill-rule="nonzero"/>
+    </g>
+</svg>
 			                        </div>
 			                        <div class="kt-iconbox__desc">
 			                            <h3 class="kt-iconbox__title">
-											Pelatihan
+											Kontraktor Tenaga Kerja
+											
 										</h3>
 			                            <div class="kt-iconbox__content">
-			                                Informasi Pelatihan >>
+			                                
 			                            </div>
 			                        </div>
 			                    </div>
@@ -666,19 +590,20 @@ License: You must have a valid license purchased only from themeforest(the above
 			                    <div class="kt-iconbox__body">
 			                        <div class="kt-iconbox__icon">
 										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
-										    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-										        <rect x="0" y="0" width="24" height="24"/>
-										        <path d="M12,4.56204994 L7.76822128,9.6401844 C7.4146572,10.0644613 6.7840925,10.1217854 6.3598156,9.76822128 C5.9355387,9.4146572 5.87821464,8.7840925 6.23177872,8.3598156 L11.2317787,2.3598156 C11.6315738,1.88006147 12.3684262,1.88006147 12.7682213,2.3598156 L17.7682213,8.3598156 C18.1217854,8.7840925 18.0644613,9.4146572 17.6401844,9.76822128 C17.2159075,10.1217854 16.5853428,10.0644613 16.2317787,9.6401844 L12,4.56204994 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
-										        <path d="M3.28077641,9 L20.7192236,9 C21.2715083,9 21.7192236,9.44771525 21.7192236,10 C21.7192236,10.0817618 21.7091962,10.163215 21.6893661,10.2425356 L19.5680983,18.7276069 C19.234223,20.0631079 18.0342737,21 16.6576708,21 L7.34232922,21 C5.96572629,21 4.76577697,20.0631079 4.43190172,18.7276069 L2.31063391,10.2425356 C2.17668518,9.70674072 2.50244587,9.16380623 3.03824078,9.0298575 C3.11756139,9.01002735 3.1990146,9 3.28077641,9 Z M12,12 C11.4477153,12 11,12.4477153 11,13 L11,17 C11,17.5522847 11.4477153,18 12,18 C12.5522847,18 13,17.5522847 13,17 L13,13 C13,12.4477153 12.5522847,12 12,12 Z M6.96472382,12.1362967 C6.43125772,12.2792385 6.11467523,12.8275755 6.25761704,13.3610416 L7.29289322,17.2247449 C7.43583503,17.758211 7.98417199,18.0747935 8.51763809,17.9318517 C9.05110419,17.7889098 9.36768668,17.2405729 9.22474487,16.7071068 L8.18946869,12.8434035 C8.04652688,12.3099374 7.49818992,11.9933549 6.96472382,12.1362967 Z M17.0352762,12.1362967 C16.5018101,11.9933549 15.9534731,12.3099374 15.8105313,12.8434035 L14.7752551,16.7071068 C14.6323133,17.2405729 14.9488958,17.7889098 15.4823619,17.9318517 C16.015828,18.0747935 16.564165,17.758211 16.7071068,17.2247449 L17.742383,13.3610416 C17.8853248,12.8275755 17.5687423,12.2792385 17.0352762,12.1362967 Z" fill="#000000"/>
-										    </g>
-										</svg>                        
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon points="0 0 24 0 24 24 0 24"/>
+        <path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+        <rect fill="#000000" x="6" y="11" width="9" height="2" rx="1"/>
+        <rect fill="#000000" x="6" y="15" width="5" height="2" rx="1"/>
+    </g>
+</svg>        
 									</div>
 			                        <div class="kt-iconbox__desc">
 			                            <h3 class="kt-iconbox__title">
-											Produk
+											Training Pengantar
 										</h3>
 			                            <div class="kt-iconbox__content">
-			                                Produk terbaru >>
+			                                
 			                            </div>
 			                        </div>
 			                    </div>
@@ -690,21 +615,20 @@ License: You must have a valid license purchased only from themeforest(the above
 			                <div class="kt-portlet__body">
 			                    <div class="kt-iconbox__body">
 			                        <div class="kt-iconbox__icon">
-										<svg xmlns:xlink="http://www.w3.org/1999/xlink" class="kt-svg-icon" height="24px" version="1.1" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
-										    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
-										    	<rect height="24" width="24" x="0" y="0"></rect>
-										      	<circle cx="12" cy="12" fill="#000000" opacity="0.3" r="10"></circle>
-										      	<rect fill="#000000" height="7" rx="1" width="2" x="11" y="10"></rect>
-										      	<rect fill="#000000" height="2" rx="1" width="2" x="11" y="7"></rect>
-										    </g>
-										</svg>
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect x="0" y="0" width="24" height="24"/>
+        <path d="M13.6855025,18.7082217 C15.9113859,17.8189707 18.682885,17.2495635 22,17 C22,16.9325178 22,13.1012863 22,5.50630526 L21.9999762,5.50630526 C21.9999762,5.23017604 21.7761292,5.00632908 21.5,5.00632908 C21.4957817,5.00632908 21.4915635,5.00638247 21.4873465,5.00648922 C18.658231,5.07811173 15.8291155,5.74261533 13,7 C13,7.04449645 13,10.79246 13,18.2438906 L12.9999854,18.2438906 C12.9999854,18.520041 13.2238496,18.7439052 13.5,18.7439052 C13.5635398,18.7439052 13.6264972,18.7317946 13.6855025,18.7082217 Z" fill="#000000"/>
+        <path d="M10.3144829,18.7082217 C8.08859955,17.8189707 5.31710038,17.2495635 1.99998542,17 C1.99998542,16.9325178 1.99998542,13.1012863 1.99998542,5.50630526 L2.00000925,5.50630526 C2.00000925,5.23017604 2.22385621,5.00632908 2.49998542,5.00632908 C2.50420375,5.00632908 2.5084219,5.00638247 2.51263888,5.00648922 C5.34175439,5.07811173 8.17086991,5.74261533 10.9999854,7 C10.9999854,7.04449645 10.9999854,10.79246 10.9999854,18.2438906 L11,18.2438906 C11,18.520041 10.7761358,18.7439052 10.4999854,18.7439052 C10.4364457,18.7439052 10.3734882,18.7317946 10.3144829,18.7082217 Z" fill="#000000" opacity="0.3"/>
+    </g>
+</svg>
 			                        </div>
 			                        <div class="kt-iconbox__desc">
 			                            <h3 class="kt-iconbox__title">
-											FAQ
+								            Psikotest
 										</h3>
 			                            <div class="kt-iconbox__content">
-			                                Pertanyaan yang sering diajukan >>
+			                                
 			                            </div>
 			                        </div>
 			                    </div>
@@ -721,7 +645,584 @@ License: You must have a valid license purchased only from themeforest(the above
 <script type="text/javascript" src="assets/js/fungsi.js">
 </script>
 							<!-- end:: Content -->
+							
+							
+<!--begin career-->
+<section id="karir">
+<div class="kt-portlet ">
+	<div class="kt-portlet__head">
+		<div class="kt-portlet__head-label">
+			<span class="kt-portlet__head-icon">
+			<!--<i class="la la-leaf"></i>-->
+			</span>
+			<h1 class="kt-portlet__head-title">
+				KARIR
+			</h1>
+		</div>
+	</div>
+	
+	<div class="kt-portlet__body">
+		<div class="kt-pricing-1 kt-pricing-1--fixed">
+		
+			<div class="kt-pricing-1__items row">
+			<div uk-slider="center: true">
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="assets/images/bg1.jpeg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h1 class="uk-card-title">PT YAMAHA</h1>
+                        <p>ADMIN<p>
+   <button class="uk-button uk-button-danger" uk-toggle="target: #my-id" type="button">Lamar</button>
+
+<!-- This is the modal -->
+<div id="my-id" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Lamar Sekarang</h2>
+        <br>
+        <!--begin::Form-->
+			<form class="kt-form">
+				<div class="kt-portlet__body">
+				<div class="form-group">
+						<label for="exampleInputName1">Nama Lengkap</label>
+						<input type="name" class="form-control" id="exampleInputName1" placeholder="Nama Lengkap" name="nama_lengkap">
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" name="email">
+					</div>
+					
+					<div class="form-group">
+						<label for="exampleSelect1">Lowongan</label>
+						<select class="form-control" id="exampleSelect1" name="id_lowongan">
+							<option>Admin</option>
+							<option>Supervisor</option>
+							<option>Driver</option>
+							<option>Security</option>
+							<option>Customer Service</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">NPWP</label>
+							<input class="form-control" type="number" placeholder="NPWP" id="example-number-input" name="npwp">
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">NIK</label>
+							<input class="form-control" type="number" placeholder="NIK" id="example-number-input" name="nik">
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">No. KK</label>
+							<input class="form-control" type="number" placeholder="No. KK" id="example-number-input" name="no_kk">
+					</div>
+					<div class="form-group">
+						<label for="example-tel-input">No. Handphone</label>
+							<input class="form-control" type="tel" placeholder="No. Handphone" id="example-tel-input" name="no_hp">
+					</div>
+					<div class="form-group">
+						<label for="example-text-input">Sosmed</label>
+							<input class="form-control" type="text" placeholder="akun sosial media" id="example-text-input" name="medsos">
+					</div>
+					<div class="form-group">
+						<label for="exampleSelect2">Pendidikan</label>
+						<select multiple="" class="form-control" id="exampleSelect2" name="pendidikan">
+							<option>SD</option>
+							<option>SMP</option>
+							<option>SMA</option>
+							<option>D3</option>
+							<option>S1</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleTextarea">Alamat</label>
+						<textarea class="form-control" id="exampleTextarea" name="alamat" rows="3"></textarea>
+					</div>
+					<div class="form-group">
+						<label>Upload CV</label>
+						<div></div>
+						<div class="custom-file">
+						  	<input type="file" class="custom-file-input" id="customFile" name="cv">
+						  	<label class="custom-file-label" for="customFile">Pilih File</label>
 						</div>
+					</div>
+				</div>
+				<div class="kt-portlet__foot">
+					<div class="kt-form__actions">
+						<button type="reset" class="btn btn-primary">Submit</button>
+						<button type="reset" class="btn btn-secondary">Cancel</button>
+					</div>
+				</div>
+			</form>
+			<!--end::Form-->
+    </div>
+</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="assets/images/bg2.jpeg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h1 class="uk-card-title">BANK DANAMON</h1>
+                        <p>SUPERVISOR</p>
+                        <button class="uk-button uk-button-danger" uk-toggle="target: #my-id" type="button">Lamar</button>
+
+<!-- This is the modal -->
+<div id="my-id" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Lamar Sekarang</h2>
+        <br>
+        <!--begin::Form-->
+			<form class="kt-form">
+				<div class="kt-portlet__body">
+				<div class="form-group">
+						<label for="exampleInputName1">Nama Lengkap</label>
+						<input type="name" class="form-control" id="exampleInputName1" placeholder="Nama Lengkap" name="nama_lengkap">
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" name="email">
+					</div>
+					
+					<div class="form-group">
+						<label for="exampleSelect1">Lowongan</label>
+						<select class="form-control" id="exampleSelect1" name="id_lowongan">
+							<option>Admin</option>
+							<option>Supervisor</option>
+							<option>Driver</option>
+							<option>Security</option>
+							<option>Customer Service</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">NPWP</label>
+							<input class="form-control" type="number" placeholder="NPWP" id="example-number-input" name="npwp">
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">NIK</label>
+							<input class="form-control" type="number" placeholder="NIK" id="example-number-input" name="nik">
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">No. KK</label>
+							<input class="form-control" type="number" placeholder="No. KK" id="example-number-input" name="no_kk">
+					</div>
+					<div class="form-group">
+						<label for="example-tel-input">No. Handphone</label>
+							<input class="form-control" type="tel" placeholder="No. Handphone" id="example-tel-input" name="no_hp">
+					</div>
+					<div class="form-group">
+						<label for="example-text-input">Sosmed</label>
+							<input class="form-control" type="text" placeholder="akun sosial media" id="example-text-input" name="medsos">
+					</div>
+					<div class="form-group">
+						<label for="exampleSelect2">Pendidikan</label>
+						<select multiple="" class="form-control" id="exampleSelect2" name="pendidikan">
+							<option>SD</option>
+							<option>SMP</option>
+							<option>SMA</option>
+							<option>D3</option>
+							<option>S1</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleTextarea">Alamat</label>
+						<textarea class="form-control" id="exampleTextarea" name="alamat" rows="3"></textarea>
+					</div>
+					<div class="form-group">
+						<label>Upload CV</label>
+						<div></div>
+						<div class="custom-file">
+						  	<input type="file" class="custom-file-input" id="customFile" name="cv">
+						  	<label class="custom-file-label" for="customFile">Pilih File</label>
+						</div>
+					</div>
+				</div>
+				<div class="kt-portlet__foot">
+					<div class="kt-form__actions">
+						<button type="reset" class="btn btn-primary">Submit</button>
+						<button type="reset" class="btn btn-secondary">Cancel</button>
+					</div>
+				</div>
+			</form>
+			<!--end::Form-->
+    </div>
+</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="assets/images/bg2.jpeg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">OSEDA</h3>
+                        <p>CUSTOMER SERVICE.</p>
+                         <button class="uk-button uk-button-danger" uk-toggle="target: #my-id" type="button">Lamar</button>
+
+<!-- This is the modal -->
+<div id="my-id" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Lamar Sekarang</h2>
+        <br>
+        <!--begin::Form-->
+			<form class="kt-form">
+				<div class="kt-portlet__body">
+				<div class="form-group">
+						<label for="exampleInputName1">Nama Lengkap</label>
+						<input type="name" class="form-control" id="exampleInputName1" placeholder="Nama Lengkap" name="nama_lengkap">
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" name="email">
+					</div>
+					
+					<div class="form-group">
+						<label for="exampleSelect1">Lowongan</label>
+						<select class="form-control" id="exampleSelect1" name="id_lowongan">
+							<option>Admin</option>
+							<option>Supervisor</option>
+							<option>Driver</option>
+							<option>Security</option>
+							<option>Customer Service</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">NPWP</label>
+							<input class="form-control" type="number" placeholder="NPWP" id="example-number-input" name="npwp">
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">NIK</label>
+							<input class="form-control" type="number" placeholder="NIK" id="example-number-input" name="nik">
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">No. KK</label>
+							<input class="form-control" type="number" placeholder="No. KK" id="example-number-input" name="no_kk">
+					</div>
+					<div class="form-group">
+						<label for="example-tel-input">No. Handphone</label>
+							<input class="form-control" type="tel" placeholder="No. Handphone" id="example-tel-input" name="no_hp">
+					</div>
+					<div class="form-group">
+						<label for="example-text-input">Sosmed</label>
+							<input class="form-control" type="text" placeholder="akun sosial media" id="example-text-input" name="medsos">
+					</div>
+					<div class="form-group">
+						<label for="exampleSelect2">Pendidikan</label>
+						<select multiple="" class="form-control" id="exampleSelect2" name="pendidikan">
+							<option>SD</option>
+							<option>SMP</option>
+							<option>SMA</option>
+							<option>D3</option>
+							<option>S1</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleTextarea">Alamat</label>
+						<textarea class="form-control" id="exampleTextarea" name="alamat" rows="3"></textarea>
+					</div>
+					<div class="form-group">
+						<label>Upload CV</label>
+						<div></div>
+						<div class="custom-file">
+						  	<input type="file" class="custom-file-input" id="customFile" name="cv">
+						  	<label class="custom-file-label" for="customFile">Pilih File</label>
+						</div>
+					</div>
+				</div>
+				<div class="kt-portlet__foot">
+					<div class="kt-form__actions">
+						<button type="reset" class="btn btn-primary">Submit</button>
+						<button type="reset" class="btn btn-secondary">Cancel</button>
+					</div>
+				</div>
+			</form>
+			<!--end::Form-->
+    </div>
+</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="assets/images/bg1.jpeg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Honda</h3>
+                        <p>Driver</p>
+                         <button class="uk-button uk-button-danger" uk-toggle="target: #my-id" type="button">Lamar</button>
+
+<!-- This is the modal -->
+<div id="my-id" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Lamar Sekarang</h2>
+        <br>
+        <!--begin::Form-->
+			<form class="kt-form">
+				<div class="kt-portlet__body">
+				<div class="form-group">
+						<label for="exampleInputName1">Nama Lengkap</label>
+						<input type="name" class="form-control" id="exampleInputName1" placeholder="Nama Lengkap" name="nama_lengkap">
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" name="email">
+					</div>
+					
+					<div class="form-group">
+						<label for="exampleSelect1">Lowongan</label>
+						<select class="form-control" id="exampleSelect1" name="id_lowongan">
+							<option>Admin</option>
+							<option>Supervisor</option>
+							<option>Driver</option>
+							<option>Security</option>
+							<option>Customer Service</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">NPWP</label>
+							<input class="form-control" type="number" placeholder="NPWP" id="example-number-input" name="npwp">
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">NIK</label>
+							<input class="form-control" type="number" placeholder="NIK" id="example-number-input" name="nik">
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">No. KK</label>
+							<input class="form-control" type="number" placeholder="No. KK" id="example-number-input" name="no_kk">
+					</div>
+					<div class="form-group">
+						<label for="example-tel-input">No. Handphone</label>
+							<input class="form-control" type="tel" placeholder="No. Handphone" id="example-tel-input" name="no_hp">
+					</div>
+					<div class="form-group">
+						<label for="example-text-input">Sosmed</label>
+							<input class="form-control" type="text" placeholder="akun sosial media" id="example-text-input" name="medsos">
+					</div>
+					<div class="form-group">
+						<label for="exampleSelect2">Pendidikan</label>
+						<select multiple="" class="form-control" id="exampleSelect2" name="pendidikan">
+							<option>SD</option>
+							<option>SMP</option>
+							<option>SMA</option>
+							<option>D3</option>
+							<option>S1</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleTextarea">Alamat</label>
+						<textarea class="form-control" id="exampleTextarea" name="alamat" rows="3"></textarea>
+					</div>
+					<div class="form-group">
+						<label>Upload CV</label>
+						<div></div>
+						<div class="custom-file">
+						  	<input type="file" class="custom-file-input" id="customFile" name="cv">
+						  	<label class="custom-file-label" for="customFile">Pilih File</label>
+						</div>
+					</div>
+				</div>
+				<div class="kt-portlet__foot">
+					<div class="kt-form__actions">
+						<button type="reset" class="btn btn-primary">Submit</button>
+						<button type="reset" class="btn btn-secondary">Cancel</button>
+					</div>
+				</div>
+			</form>
+			<!--end::Form-->
+    </div>
+</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="assets/images/bg3.jpeg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Astra</h3>
+                        <p>Security</p>
+                         <button class="uk-button uk-button-danger" uk-toggle="target: #my-id" type="button">Lamar</button>
+
+<!-- This is the modal -->
+<div id="my-id" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Lamar Sekarang</h2>
+        <br>
+        <!--begin::Form-->
+			<form class="kt-form">
+				<div class="kt-portlet__body">
+				<div class="form-group">
+						<label for="exampleInputName1">Nama Lengkap</label>
+						<input type="name" class="form-control" id="exampleInputName1" placeholder="Nama Lengkap" name="nama_lengkap">
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" name="email">
+					</div>
+					
+					<div class="form-group">
+						<label for="exampleSelect1">Lowongan</label>
+						<select class="form-control" id="exampleSelect1" name="id_lowongan">
+							<option>Admin</option>
+							<option>Supervisor</option>
+							<option>Driver</option>
+							<option>Security</option>
+							<option>Customer Service</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">NPWP</label>
+							<input class="form-control" type="number" placeholder="NPWP" id="example-number-input" name="npwp">
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">NIK</label>
+							<input class="form-control" type="number" placeholder="NIK" id="example-number-input" name="nik">
+					</div>
+					<div class="form-group">
+						<label for="example-number-input">No. KK</label>
+							<input class="form-control" type="number" placeholder="No. KK" id="example-number-input" name="no_kk">
+					</div>
+					<div class="form-group">
+						<label for="example-tel-input">No. Handphone</label>
+							<input class="form-control" type="tel" placeholder="No. Handphone" id="example-tel-input" name="no_hp">
+					</div>
+					<div class="form-group">
+						<label for="example-text-input">Sosmed</label>
+							<input class="form-control" type="text" placeholder="akun sosial media" id="example-text-input" name="medsos">
+					</div>
+					<div class="form-group">
+						<label for="exampleSelect2">Pendidikan</label>
+						<select multiple="" class="form-control" id="exampleSelect2" name="pendidikan">
+							<option>SD</option>
+							<option>SMP</option>
+							<option>SMA</option>
+							<option>D3</option>
+							<option>S1</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleTextarea">Alamat</label>
+						<textarea class="form-control" id="exampleTextarea" name="alamat" rows="3"></textarea>
+					</div>
+					<div class="form-group">
+						<label>Upload CV</label>
+						<div></div>
+						<div class="custom-file">
+						  	<input type="file" class="custom-file-input" id="customFile" name="cv">
+						  	<label class="custom-file-label" for="customFile">Pilih File</label>
+						</div>
+					</div>
+				</div>
+				<div class="kt-portlet__foot">
+					<div class="kt-form__actions">
+						<button type="reset" class="btn btn-primary">Submit</button>
+						<button type="reset" class="btn btn-secondary">Cancel</button>
+					</div>
+				</div>
+			</form>
+			<!--end::Form-->
+    </div>
+</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+	</div>
+</div>
+<!--end career-->
+                    
+<!--begin client-->
+<section id="klien">
+ <div class="kt-portlet">
+		<div class="kt-portlet__head">
+		<div class="kt-portlet__head-label">
+			<span class="kt-portlet__head-icon">
+			<!--<i class="la la-leaf"></i>-->
+			</span>
+			<h1 class="kt-portlet__head-title">
+				KLIEN
+			</h1>
+		</div>
+	</div>
+	</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+ <div class="uk-child-width-1-4@m" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="assets/images/klien1.jpg" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">PT JOHNSON</h3>
+                <p><a href="#">www.johnson.com</a></p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="assets/images/laz.jpg" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">LAZADA</h3>
+                <p><a href="#">www.lazada.co.id</a></p>
+            </div>
+        </div>
+    </div>
+     <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="assets/images/klien3.jpg" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">INBISCO</h3>
+                <p><a href="#">www.inbisco.com</a></p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="assets/images/TORABIKA.jpg" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">PT TORA BIKA</h3>
+                <p><a href="#">www.torabika.com</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--end client-->
+						</div>
+						</section>
 					</div>
 					<!-- begin:: Footer -->
 					<div class="kt-footer  kt-footer--extended  kt-grid__item">
@@ -730,12 +1231,12 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="row">
 									<div class="col-lg-4">
 										<div class="kt-footer__section">
-											<h3 class="kt-footer__title">Dinas Sosial DKI Jakarta</h3>
+											<h3 class="kt-footer__title">PT INDOPSIKO INDONESIA</h3>
 											<div class="kt-footer__content">
 												Kantor Pusat : <br>
-												Jl. Gn. Sahari No.31 RT.12/RW.04 <br>
-												Gn. Sahari Utara Kec. Sawah Besar <br>
-												Kota Jakarta Pusat - DKI Jakarta (10720)
+												Jl. Raya Pahlawan Revolusi No. 59 Jakarta Timur <br>
+												Pondok Bambu Kec. Duren Sawit <br>
+												Kota Jakarta Timur - DKI Jakarta (13430)
 											</div>
 										</div>
 									</div>
@@ -746,34 +1247,43 @@ License: You must have a valid license purchased only from themeforest(the above
 											</a>
 										</div>
 									</div>
+									
 									<div class="col-md-3">
+									<section id="kontak">
 										<div class="kt-footer__section" style="text-align: center;">
-											<h3 class="kt-footer__title">Sosial Media</h3>
+											<h3 class="kt-footer__title">KONTAK</h3>
 											<div class="kt-footer__content">
 												<div class="kt-footer__nav">
 													<div class="kt-footer__nav-section">
-														<a href="https://web.facebook.com/dinsosDKIJakarta"><i class="socicon-facebook"></i> Dinsos DKI Jakarta</a>
-														<a href="https://twitter.com/dinsosdki1"><i class="socicon-twitter"></i> Dinsos DKI Jakarta</a>
-														<a href="https://www.instagram.com/explore/locations/310710228/dinas-sosial-prov-dki-jakarta"><i class="socicon-instagram"></i> Dinsos DKI Jakarta</a>
+														<i class="fa fa-phone p-2" style="font-size: 17px;"> (021) 861-5604 </i>
+														<i class="fa fa-fax p-2" style="font-size: 17px;"> (021) 861-1507</i> 
+														<i class="fa fa-envelope p-2" style="font-size: 17px;"> hrd@indopsiko.com</i> 
 													</div>
 												</div>
 											</div>
 										</div>
+										</section>
 									</div>
+									
 								</div>
 							</div>
 						</div>
+						
+
+
+        <!--end::Portlet-->
+
 						<div class="kt-footer__bottom">
-							<div class="kt-container ">
+							<div class="kt-container-fluid mx-auto">
 								<div class="kt-footer__wrapper">
 									<div class="kt-footer__copyright">
-										&copy; 2019 <a href="http://dinsos.jakarta.go.id/" target="_blank">Dinas Sosial DKI Jakarta</a>
+										&copy; 2019 <a href="http://dinsos.jakarta.go.id/" target="_blank">PT INDOPSIKO INDONESIA</a>
 									</div>
-									<div class="kt-footer__menu">
+								<!--	<div class="kt-footer__menu">
 										<a href="/tentang_kami">Tentang Kami</a>
 										<a href="/kebijakan_privasi">Kebijakan Privasi</a>
 										<a href="/kontak">Kontak</a>
-									</div>
+									</div>-->
 								</div>
 							</div>
 						</div>
