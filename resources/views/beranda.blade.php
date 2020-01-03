@@ -177,9 +177,9 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper " id="kt_wrapper">
 
 					{{--  <!-- begin:: Header -->  --}}
-					<div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed " data-ktheader-minimize="on">
+					<div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed " data-ktheader-minimize="on"  style="background-color:white;">
 	<div class="kt-header__top">
-		<div class="kt-container" style="background-color:white;">
+		<div class="kt-container">
 
 			{{--  <!-- begin:: Brand -->  --}}
 			<div class="kt-header__brand   kt-grid__item" id="kt_header_brand">
