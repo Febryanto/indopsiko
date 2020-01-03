@@ -107,9 +107,9 @@ License: You must have a valid license purchased only from themeforest(the above
 		{{--  <!-- begin:: Page -->  --}}
 
 		{{--  <!-- begin:: Header Mobile -->  --}}
-		<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
+		<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed">
 			<div class="kt-header-mobile__brand">
-				<a class="kt-header-mobile__logo" href="demo5/index.html">
+				<a class="kt-header-mobile__logo" href="/">
 					<img alt="Logo" src="assets/images/logooo.png" width="202px" height="40px" />
 				</a>
 
@@ -128,7 +128,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="dropdown-menu dropdown-menu-fit dropdown-menu-md">
 							<ul class="kt-nav kt-nav--bold kt-nav--md-space kt-margin-t-20 kt-margin-b-20">
 								<li class="kt-nav__item">
-									<a class="kt-nav__link active" href="index.html">
+									<a class="kt-nav__link active" href="/">
 										<span class="kt-nav__link-icon"><i class="fa fa-home"></i></span>
 										<span class="kt-nav__link-text">HOME</span>
 									</a>
@@ -177,7 +177,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper " id="kt_wrapper">
 
 					{{--  <!-- begin:: Header -->  --}}
-					<div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed " data-ktheader-minimize="on">
+					<div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed " data-ktheader-minimize="on"  style="background-color:white;">
 	<div class="kt-header__top">
 		<div class="kt-container">
 
@@ -185,13 +185,13 @@ License: You must have a valid license purchased only from themeforest(the above
 			<div class="kt-header__brand   kt-grid__item" id="kt_header_brand">
 				<div class="kt-header__brand-logo">
 					<a href="/">
-						<img alt="Logo" src="assets/images/logos/logo-5.png" height="140px"/>
+						<img alt="Logo" src="assets/images/logooo.png" height="140px" width="200px"/>
 					</a>
 				</div>
 
 				<div class="kt-header__brand-nav">
 					<div class="dropdown"  style="padding:0 5px ;">
-						<a  href="index.html"><button type="button" class="btn btn-pill btn-default">
+						<a  href="/"><button type="button" class="btn btn-pill btn-default">
 							<i class="fa fa-home"></i>
 							HOME
 						</button></a>
@@ -1174,7 +1174,7 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 									</div>
 									<div class="col-lg-4">
 										<div class="kt-footer__section" style="text-align: center">
-											<a class="kt-header-mobile__logo" href="demo5/index.html">
+											<a class="kt-header-mobile__logo" href="/">
 
 											</a>
 										</div>
