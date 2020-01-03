@@ -134,13 +134,13 @@ License: You must have a valid license purchased only from themeforest(the above
 									</a>
 								</li>
 								<li class="kt-nav__item">
-									<a class="kt-nav__link" href="index.html#profil">
+									<a class="kt-nav__link" href="#profil">
 										<span class="kt-nav__link-icon"><i class="fa fa-id-card"></i></span>
 										<span class="kt-nav__link-text">PROFIL</span>
 									</a>
 								</li>
 								<li class="kt-nav__item">
-									<a class="kt-nav__link" href="index.html#karir">
+									<a class="kt-nav__link" href="#karir">
 										<span class="kt-nav__link-icon"><i class="fa fa-briefcase"></i></span>
 										<span class="kt-nav__link-text">KARIR</span>
 									</a>
@@ -152,13 +152,13 @@ License: You must have a valid license purchased only from themeforest(the above
 									</a>
 								</li>
 								<li class="kt-nav__item">
-									<a class="kt-nav__link" href="index.html#klien">
+									<a class="kt-nav__link" href="#klien">
 										<span class="kt-nav__link-icon"><i class="fa fa-users"></i></span>
 										<span class="kt-nav__link-text">KLIEN</span>
 									</a>
 								</li>
 								<li class="kt-nav__item">
-									<a class="kt-nav__link" href="index.html#kontak">
+									<a class="kt-nav__link" href="#kontak">
 										<span class="kt-nav__link-icon"><i class="fa fa-phone"></i></span>
 										<span class="kt-nav__link-text">KONTAK</span>
 									</a>
@@ -197,13 +197,13 @@ License: You must have a valid license purchased only from themeforest(the above
 						</button></a>
 					</div>
 					<div class="dropdown" style="padding:0 5px ;">
-						<a href="index.html#profil"><button type="button" class="btn btn-pill btn-default">
+						<a href="#profil"><button type="button" class="btn btn-pill btn-default">
 								<i class="fa fa-id-card"></i>
 								PROFIL
 							</button></a>
 					</div>
 					<div class="dropdown" style="padding:0 5px ;">
-						<a href="index.html#klien"><button type="button" class="btn btn-pill btn-default">
+						<a href="#klien"><button type="button" class="btn btn-pill btn-default">
 								<i class="fa fa-users"></i>
 								KLIEN
 							</button></a>
@@ -215,13 +215,13 @@ License: You must have a valid license purchased only from themeforest(the above
 							</button></a>
 					</div>
 					<div class="dropdown" style="padding:0 5px ;">
-						<a href="index.html#karir"><button type="button" class="btn btn-pill btn-default">
+						<a href="#karir"><button type="button" class="btn btn-pill btn-default">
 							<i class="fa fa-briefcase"></i>
 							KARIR
 						</button></a>
 					</div>
 					<div class="dropdown" style="padding:0 5px ;">
-						<a href="index.html#kontak"><button type="button" class="btn btn-pill btn-default">
+						<a href="#kontak"><button type="button" class="btn btn-pill btn-default">
 							<i class="fa fa-phone"></i>
 							KONTAK
 						</button></a>
