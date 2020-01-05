@@ -1209,7 +1209,7 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 							<div class="kt-container-fluid mx-auto">
 								<div class="kt-footer__wrapper">
 									<div class="kt-footer__copyright">
-										&copy; 2019 <a href="http://dinsos.jakarta.go.id/" target="_blank">PT INDOPSIKO INDONESIA</a>
+										&copy; 2019 <a href="/" target="_blank">PT INDOPSIKO INDONESIA</a>
 									</div>
 								<!--	<div class="kt-footer__menu">
 										<a href="/tentang_kami">Tentang Kami</a>
