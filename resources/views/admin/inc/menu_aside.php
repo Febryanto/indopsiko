@@ -17,26 +17,26 @@
                     <i class="kt-menu__section-icon flaticon-more-v2"></i>
                 </li>
             <li class="kt-menu__item " aria-haspopup="true" >
-                <a href="/profil" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-database"></i>
+                <a href="/proper" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-database"></i>
                     <span class="kt-menu__link-text">Profil</span></a>
             </li>
             <li class="kt-menu__item " aria-haspopup="true" >
-                <a  href="#" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-cube"></i>
+                <a  href="/klien" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-cube"></i>
                     <span class="kt-menu__link-text">Klient</span>
                 </a>
             </li>
             <li class="kt-menu__item " aria-haspopup="true" >
-                <a  href="#" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-newspaper"></i>
+                <a  href="/berita" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-newspaper"></i>
                     <span class="kt-menu__link-text">Berita</span>
                 </a>
             </li>
             <li class="kt-menu__item " aria-haspopup="true" >
-                <a  href="#" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-bullhorn"></i>
+                <a  href="/pengumuman" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-bullhorn"></i>
                     <span class="kt-menu__link-text">Pengumuman</span>
                 </a>
             </li>
             <li class="kt-menu__item " aria-haspopup="true" >
-                <a  href="#" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-briefcase"></i>
+                <a  href="/lowongan" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-briefcase"></i>
                     <span class="kt-menu__link-text">Lowongan</span>
                 </a>
             </li>

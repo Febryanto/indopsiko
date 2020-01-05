@@ -8,9 +8,9 @@
 <script src="assets/vendors/general/sticky-js/dist/sticky.min.js" type="text/javascript"></script>
 <script src="assets/vendors/general/wnumb/wNumb.js" type="text/javascript"></script>
 
-{{--  <!--end:: Global Mandatory Vendors -->  --}}
+  <!--end:: Global Mandatory Vendors -->
 
-{{--  <!--begin:: Global Optional Vendors -->  --}}
+  <!--begin:: Global Optional Vendors -->
 <script src="assets/vendors/general/jquery-form/dist/jquery.form.min.js" type="text/javascript"></script>
 <script src="assets/vendors/general/block-ui/jquery.blockUI.js" type="text/javascript"></script>
 <script src="assets/vendors/general/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
@@ -62,21 +62,18 @@
 <script src="assets/vendors/general/jquery.repeater/src/repeater.js" type="text/javascript"></script>
 <script src="assets/vendors/general/dompurify/dist/purify.js" type="text/javascript"></script>
 
-{{--  <!--end:: Global Optional Vendors -->  --}}
+  <!--end:: Global Optional Vendors -->
 
-{{--  <!--begin::Global Theme Bundle(used by all pages) -->  --}}
+  <!--begin::Global Theme Bundle(used by all pages) -->
 <script src="assets/js/scripts.bundle.js" type="text/javascript"></script>
 
-{{--  <!--end::Global Theme Bundle -->  --}}
+  <!--end::Global Theme Bundle -->
 
-{{--  <!--begin::Page Vendors(used by this page) -->  --}}
+  <!--begin::Page Vendors(used by this page) -->
 <script src="assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtizBEi9K7hfwI3uUi0AOrYFAx_hh0gkA&callback=initMap"></script>
 <script src="assets/vendors/custom/gmaps/gmaps.js" type="text/javascript"></script>
 
-{{--  <!--end::Page Vendors -->  --}}
+  <!--end::Page Vendors -->
 
-{{--  <!--begin::Page Scripts(used by this page) -->  --}}
-<script src="assets/js/pages/dashboard.js" type="text/javascript"></script>
-<script src="assets/vendors/general/chart.js/dist/Chart.min.js" type="text/javascript"></script>
-<script src="assets/vendors/general/chart.js/dist/createChart.js" type="text/javascript"></script>
+  <!--begin::Page Scripts(used by this page) -->

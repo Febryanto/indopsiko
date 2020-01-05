@@ -68,7 +68,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 {{--  <!--begin: Navigation -->  --}}
 <div class="kt-notification">
-    <a href="/metronic/preview/demo5/custom/apps/user/profile-1/personal-information.html" class="kt-notification__item">
+    <a href="#" class="kt-notification__item">
         <div class="kt-notification__item-icon">
             <i class="flaticon2-calendar-3 kt-font-success"></i>
         </div>
@@ -80,7 +80,7 @@ License: You must have a valid license purchased only from themeforest(the above
     </a>
 
     <div class="kt-notification__custom kt-space-between">
-        <a href="/metronic/preview/demo5/custom/user/login-v2.html" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Sign Out</a>
+        <a href="#" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Sign Out</a>
     </div>
 </div>
 {{--  <!--end: Navigation -->  --}}
@@ -107,7 +107,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	{{--  <!-- begin:: Aside -->  --}}
 
 	{{--  <!-- begin:: Aside Menu -->  --}}
-	@include('name')
+	@include('admin.inc.menu_aside')
 	{{--  <!-- end:: Aside Menu -->  --}}
 </div>
 {{--  <!-- end:: Aside -->  --}}
@@ -118,7 +118,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <ul class="kt-menu__nav ">
                 <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
                     <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
-                        <span class="kt-menu__link-text">Dashboards</span>
+                        <span class="kt-menu__link-text">@yield('subheader')</span>
                         <i class="kt-menu__ver-arrow la la-angle-right"></i>
                     </a>
                 </li>
@@ -128,7 +128,7 @@ License: You must have a valid license purchased only from themeforest(the above
            	{{--  <!--begin: User bar -->  --}}
 	        <div class="kt-header__topbar-item kt-header__topbar-item--user">
 		        <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,10px">
-                    <span class="kt-header__topbar-icon kt-header__topbar-icon--brand"><b>Hi, Nick</b></span>
+                    <span class="kt-header__topbar-icon kt-header__topbar-icon--brand" style="font-size:10px;"><b>Hi, {{Auth::user()->name}}</b></span>
 			        <img class="kt-hidden-" alt="Pic" src="assets/images/users/user1.jpg" style="width: 50%;padding: 10px;"/>
 
 		        </div>
@@ -137,18 +137,17 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="kt-user-card kt-user-card--skin-light kt-notification-item-padding-x">
                         <div class="kt-user-card__avatar">
                             <img class="kt-hidden-" alt="Pic" src="assets/images/users/user1.jpg" />
-                            {{--  <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->  --}}
                             <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden">S</span>
                         </div>
                         <div class="kt-user-card__name">
-                            Sean Stone
+                            {{Auth::user()->name}}
                         </div>
                     </div>
             {{--  <!--end: Head -->  --}}
 
 {{--  <!--begin: Navigation -->  --}}
 <div class="kt-notification">
-    <a href="/metronic/preview/demo5/custom/apps/user/profile-1/personal-information.html" class="kt-notification__item">
+    <a href="#" class="kt-notification__item">
         <div class="kt-notification__item-icon">
             <i class="flaticon2-calendar-3 kt-font-success"></i>
         </div>
@@ -160,7 +159,7 @@ License: You must have a valid license purchased only from themeforest(the above
     </a>
 
     <div class="kt-notification__custom kt-space-between">
-        <a href="/metronic/preview/demo5/custom/user/login-v2.html" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Sign Out</a>
+        <a href="#" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Sign Out</a>
     </div>
 </div>
 {{--  <!--end: Navigation -->  --}}
@@ -190,12 +189,12 @@ License: You must have a valid license purchased only from themeforest(the above
 		<div class="kt-container ">
 			<div class="kt-footer__wrapper">
 				<div class="kt-footer__copyright">
-					&copy; 2019 <a href="http://keenthemes.com/metronic" target="_blank">indopsiko</a>
+					&copy; 2019 <a href="#" target="_blank">indopsiko</a>
 				</div>
 				<div class="kt-footer__menu">
-					<a href="http://keenthemes.com/metronic" target="_blank">Purchase Lisence</a>
-					<a href="http://keenthemes.com/metronic" target="_blank">Team</a>
-					<a href="http://keenthemes.com/metronic" target="_blank">Contact</a>
+					<a href="#" target="_blank">Purchase Lisence</a>
+					<a href="#" target="_blank">Team</a>
+					<a href="#" target="_blank">Contact</a>
 				</div>
 			</div>
 		</div>
