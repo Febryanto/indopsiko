@@ -7,7 +7,7 @@
 
 			<ul class="kt-menu__nav ">
                 <li class="kt-menu__item " aria-haspopup="true" >
-                    <a  href="/metronic/preview/demo5/builder.html" class="kt-menu__link ">
+                    <a  href="/" class="kt-menu__link ">
                         <img alt="Logo" src="assets/images/logos/logo-4.png"/>&nbsp;
                         <span class="kt-menu__link-text">INDOPSIKO</span>
                     </a>
