@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Lowongan;
+use App\Klien;
 
 class KlienController extends Controller
 {
@@ -18,7 +18,7 @@ class KlienController extends Controller
     }
     public function index()
     {
-        $data = Lowongan::all();
+        $data = Klien::all();
         // dd($data);
         return view('admin.klien.klien',compact('data'));
     }
