@@ -13,19 +13,19 @@ Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-t
 License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.  --}}
 <html lang="en">
 
-	{{--  <!-- begin::Head -->  --}}
+	{{-- begin::Head --}}
 	<head>
 
-		{{--  <!--begin::Base Path (base relative path for assets of this page) -->  --}}
+		{{--begin::Base Path (base relative path for assets of this page) --}}
 		<base href="./">
 
-		{{--  <!--end::Base Path -->  --}}
+		{{--end::Base Path --}}
 		<meta charset="utf-8" />
 		<title>	INDOPSIKO</title>
 		<meta name="description" content="Latest updates and statistic charts">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		{{--  <!--begin::Fonts -->  --}}
+		{{--begin::Fonts --}}
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
 		<script>
 			WebFont.load({
@@ -38,19 +38,19 @@ License: You must have a valid license purchased only from themeforest(the above
 			});
 		</script>
 
-		{{--  <!--end::Fonts -->  --}}
+		{{--end::Fonts --}}
 
-		{{--  <!--begin::Page Vendors Styles(used by this page) -->  --}}
+		{{--begin::Page Vendors Styles(used by this page) --}}
 		<link href="assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
 
-		{{--  <!--end::Page Vendors Styles -->  --}}
+		{{--end::Page Vendors Styles --}}
 
-		{{--  <!--begin:: Global Mandatory Vendors -->  --}}
+		{{--begin:: Global Mandatory Vendors --}}
 		<link href="assets/vendors/general/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
 
-		{{--  <!--end:: Global Mandatory Vendors -->  --}}
+		{{--end:: Global Mandatory Vendors --}}
 
-		{{--  <!--begin:: Global Optional Vendors -->  --}}
+		{{--begin:: Global Optional Vendors --}}
 		<link href="assets/vendors/general/tether/dist/css/tether.css" rel="stylesheet" type="text/css" />
 		<link href="assets/vendors/general/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css" />
 		<link href="assets/vendors/general/bootstrap-datetime-picker/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css" />
@@ -77,36 +77,36 @@ License: You must have a valid license purchased only from themeforest(the above
 		<link href="assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
 		<link href="assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="assets/css/demo5/pages/pricing/pricing-1.css">
-		{{--  <!-- UIkit CSS -->  --}}
+		{{-- UIkit CSS --}}
 <link rel="stylesheet" href="assets/css/uikit/css/uikit.min.css" />
 
-{{--  <!-- UIkit JS -->  --}}
+{{-- UIkit JS --}}
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
 
-		{{--  <!--end:: Global Optional Vendors -->  --}}
+		{{--end:: Global Optional Vendors --}}
 
-		{{--  <!--begin::Global Theme Styles(used by all pages) -->  --}}
+		{{--begin::Global Theme Styles(used by all pages) --}}
 		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 
-		{{--  <!--end::Global Theme Styles -->  --}}
+		{{--end::Global Theme Styles --}}
 
-		{{--  <!--begin::Layout Skins(used by all pages) -->  --}}
+		{{--begin::Layout Skins(used by all pages) --}}
 
-		{{--  <!--end::Layout Skins -->  --}}
+		{{--end::Layout Skins --}}
 		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
 
 
 	</head>
 
-	{{--  <!-- end::Head -->  --}}
+	{{-- end::Head --}}
 
-	{{--  <!-- begin::Body -->  --}}
+	{{-- begin::Body --}}
 	<body class="kt-page--loading-enabled kt-page--loading kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-subheader--enabled kt-subheader--transparent kt-page--loading">
 
-		{{--  <!-- begin:: Page -->  --}}
+		{{-- begin:: Page --}}
 
-		{{--  <!-- begin:: Header Mobile -->  --}}
+		{{-- begin:: Header Mobile --}}
 		<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed">
 			<div class="kt-header-mobile__brand">
 				<a class="kt-header-mobile__logo" href="/">
@@ -171,17 +171,17 @@ License: You must have a valid license purchased only from themeforest(the above
 				<button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon2-down"></i></button>
 			</div>
 </div>
-		{{--  <!-- end:: Header Mobile -->  --}}
+		{{-- end:: Header Mobile --}}
 		<div class="kt-grid kt-grid--hor kt-grid--root">
 			<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
 				<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper " id="kt_wrapper">
 
-					{{--  <!-- begin:: Header -->  --}}
+					{{-- begin:: Header --}}
 					<div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed " data-ktheader-minimize="on"  style="background-color:white;">
 	<div class="kt-header__top">
 		<div class="kt-container">
 
-			{{--  <!-- begin:: Brand -->  --}}
+			{{-- begin:: Brand --}}
 			<div class="kt-header__brand   kt-grid__item" id="kt_header_brand">
 				<div class="kt-header__brand-logo">
 					<a href="/">
@@ -229,46 +229,46 @@ License: You must have a valid license purchased only from themeforest(the above
 				</div>
 
 			</div>
-			{{--  <!-- end:: Brand -->  --}}
+			{{-- end:: Brand --}}
 
 
-			{{--  <!-- begin:: Header Topbar -->  --}}
+			{{-- begin:: Header Topbar --}}
 		<div class="kt-header__topbar">
-				{{--  <!--begin: User bar -->  --}}
+				{{--begin: User bar --}}
 				<div class="kt-header__topbar-item kt-header__topbar-item--user">
-				{{--  <!--<div class="kt-notification__custom kt-space-between" style="padding: 0 10px;">
+				{{--<div class="kt-notification__custom kt-space-between" style="padding: 0 10px;">
 								<a href="/masuk" class="btn btn-label btn-label-success btn-sm btn-bold" >Masuk</a>
-					</div>-->  --}}
-					{{--  <!-- <div class="kt-notification__custom kt-space-between">
+					</div>--}}
+					{{-- <div class="kt-notification__custom kt-space-between">
 								<a href="/daftar" class="btn btn-label btn-label-brand btn-sm btn-bold">Daftar</a>
-					</div> -->  --}}
+					</div> --}}
 				</div>
 
-				{{--  <!--end: User bar -->  --}}
+				{{--end: User bar --}}
 		</div>
-			{{--  <!-- end:: Header Topbar -->  --}}
+			{{-- end:: Header Topbar --}}
 		</div>
 	</div>
 
 </div>
-					{{--  <!-- end:: Header -->  --}}
+					{{-- end:: Header --}}
 					<div class="kt-body kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch" id="kt_body">
 						<div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
 
-							{{--  <!-- begin:: Subheader -->  --}}
+							{{-- begin:: Subheader --}}
 							<div class="kt-subheader   kt-grid__item" id="kt_subheader">
 								<div class="kt-container">
 
 								</div>
 							</div>
 
-							{{--  <!-- end:: Subheader -->  --}}
+							{{-- end:: Subheader --}}
 
-							{{--  <!-- begin:: Content -->  --}}
+							{{-- begin:: Content --}}
 							<div class="kt-portlet">
 	<div class="kt-body kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch" id="kt_body">
 		<div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
-			<!-- begin:: Subheader -->
+			{{-- begin:: Subheader --}}
 			<div class="kt-subheader   kt-grid__item" id="kt_subheader">
 				<div class="kt-container ">
 				</div>
@@ -289,7 +289,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									    <div class="carousel-item">
 									      	<img class="d-block w-100"  height="400px" src="assets/images/bg3.jpeg" alt="Third slide">
 									    </div>
-									    <!--Search -->
+									    {{--Search --}}
 										<div class="row align-self-center">
 
 											<div class="col-lg-3"></div>
@@ -300,20 +300,20 @@ License: You must have a valid license purchased only from themeforest(the above
 															<div class="input-group input-group-lg">
 																<div class="input-group-prepend">
 																	<span class="input-group-text" id="basic-addon1">
-																	<!--	<svg xmlns:xlink="http://www.w3.org/1999/xlink" class="kt-svg-icon" height="24px" version="1.1" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><rect height="24" width="24" x="0" y="0"></rect><path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path><path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero"></path></g>
-																		</svg>-->
+																	{{--	<svg xmlns:xlink="http://www.w3.org/1999/xlink" class="kt-svg-icon" height="24px" version="1.1" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><rect height="24" width="24" x="0" y="0"></rect><path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path><path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero"></path></g>
+																		</svg>--}}
 																	</span>
 																</div>
-												<!--			<input autocomplete="off" class="form-control mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid" placeholder="Masukkan NIK UEP Atau Nama KUBE" type="text" id="input_data" aria-invalid="false" aria-required="false">
-																	<button class="btn btn-warning btn-font-lg kt-margin-l-4" id="button" type="button">Cari</button>-->
+												{{--			<input autocomplete="off" class="form-control mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid" placeholder="Masukkan NIK UEP Atau Nama KUBE" type="text" id="input_data" aria-invalid="false" aria-required="false">
+																	<button class="btn btn-warning btn-font-lg kt-margin-l-4" id="button" type="button">Cari</button>--}}
 															</div>
-														</div><!----><!----><!---->
+														</div>{{----}}{{----}}{{----}}
 													</div>
 												</form>
 											</div>
 											<div class="col-lg-3"></div>
 										</div>
-										<!-- end search-->
+										{{-- end search--}}
 								  	</div>
 								</div>
 							</div>
@@ -324,7 +324,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			<div class="kt-container  kt-grid__item kt-grid__item--fluid">
 				<div class="row">
 					<div class="col-lg-6">
-						<!--begin:: Foto UEP-KUBE-->
+						{{--begin:: Foto UEP-KUBE--}}
 						<div class="kt-portlet kt-portlet--height-fluid">
 							<div class="kt-portlet__head">
 								<div class="kt-portlet__head-label">
@@ -383,7 +383,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</div>
 						</div>
 					</div>
-					<!-- Pendamping Terbaik -->
+					{{-- Pendamping Terbaik --}}
 
 					<div class="col-lg-6">
 					<section id="profil">
@@ -404,7 +404,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 									</ul>
 								</div>
-						<!---->	</div>
+						{{----}}	</div>
                          <div class="kt-portlet kt-portlet--height-fluid kt-widget19">
     <div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
         <div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(assets/images/profile.jpeg)">
@@ -413,7 +413,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				</h3>
 			<div class="kt-widget19__shadow"></div>
 			<div class="kt-widget19__labels">
-			<!--	<a href="#" class="btn btn-label-light-o2 btn-bold ">Recent</a> -->
+			{{--	<a href="#" class="btn btn-label-light-o2 btn-bold ">Recent</a> --}}
 			</div>
         </div>
     </div>
@@ -424,27 +424,27 @@ License: You must have a valid license purchased only from themeforest(the above
                     <img src="assets/images/logooo.png " alt="" >
                 </div>
                 <div class="kt-widget19__info">
-                   <!-- <a href="#" class="kt-widget19__username">
+                   {{-- <a href="#" class="kt-widget19__username">
 						Anna Krox
 					</a>
                     <span class="kt-widget19__time">
 						UX/UI Designer, Google
-					</span> -->
+					</span> --}}
                 </div>
-              <!--  <div class="kt-widget19__stats">
+              {{--  <div class="kt-widget19__stats">
                     <span class="kt-widget19__number kt-font-brand">
 						18
 					</span>
                     <a href="#" class="kt-widget19__comment">
 						Comments
 					</a>
-                </div>-->
+                </div>--}}
             </div>
             <div class="kt-widget19__text">
-               Pembangunan manusia seutuhnya. Demikian kalimat sakral yang telah menjadi komitmen dasar bagi Bangsa dan Negara. Aplikasinya menjadi kewajiban bersama, baik pemerintah maupun rakyatnya. <!--Arahnya adalah tercapainya kehidupan yang sejahtera, adil dan makmur, lahir maupun batin. Dalam kerangka itu orang beraktifitas menurut bidang dan keahlian masing-masing, dan satu aktifitas yang menghasilkan produk unggul pasti dikerjakan oleh tangan-tangan yang ahli dan profesional.
+               Pembangunan manusia seutuhnya. Demikian kalimat sakral yang telah menjadi komitmen dasar bagi Bangsa dan Negara. Aplikasinya menjadi kewajiban bersama, baik pemerintah maupun rakyatnya. {{--Arahnya adalah tercapainya kehidupan yang sejahtera, adil dan makmur, lahir maupun batin. Dalam kerangka itu orang beraktifitas menurut bidang dan keahlian masing-masing, dan satu aktifitas yang menghasilkan produk unggul pasti dikerjakan oleh tangan-tangan yang ahli dan profesional.
 Dengan semakin menyempitnya spesifikasi pengetahuan dan keilmuan, maka semakin terfokus pula orang terhadap bidang yang digelutinya. Sebuah perusahaan yang memproduksi satu barang memerlukan sekian banyak bidang keahlian, sehingga pengaturan sumber daya manusia menjadi satu hal tersendiri yang harus ditangani secara baik dan benar, matang dan profesional.
 PT.INDOPSIKO INDONESIA dengan mantap mengambil peran sebagai profesi di bidang Sumber Daya Manusia ini dengan maksud mampu mencakup multi manfaat. Satu sisi membantu dan mempersiapkan calon tenaga kerja dalam memasuki dunia kerja, pada sisi lain mempermudah dan membantu para pengusaha dalam mendapatkan tenaga-tenaga kerja yang dibutuhkannya, dan sisi yang lainnya lagi adalah merupakan bidang kerja/usaha yang menawarkan profit tersendiri.
-Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA telah menancapkan komitmennya dan terus berupaya untuk memberikan layanan yang terbaik serta menjadi rekanan yang terpercaya.-->
+Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA telah menancapkan komitmennya dan terus berupaya untuk memberikan layanan yang terbaik serta menjadi rekanan yang terpercaya.--}}
             </div>
         </div>
         <div class="kt-widget19__action">
@@ -452,26 +452,26 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
     Selengkapnya
   </button>
 
-  <!-- The Modal -->
+  {{-- The Modal --}}
   <div class="modal fade" id="myModal">
     <div class="modal-dialog">
       <div class="modal-content">
 
-        <!-- Modal Header -->
+        {{-- Modal Header --}}
         <div class="modal-header">
           <h4 class="modal-title">Profil</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
-        <!-- Modal body -->
-        <div class="modal-body">
-         Pembangunan manusia seutuhnya. Demikian kalimat sakral yang telah menjadi komitmen dasar bagi Bangsa dan Negara. Aplikasinya menjadi kewajiban bersama, baik pemerintah maupun rakyatnya. Arahnya adalah tercapainya kehidupan yang sejahtera, adil dan makmur, lahir maupun batin. Dalam kerangka itu orang beraktifitas menurut bidang dan keahlian masing-masing, dan satu aktifitas yang menghasilkan produk unggul pasti dikerjakan oleh tangan-tangan yang ahli dan profesional.
+        {{-- Modal body --}}
+        <div class="modal-body" style="text-align:justify;">
+           Pembangunan manusia seutuhnya. Demikian kalimat sakral yang telah menjadi komitmen dasar bagi Bangsa dan Negara. Aplikasinya menjadi kewajiban bersama, baik pemerintah maupun rakyatnya. Arahnya adalah tercapainya kehidupan yang sejahtera, adil dan makmur, lahir maupun batin. Dalam kerangka itu orang beraktifitas menurut bidang dan keahlian masing-masing, dan satu aktifitas yang menghasilkan produk unggul pasti dikerjakan oleh tangan-tangan yang ahli dan profesional.
 Dengan semakin menyempitnya spesifikasi pengetahuan dan keilmuan, maka semakin terfokus pula orang terhadap bidang yang digelutinya. Sebuah perusahaan yang memproduksi satu barang memerlukan sekian banyak bidang keahlian, sehingga pengaturan sumber daya manusia menjadi satu hal tersendiri yang harus ditangani secara baik dan benar, matang dan profesional.
 PT.INDOPSIKO INDONESIA dengan mantap mengambil peran sebagai profesi di bidang Sumber Daya Manusia ini dengan maksud mampu mencakup multi manfaat. Satu sisi membantu dan mempersiapkan calon tenaga kerja dalam memasuki dunia kerja, pada sisi lain mempermudah dan membantu para pengusaha dalam mendapatkan tenaga-tenaga kerja yang dibutuhkannya, dan sisi yang lainnya lagi adalah merupakan bidang kerja/usaha yang menawarkan profit tersendiri.
 Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA telah menancapkan komitmennya dan terus berupaya untuk memberikan layanan yang terbaik serta menjadi rekanan yang terpercaya.
         </div>
 
-        <!-- Modal footer -->
+        {{-- Modal footer --}}
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         </div>
@@ -488,8 +488,8 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 
 			</div>
 
-			<!--Widget -->
-			<div class="kt-container">
+			{{--Widget --}}
+			{{--  <div class="kt-container">
 			    <div class="row">
 			        <div class="col-lg-4">
 			            <a href="/informasi" class="kt-portlet kt-iconbox kt-iconbox--danger kt-iconbox--animate-fast">
@@ -575,17 +575,17 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 	</div>
 </div>
 <script src="assets/vendors/general/jquery/dist/jquery.min.js"></script>
-</script>
-							<!-- end:: Content -->
+</script>  --}}
+							{{-- end:: Content --}}
 
 
-<!--begin career-->
+{{--begin career--}}
 <section id="karir">
 <div class="kt-portlet ">
 	<div class="kt-portlet__head">
 		<div class="kt-portlet__head-label">
 			<span class="kt-portlet__head-icon">
-			<!--<i class="la la-leaf"></i>-->
+			{{--<i class="la la-leaf"></i>--}}
 			</span>
 			<h1 class="kt-portlet__head-title">
 				KARIR
@@ -612,12 +612,12 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
                         <p>ADMIN<p>
    <button class="uk-button uk-button-danger" uk-toggle="target: #my-id" type="button">Lamar</button>
 
-<!-- This is the modal -->
+{{-- This is the modal --}}
 <div id="my-id" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
         <h2 class="uk-modal-title">Lamar Sekarang</h2>
         <br>
-        <!--begin::Form-->
+        {{--begin::Form--}}
 			<form class="kt-form">
 				<div class="kt-portlet__body">
 				<div class="form-group">
@@ -689,7 +689,7 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 					</div>
 				</div>
 			</form>
-			<!--end::Form-->
+			{{--end::Form--}}
     </div>
 </div>
                     </div>
@@ -705,12 +705,12 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
                         <p>SUPERVISOR</p>
                         <button class="uk-button uk-button-danger" uk-toggle="target: #my-id" type="button">Lamar</button>
 
-<!-- This is the modal -->
+{{-- This is the modal --}}
 <div id="my-id" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
         <h2 class="uk-modal-title">Lamar Sekarang</h2>
         <br>
-        <!--begin::Form-->
+        {{--begin::Form--}}
 			<form class="kt-form">
 				<div class="kt-portlet__body">
 				<div class="form-group">
@@ -782,7 +782,7 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 					</div>
 				</div>
 			</form>
-			<!--end::Form-->
+			{{--end::Form--}}
     </div>
 </div>
                     </div>
@@ -798,12 +798,12 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
                         <p>CUSTOMER SERVICE.</p>
                          <button class="uk-button uk-button-danger" uk-toggle="target: #my-id" type="button">Lamar</button>
 
-<!-- This is the modal -->
+{{-- This is the modal --}}
 <div id="my-id" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
         <h2 class="uk-modal-title">Lamar Sekarang</h2>
         <br>
-        <!--begin::Form-->
+        {{--begin::Form--}}
 			<form class="kt-form">
 				<div class="kt-portlet__body">
 				<div class="form-group">
@@ -875,7 +875,7 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 					</div>
 				</div>
 			</form>
-			<!--end::Form-->
+			{{--end::Form--}}
     </div>
 </div>
                     </div>
@@ -891,12 +891,12 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
                         <p>Driver</p>
                          <button class="uk-button uk-button-danger" uk-toggle="target: #my-id" type="button">Lamar</button>
 
-<!-- This is the modal -->
+{{-- This is the modal --}}
 <div id="my-id" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
         <h2 class="uk-modal-title">Lamar Sekarang</h2>
         <br>
-        <!--begin::Form-->
+        {{--begin::Form--}}
 			<form class="kt-form">
 				<div class="kt-portlet__body">
 				<div class="form-group">
@@ -968,7 +968,7 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 					</div>
 				</div>
 			</form>
-			<!--end::Form-->
+			{{--end::Form--}}
     </div>
 </div>
                     </div>
@@ -984,12 +984,12 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
                         <p>Security</p>
                          <button class="uk-button uk-button-danger" uk-toggle="target: #my-id" type="button">Lamar</button>
 
-<!-- This is the modal -->
+{{-- This is the modal --}}
 <div id="my-id" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
         <h2 class="uk-modal-title">Lamar Sekarang</h2>
         <br>
-        <!--begin::Form-->
+        {{--begin::Form--}}
 			<form class="kt-form">
 				<div class="kt-portlet__body">
 				<div class="form-group">
@@ -1061,7 +1061,7 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 					</div>
 				</div>
 			</form>
-			<!--end::Form-->
+			{{--end::Form--}}
     </div>
 </div>
                     </div>
@@ -1087,15 +1087,15 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 </section>
 	</div>
 </div>
-<!--end career-->
+{{--end career--}}
 
-<!--begin client-->
+{{--begin client--}}
 <section id="klien">
  <div class="kt-portlet">
 		<div class="kt-portlet__head">
 		<div class="kt-portlet__head-label">
 			<span class="kt-portlet__head-icon">
-			<!--<i class="la la-leaf"></i>-->
+			{{--<i class="la la-leaf"></i>--}}
 			</span>
 			<h1 class="kt-portlet__head-title">
 				KLIEN
@@ -1152,11 +1152,11 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 </div>
 
 
-<!--end client-->
+{{--end client--}}
 						</div>
 						</section>
 					</div>
-					<!-- begin:: Footer -->
+					{{-- begin:: Footer --}}
 					<div class="kt-footer  kt-footer--extended  kt-grid__item">
 						<div class="kt-footer__top">
 							<div class="kt-container ">
@@ -1203,7 +1203,7 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 
 
 
-        <!--end::Portlet-->
+        {{--end::Portlet--}}
 
 						<div class="kt-footer__bottom">
 							<div class="kt-container-fluid mx-auto">
@@ -1211,24 +1211,24 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 									<div class="kt-footer__copyright">
 										&copy; 2019 <a href="/" target="_blank">PT INDOPSIKO INDONESIA</a>
 									</div>
-								<!--	<div class="kt-footer__menu">
+								{{--	<div class="kt-footer__menu">
 										<a href="/tentang_kami">Tentang Kami</a>
 										<a href="/kebijakan_privasi">Kebijakan Privasi</a>
 										<a href="/kontak">Kontak</a>
-									</div>-->
+									</div>--}}
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- end:: Footer -->
+					{{-- end:: Footer --}}
 				</div>
 			</div>
 		</div>
 
-		<!-- end:: Page -->
+		{{-- end:: Page --}}
 
-		<!-- begin::Quick Panel -->
-		<!-- <div id="kt_quick_panel" class="kt-quick-panel">
+		{{-- begin::Quick Panel --}}
+		{{-- <div id="kt_quick_panel" class="kt-quick-panel">
 			<a href="#" class="kt-quick-panel__close" id="kt_quick_panel_close_btn"><i class="flaticon2-delete"></i></a>
 			<div class="kt-quick-panel__nav">
 				<ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-brand  kt-notification-item-padding-x" role="tablist">
@@ -1244,33 +1244,33 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 				</ul>
 			</div>
 
-		</div> -->
+		</div> --}}
 
-		<!-- end::Quick Panel -->
+		{{-- end::Quick Panel --}}
 
-		<!-- begin::Scrolltop -->
+		{{-- begin::Scrolltop --}}
 		<div id="kt_scrolltop" class="kt-scrolltop">
 			<i class="fa fa-arrow-up"></i>
 		</div>
 
-		<!-- end::Scrolltop -->
+		{{-- end::Scrolltop --}}
 
-		<!-- begin::Sticky Toolbar -->
-
-
-		<!-- end::Sticky Toolbar -->
-
-		<!-- begin::Demo Panel -->
+		{{-- begin::Sticky Toolbar --}}
 
 
-		<!-- end::Demo Panel -->
+		{{-- end::Sticky Toolbar --}}
 
-		<!--Begin:: Chat-->
+		{{-- begin::Demo Panel --}}
 
 
-		<!--ENd:: Chat-->
+		{{-- end::Demo Panel --}}
 
-		<!-- begin::Global Config(global config for global JS sciprts) -->
+		{{--Begin:: Chat--}}
+
+
+		{{--ENd:: Chat--}}
+
+		{{-- begin::Global Config(global config for global JS sciprts) --}}
 		<script>
 			var KTAppOptions = {
 				"colors": {
@@ -1292,9 +1292,9 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 			};
 		</script>
 
-		<!-- end::Global Config -->
+		{{-- end::Global Config --}}
 
-		<!--begin:: Global Mandatory Vendors -->
+		{{--begin:: Global Mandatory Vendors --}}
 		<script src="assets/vendors/general/jquery/dist/jquery.js" type="text/javascript"></script>
 		<script src="assets/vendors/general/popper.js/dist/umd/popper.js" type="text/javascript"></script>
 		<script src="assets/vendors/general/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
@@ -1305,9 +1305,9 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 		<script src="assets/vendors/general/sticky-js/dist/sticky.min.js" type="text/javascript"></script>
 		<script src="assets/vendors/general/wnumb/wNumb.js" type="text/javascript"></script>
 
-		<!--end:: Global Mandatory Vendors -->
+		{{--end:: Global Mandatory Vendors --}}
 
-		<!--begin:: Global Optional Vendors -->
+		{{--begin:: Global Optional Vendors --}}
 		<script src="assets/vendors/general/jquery-form/dist/jquery.form.min.js" type="text/javascript"></script>
 		<script src="assets/vendors/general/block-ui/jquery.blockUI.js" type="text/javascript"></script>
 		<script src="assets/vendors/general/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
@@ -1359,26 +1359,26 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 		<script src="assets/vendors/general/jquery.repeater/src/repeater.js" type="text/javascript"></script>
 		<script src="assets/vendors/general/dompurify/dist/purify.js" type="text/javascript"></script>
 
-		<!--end:: Global Optional Vendors -->
+		{{--end:: Global Optional Vendors --}}
 
-		<!--begin::Global Theme Bundle(used by all pages) -->
+		{{--begin::Global Theme Bundle(used by all pages) --}}
 		<script src="assets/js/scripts.bundle.js" type="text/javascript"></script>
 
-		<!--end::Global Theme Bundle -->
+		{{--end::Global Theme Bundle --}}
 
-		<!--begin::Page Vendors(used by this page) -->
+		{{--begin::Page Vendors(used by this page) --}}
 		<script src="assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtizBEi9K7hfwI3uUi0AOrYFAx_hh0gkA&callback=initMap"></script>
 		<script src="assets/vendors/custom/gmaps/gmaps.js" type="text/javascript"></script>
 
-		<!--end::Page Vendors -->
+		{{--end::Page Vendors --}}
 
-		<!--begin::Page Scripts(used by this page) -->
+		{{--begin::Page Scripts(used by this page) --}}
 		<script src="assets/js/pages/dashboard.js" type="text/javascript"></script>
 
-		<!--end::Page Scripts -->
+		{{--end::Page Scripts --}}
 
-		<!--MAPS-->
+		{{--MAPS--}}
 		<script>
 
 		var map;
@@ -1502,7 +1502,7 @@ Dengan dukungan dan keyakinan dari berbagai pihak, maka PT. INDOPSIKO INDONESIA 
 		    map.fitBounds(bounds);
 		});
 		</script>
-		<!--END:MAPS-->	</body>
+		{{--END:MAPS--}}	</body>
 
-	<!-- end::Body -->
+	{{-- end::Body --}}
 </html>
