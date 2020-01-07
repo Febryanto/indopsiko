@@ -41,7 +41,7 @@
                 </a>
             </li>
             <li class="kt-menu__item " aria-haspopup="true" >
-                <a  href="#" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-users"></i>
+                <a  href="/pelamar" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-users"></i>
                     <span class="kt-menu__link-text">Lamaran</span>
                 </a>
             </li>
