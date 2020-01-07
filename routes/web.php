@@ -23,3 +23,4 @@ Route::resource('klien', 'KlienController');
 Route::resource('lowongan', 'LowonganController');
 Route::resource('berita', 'BeritaController');
 Route::resource('pengumuman', 'PengumumanController');
+Route::resource('pelamar', 'PelamarController');
