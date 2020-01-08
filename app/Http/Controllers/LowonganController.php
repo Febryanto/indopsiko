@@ -18,7 +18,7 @@ class LowonganController extends Controller
     }
     public function index()
     {
-        $data = Lowongan::all();
+        $data = Lowongan::paginate(15);
         // dd($data);
         return view('admin.lowongan.lowongan',compact('data'));
     }

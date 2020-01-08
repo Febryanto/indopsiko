@@ -19,7 +19,7 @@ class Lowongan extends Model
 
     public function pelamar()
     {
-        return this->hasMany('App\Pelamar', 'id_lowongan','id_lowongan');
+        return $this->hasMany('App\Pelamar', 'id_lowongan','id_lowongan');
     }
 
 

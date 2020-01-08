@@ -18,7 +18,8 @@ class PelamarController extends Controller
         $data = DB::table('pelamar as a')
         ->leftjoin('lowongan as b','b.id_lowongan','=','a.id_lowongan')
         ->leftjoin('klien as c','b.id_klien','=','c.id_klien')
-        ->get();
+        ->paginate(15);
+
         return view('admin.pelamar.pelamar',compact('data'));
     }
 
