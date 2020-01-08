@@ -18,7 +18,7 @@ class KlienController extends Controller
     }
     public function index()
     {
-        $data = Klien::all();
+        $data = Klien::paginate(15);
         // dd($data);
         return view('admin.klien.klien',compact('data'));
     }

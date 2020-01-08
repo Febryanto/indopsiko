@@ -2,6 +2,10 @@
 @section('title')
     Data Pelamar
 @endsection
+
+@section('aktif_lamaran')
+kt-menu__item--open kt-menu__item--here
+@endsection
 @section('content')
 
 <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
@@ -21,11 +25,45 @@
                     Data Pelamar
                 </h3>
             </div>
+            <div class="kt-portlet__head-toolbar">
+                <div class="kt-portlet__head-wrapper">
+        <div class="kt-portlet__head-actions">
+
+            &nbsp;
+            <a href="#" class="btn btn-brand btn-elevate btn-icon-sm">
+                <i class="la la-plus"></i>
+                New Record
+            </a>
+        </div>
+    </div>		</div>
+        </div>
+        <div class="kt-portlet__body">
+            <!--begin: Search Form -->
+            <div class="kt-form kt-form--label-right kt-margin-t-20 kt-margin-b-10">
+        <div class="row align-items-center">
+            <div class="col-xl-8 order-2 order-xl-1">
+                <div class="row align-items-center">
+                    <div class="col-md-4 kt-margin-b-20-tablet-and-mobile">
+                        <div class="kt-input-icon kt-input-icon--left">
+                            <input type="text" class="form-control" placeholder="Search..." id="generalSearch">
+                            <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                                <span><i class="la la-search"></i></span>
+                            </span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+            <!--end: Search Form -->
         </div>
             <div class="kt-portlet__body kt-portlet__body--fit">
 
                 {{--  <!--begin: Datatable -->  --}}
-                <table class="table table-striped table-hover table-checkable" id="kt_table_1">
+                <table class="table  table-hover table-checkable" id="kt_table_1">
                 {{-- <table class="kt-datatable" id="html_table" width="100%"> --}}
                     <thead>
                         <tr>
@@ -71,6 +109,8 @@
 
                     </tbody>
                 </table>
+                <div class="kt-datatable__pager kt-datatable--paging-loaded">
+                    {{ $data->links() }}</div>
                 {{--  <!--end: Datatable -->  --}}
 
 
@@ -82,70 +122,10 @@
 {{--  <!-- end:: Content -->  --}}
 </div>
 
-{{-- <script>
-    "use strict";
-    // Class definition
-
-    var KTDatatableHtmlTableDemo = function() {
-        // Private functions
-
-        // demo initializer
-        var demo = function() {
-
-            var datatable = $('.kt-datatable').KTDatatable({
-                data: {
-                    saveState: {cookie: false},
-                },
-                search: {
-                    input: $('#generalSearch'),
-                },
-                columns: [
-                    {
-                        field: 'name',
-                        title: 'Nama'
-                    },{
-                        field: 'nik',
-                        title: 'Nik',
-                        type: 'number',
-                    },
-                    {
-                        field: 'jenis_kelamin',
-                        title: 'Jenis Kelamin',
-                    },
-
-                ],
-            });
-
-        $('#kt_form_status').on('change', function() {
-          datatable.search($(this).val().toLowerCase(), 'Status');
-        });
-
-        $('#kt_form_type').on('change', function() {
-          datatable.search($(this).val().toLowerCase(), 'Type');
-        });
-
-        $('#kt_form_status,#kt_form_type').selectpicker();
-
-        };
-
-        return {
-            // Public functions
-            init: function() {
-                // init dmeo
-                demo();
-            },
-        };
-    }();
-
-    jQuery(document).ready(function() {
-        KTDatatableHtmlTableDemo.init();
-    });
-
-</script> --}}
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
-      $("#myInput").on("keyup", function() {
+      $("#generalSearch").on("keyup", function() {
         var value = $(this).val().toLowerCase();
         $("#myTable tr").filter(function() {
           $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
@@ -153,29 +133,5 @@
       });
     });
     </script>
-    {{--  <script>let elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
-        elems.forEach(function(html) {
-        let switchery = new Switchery(html,  { size: 'small' });
-        });
-       </script>
-       <script>
-           $(document).ready(function(){
-             $('.js-switch').change(function () {
-                 let status = $(this).prop('checked') === true ? 1 : 0;
-                 let id_uep = $(this).data('id');
-                 $.ajax({
-                     type: "GET",
-                     dataType: "json",
-                     url: '{{ route('uep.updatestatus') }}',
-                     data: {'status': status, 'id_uep': id_uep},
-                     success: function (data) {
-                         console.log(data.message);
-                         alert(data.message);
-                     }
-                 });
-             });
-         });
-       </script>
-  --}}
 
 @endsection

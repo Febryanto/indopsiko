@@ -15,7 +15,9 @@ Route::get('/', function () {
     return view('beranda');
 });
 
-Auth::routes();
+Auth::routes([
+    'register' => false
+]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('proper', 'ProPerController');
