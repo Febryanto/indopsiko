@@ -73,7 +73,7 @@
 <script src="/assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtizBEi9K7hfwI3uUi0AOrYFAx_hh0gkA&callback=initMap"></script>
 <script src="/assets/vendors/custom/gmaps/gmaps.js" type="text/javascript"></script>
-
+<script src="/assets/ckeditor/ckeditor.js"></script>
   <!--end::Page Vendors -->
 
   <!--begin::Page Scripts(used by this page) -->

@@ -95,6 +95,7 @@ class ProPerController extends Controller
                     'motto' => $request->motto,
                     'website' => $request->website,
                     'email' => $request->email,
+                    'alamat' =>$request->alamat,
                     'telp' => $request->telp,
                     'updated_by' => $nama
                 ]);
@@ -105,6 +106,7 @@ class ProPerController extends Controller
                     'motto' => $request->motto,
                     'website' => $request->website,
                     'email' => $request->email,
+                    'alamat' =>$request->alamat,
                     'telp' => $request->telp,
                     'updated_by' => $nama
                 ]);

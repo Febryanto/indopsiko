@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Klien;
-
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Auth;
 class KlienController extends Controller
 {
     /**
@@ -41,7 +43,37 @@ class KlienController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $nama = Auth::user()->name;
+        $file = $request->file('logo');
+        if ($file!='') {
+            $file = $request->file('logo');
+            $extension=$file->getClientOriginalExtension();
+            $destinationPath = 'assets/images/klien';
+            $fileName = rand(11111, 99999) . '.' . $extension;
+            $request->file('logo')->move($destinationPath, $fileName);
+            $data = Klien::insert([
+                'logo' => $fileName,
+                'nama_perusahaan' => $request->nama_perusahaan,
+                'deskripsi' => $request->deskripsi,
+                'website' => $request->website,
+                'alamat' => $request->alamat,
+                'email' => $request->email,
+                'telp' => $request->telp,
+                'created_by' => $nama
+            ]);
+        }else{
+            $data = Klien::insert([
+
+                'nama_perusahaan' => $request->nama_perusahaan,
+                'deskripsi' => $request->deskripsi,
+                'website' => $request->website,
+                'alamat' => $request->alamat,
+                'email' => $request->email,
+                'telp' => $request->telp,
+                'created_by' => $nama
+            ]);
+        }
+        return redirect()->route('klien.index')->with('alert-success','Data Berhasil Ditambah');
     }
 
     /**
@@ -52,7 +84,7 @@ class KlienController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -63,7 +95,10 @@ class KlienController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Klien::where('id_klien',$id)->get();
+        // dd($data);
+        return view('admin.klien.edit_klien',compact('data'));
+
     }
 
     /**
@@ -75,7 +110,40 @@ class KlienController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $nama = Auth::user()->name;
+        $file = $request->file('gambar');
+        if ($file!='') {
+            $file = $request->file('gambar');
+            $extension=$file->getClientOriginalExtension();
+            $destinationPath = 'assets/images/klien';
+            $fileName = rand(11111, 99999) . '.' . $extension;
+            $request->file('gambar')->move($destinationPath, $fileName);
+            $data = Klien::where('id_klien',$id)
+                ->update([
+                    'logo' => $fileName,
+                    'nama_perusahaan' => $request->nama_perusahaan,
+                    'deskripsi' => $request->deskripsi,
+                    'website' => $request->website,
+                    'email' => $request->email,
+                    'alamat' => $request->alamat,
+                    'telp' => $request->telp,
+                    'updated_by' => $nama
+                ]);
+        }else{
+            $data = Klien::where('id_klien',$id)
+                ->update([
+                    'nama_perusahaan' => $request->nama_perusahaan,
+                    'deskripsi' => $request->deskripsi,
+                    'website' => $request->website,
+                    'email' => $request->email,
+                    'alamat' => $request->alamat,
+                    'telp' => $request->telp,
+                    'updated_by' => $nama
+                ]);
+        }
+
+
+    return redirect()->route('klien.index')->with('alert-success','Data Berhasil Diubah');
     }
 
     /**
@@ -86,6 +154,7 @@ class KlienController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Klien::where('id_klien',$id)->delete();
+        return redirect()->route('klien.index')->with('alert-success','Data berhasi dihapus!');
     }
 }

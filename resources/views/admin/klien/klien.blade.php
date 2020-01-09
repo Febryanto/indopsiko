@@ -30,10 +30,59 @@ kt-menu__item--open kt-menu__item--here
         <div class="kt-portlet__head-actions">
 
             &nbsp;
-            <a href="#" class="btn btn-brand btn-elevate btn-icon-sm">
-                <i class="la la-plus"></i>
-                New Record
-            </a>
+            <button type="button" class="btn btn-primary btn-brand btn-elevate btn-icon-sm" data-toggle="modal" data-target="#tambah">
+                <i class="la la-plus"></i> Tambah Data
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="tambahLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="tambahLabel">Tambah Klien</h5>
+
+                  </div>
+                  <form action="{{ route('klien.store') }}" method="POST" enctype="multipart/form-data">
+                  <div class="modal-body">
+                                    {{ @csrf_field() }}
+                                    <div class="form-group">
+                                            <label for="nama_perusahaan">nama_perusahaan</label>
+                                            <input type="text" name="nama_perusahaan" class="form-control" placeholder="nama perusahaan" value="">
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="logo">Logo</label>
+                                            <input type="file" name="logo" class="form-control" placeholder="logo" value="">
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="website">website</label>
+                                            <input type="text" name="website" class="form-control" placeholder="website" value="">
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="email">email</label>
+                                            <input type="email" name="email" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telp">telp</label>
+                                        <input type="text" name="telp" class="form-control">
+                                </div>
+                                <div class="form-group row">
+                                    <label for="alamat">alamat</label>
+                                    <textarea name="alamat" id="" cols="70" rows="7"></textarea>
+                            </div>
+                            <div class="form-group row">
+                                <label for="deskripsi">deskripsi</label>
+                                <textarea name="deskripsi" id="" cols="70" rows="7"></textarea>
+                        </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                  </div>
+                </form>
+                </div>
+              </div>
+            </div>
+
         </div>
     </div>		</div>
         </div>
@@ -76,24 +125,23 @@ kt-menu__item--open kt-menu__item--here
                     <tbody id="myTable">
                         @foreach ($data as $i)
                             <tr>
-                                <td>
-                                    {{ $i->logo }}
-                                </td>
-                                <td>
+                                <td class="kt-datatable__cell">
+                                <img src="{{url('assets/images/klien/'. $i->logo)}}" width="100px" alt="image" style="margin-right: 10px;" />
+
+                            </td>
+                                <td class="kt-datatable__cell">
                                     {{ $i->nama_perusahaan }}
                                 </td>
-                                <td>
+                                <td class="kt-datatable__cell">
                                     {{ $i->website }}
                                 </td>
-                                <td><form action="{{ route('klien.destroy', $i->id_klien) }}" method="post">
+                                <td class="kt-datatable__cell"><form action="{{ route('klien.destroy', $i->id_klien) }}" method="post">
                                     {{ csrf_field() }}
-                                    {{ method_field('DELETE') }}
-                                    <a href="{{route('klien.show', $i->id_klien)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" title="Detail"><i class="fa fa-info"></i></a>
+                                   {{ method_field('DELETE') }}
+                                    {{--  <a href="{{route('klien.show', $i->id_klien)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" title="Detail"><i class="fa fa-info"></i></a>  --}}
                                     <a href="{{ route('klien.edit',$i->id_klien) }}" class="btn btn-sm btn-outline-warning btn-icon btn-icon-sm" title="Edit"><i class="fa fa-pen"></i></a>
                                     <button class="btn btn-sm btn-outline-danger btn-icon btn-icon-sm" type="submit" title="Hapus" onclick="return confirm('Yakin ingin menghapus data?')"><i class="fa fa-trash"></i></button>
                                 </form></td>
-
-
                             </tr>
 
                         @endforeach

@@ -11,8 +11,4 @@ class Klien extends Model
         'nama_perusahaan','deskripsi', 'logo', 'website','email','telp','alamat',
         'created_at','updated_at','created_by','updated_by'
     ];
-    public function lowongan()
-    {
-        return $this->hasMany('App\Lowongan', 'id_klien');
-    }
 }

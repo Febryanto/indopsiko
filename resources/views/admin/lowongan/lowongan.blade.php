@@ -30,10 +30,59 @@ kt-menu__item--open kt-menu__item--here
         <div class="kt-portlet__head-actions">
 
             &nbsp;
-            <a href="#" class="btn btn-brand btn-elevate btn-icon-sm">
-                <i class="la la-plus"></i>
-                New Record
-            </a>
+            <button type="button" class="btn btn-primary btn-brand btn-elevate btn-icon-sm" data-toggle="modal" data-target="#tambah">
+                <i class="la la-plus"></i> Tambah Data
+            </button>
+            {{--  <!-- Modal -->  --}}
+            <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="tambahLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="tambahLabel">Tambah Lowongan</h5>
+
+                  </div>
+                  <form action="{{ route('lowongan.store') }}" method="POST" enctype="multipart/form-data">
+                  <div class="modal-body">
+                                    {{ @csrf_field() }}
+                                    <div class="form-group">
+                                        <label for="nama_perusahaan">Nama Perusahaan</label>
+                                        <select name="id_klien" id="id_klien" class="form-control input-lg dynamic">
+                                            <option value="">Select Perusahaan</option>
+                                            @foreach ($klien as $item)
+                                                <option value="{{$item->id_klien}}">
+                                                    {{$item->nama_perusahaan}}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="jabatan">jabatan</label>
+                                            <input type="text" name="jabatan" class="form-control" placeholder="jabatan" value="">
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="deskripsi">deskripsi</label>
+                                        <textarea cols="80" id="editor1" name="deskripsi" rows="10" data-sample-short></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Status">Status Lowongan</label>
+                                        <select class="form-control" name="status">
+                                            <option value="">Pilih status</option>
+                                            <option value="1">Dibuka</option>
+                                            <option value="0">Ditutup</option>
+                                        </select>
+                                    </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                  </div>
+                </form>
+                </div>
+              </div>
+            </div>
+
+
         </div>
     </div>		</div>
         </div>
@@ -51,8 +100,6 @@ kt-menu__item--open kt-menu__item--here
                             </span>
                         </div>
                     </div>
-
-
                 </div>
             </div>
 
@@ -77,7 +124,7 @@ kt-menu__item--open kt-menu__item--here
                         @foreach ($data as $i)
                             <tr>
                                 <td>
-                                    {{ $i->klien->nama_perusahaan }}
+                                    {{ $i->nama_perusahaan }}
                                 </td>
                                 <td>
                                     {{ $i->jabatan }}
@@ -92,7 +139,7 @@ kt-menu__item--open kt-menu__item--here
                                 <td><form action="{{ route('lowongan.destroy', $i->id_lowongan) }}" method="post">
                                     {{ csrf_field() }}
                                     {{ method_field('DELETE') }}
-                                    <a href="{{route('lowongan.show', $i->id_lowongan)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" title="Detail"><i class="fa fa-info"></i></a>
+                                    {{--  <a href="{{route('lowongan.show', $i->id_lowongan)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" title="Detail"><i class="fa fa-info"></i></a>  --}}
                                     <a href="{{ route('lowongan.edit',$i->id_lowongan) }}" class="btn btn-sm btn-outline-warning btn-icon btn-icon-sm" title="Edit"><i class="fa fa-pen"></i></a>
                                     <button class="btn btn-sm btn-outline-danger btn-icon btn-icon-sm" type="submit" title="Hapus" onclick="return confirm('Yakin ingin menghapus data?')"><i class="fa fa-trash"></i></button>
                                 </form></td>
@@ -126,7 +173,12 @@ kt-menu__item--open kt-menu__item--here
           $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
       });
+      CKEDITOR.replace('editor1', {
+        height: 260,
+        width: 450,
+      });
     });
     </script>
 
+<script src="/assets/ckeditor/ckeditor.js"></script>
 @endsection
