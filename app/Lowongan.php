@@ -12,17 +12,4 @@ class Lowongan extends Model
         'created_at','updated_at','created_by','updated_by'
     ];
 
-    public function klien()
-    {
-        return $this->belongsTo('App\Klien', 'id_klien','id_klien');
-    }
-
-    public function pelamar()
-    {
-        return $this->hasMany('App\Pelamar', 'id_lowongan','id_lowongan');
-    }
-
-
-
-
 }

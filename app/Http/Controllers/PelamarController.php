@@ -86,6 +86,7 @@ class PelamarController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Pelamar::where('id_pelamar',$id)->delete();
+        return redirect()->route('pelamar.index')->with('alert-success','Data berhasi dihapus!');
     }
 }

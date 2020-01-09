@@ -84,6 +84,7 @@ class PengumumanController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Pengumuman::where('id_pengumuman',$id)->delete();
+        return redirect()->route('pengumuman.index')->with('alert-success','Data berhasi dihapus!');
     }
 }

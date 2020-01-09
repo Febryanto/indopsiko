@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Lowongan;
+use Auth;
+use App\Klien;
+use DB;
 
 class LowonganController extends Controller
 {
@@ -18,9 +21,12 @@ class LowonganController extends Controller
     }
     public function index()
     {
-        $data = Lowongan::paginate(15);
+        $data = DB::table('lowongan AS l')
+        ->leftjoin('klien AS k','k.id_klien','=','l.id_klien')
+        ->paginate(15);
+        $klien = Klien::all();
         // dd($data);
-        return view('admin.lowongan.lowongan',compact('data'));
+        return view('admin.lowongan.lowongan',compact('data','klien'));
     }
 
     /**
@@ -41,7 +47,15 @@ class LowonganController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $nama = Auth::user()->name;
+        $data = Lowongan::insert([
+            'id_klien' => $request->id_klien,
+            'jabatan' => $request->jabatan,
+            'deskripsi' => $request->deskripsi,
+            'status' => $request->status,
+            'created_by' => $nama
+        ]);
+        return redirect()->route('lowongan.index')->with('alert-success','Data Berhasil Ditambah');
     }
 
     /**
@@ -63,7 +77,12 @@ class LowonganController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = DB::table('lowongan AS l')
+        ->leftjoin('klien AS k','k.id_klien','=','l.id_klien')
+        ->where('id_lowongan',$id)
+        ->get();
+        $klien = Klien::all();
+        return view('admin.lowongan.edit_lowongan',compact('data','klien'));
     }
 
     /**
@@ -75,7 +94,16 @@ class LowonganController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $nama = Auth::user()->name;
+        $data = Lowongan::where('id_lowongan',$id)
+        ->update([
+            'id_klien' => $request->id_klien,
+            'jabatan' => $request->jabatan,
+            'deskripsi' =>$request->deskripsi,
+            'status' => $request->status,
+            'updated_by' => $nama
+        ]);
+        return redirect()->route('lowongan.index')->with('alert alert-success','Data Berhasil Diubah');
     }
 
     /**
@@ -86,6 +114,7 @@ class LowonganController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Lowongan::where('id_lowongan',$id)->delete();
+        return redirect()->route('lowongan.index')->with('alert-success','Data berhasi dihapus!');
     }
 }

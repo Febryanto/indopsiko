@@ -85,6 +85,8 @@ class BeritaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Berita::where('id_berita',$id)->delete();
+        return redirect()->route('berita.index')->with('alert-success','Data berhasi dihapus!');
+
     }
 }

@@ -30,7 +30,7 @@ kt-menu__item--open kt-menu__item--here
                         <div class="kt-widget kt-widget--user-profile-3" style="margin:70px 120px;">
                             <div class="kt-widget__top">
                                 <div class="kt-widget__media">
-                                    <img src="assets/images/logos/{{$i->logo}}" alt="image">
+                                    <img src="/assets/images/logos/{{$i->logo}}" alt="image">
                                 </div>
                             </div>
                         </div>
