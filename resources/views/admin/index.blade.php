@@ -41,7 +41,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed " >
 	<div class="kt-header-mobile__brand">
 		<a class="kt-header-mobile__logo" href="/">
-            <img alt="Logo" src="assets/images/logos/logo-5.png">
+            <img alt="Logo" src="/assets/images/logos/logo-5.png">
 		</a>
         <div class="kt-header-mobile__nav">
 			<div class="dropdown">
@@ -49,14 +49,14 @@ License: You must have a valid license purchased only from themeforest(the above
 	{{--  <!--begin: User bar -->  --}}
 	<div class="kt-header__topbar-item kt-header__topbar-item--user">
 		<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,10px">
-			<img class="kt-hidden-" alt="Pic" src="assets/images/users/user1.jpg" style="width: 60%;"/>
+			<img class="kt-hidden-" alt="Pic" src="/assets/images/users/user1.jpg" style="width: 60%;"/>
 			<span class="kt-header__topbar-icon kt-header__topbar-icon--brand kt-hidden"><b>S</b></span>
 		</div>
 		<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
 			{{--  <!--begin: Head -->  --}}
     <div class="kt-user-card kt-user-card--skin-light kt-notification-item-padding-x">
         <div class="kt-user-card__avatar">
-            <img class="kt-hidden-" alt="Pic" src="assets/images/users/user1.jpg" />
+            <img class="kt-hidden-" alt="Pic" src="/assets/images/users/user1.jpg" />
             {{--  <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->  --}}
             <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden">S</span>
         </div>
@@ -86,7 +86,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    <form id="logout-form1" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
     </div>
@@ -125,13 +125,17 @@ License: You must have a valid license purchased only from themeforest(the above
 			<ul class="kt-menu__nav ">
                 <li class="kt-menu__item " aria-haspopup="true" >
                     <a  href="/" class="kt-menu__link ">
-                        <img alt="Logo" src="assets/images/logos/logo-4.png"/>&nbsp;
+                        <img alt="Logo" src="/assets/images/logos/logo-4.png"/>&nbsp;
                         <span class="kt-menu__link-text">INDOPSIKO</span>
                     </a>
                 </li>
                 <li class="kt-menu__section " aria-haspopup="true">
                     <h4 class="kt-menu__section-text">Kelola Dashboard</h4>
                     <i class="kt-menu__section-icon flaticon-more-v2"></i>
+                </li>
+                <li class="kt-menu__item @yield('aktif_dashboard')" aria-haspopup="true" >
+                    <a href="/proper" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-house-damage"></i>
+                        <span class="kt-menu__link-text">Dashboard</span></a>
                 </li>
             <li class="kt-menu__item @yield('aktif_profil')" aria-haspopup="true" >
                 <a href="/proper" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-database"></i>
@@ -188,14 +192,14 @@ License: You must have a valid license purchased only from themeforest(the above
 	        <div class="kt-header__topbar-item kt-header__topbar-item--user">
 		        <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,10px">
                     <span class="kt-header__topbar-icon kt-header__topbar-icon--brand" style="font-size:10px;"><b>Hi, {{Auth::user()->name}}</b></span>
-			        <img class="kt-hidden-" alt="Pic" src="assets/images/users/user1.jpg" style="width: 50%;padding: 10px;"/>
+			        <img class="kt-hidden-" alt="Pic" src="/assets/images/users/user1.jpg" style="width: 50%;padding: 10px;"/>
 
 		        </div>
 		        <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
 			{{--  <!--begin: Head -->  --}}
                     <div class="kt-user-card kt-user-card--skin-light kt-notification-item-padding-x">
                         <div class="kt-user-card__avatar">
-                            <img class="kt-hidden-" alt="Pic" src="assets/images/users/user1.jpg" />
+                            <img class="kt-hidden-" alt="Pic" src="/assets/images/users/user1.jpg" />
                             <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden">S</span>
                         </div>
                         <div class="kt-user-card__name">
