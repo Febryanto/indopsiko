@@ -30,15 +30,15 @@ kt-menu__item--open kt-menu__item--here
         <div class="kt-portlet__head-actions">
 
             &nbsp;
-            <a href="#" class="btn btn-brand btn-elevate btn-icon-sm">
+            {{--  <a href="#" class="btn btn-brand btn-elevate btn-icon-sm">
                 <i class="la la-plus"></i>
                 New Record
-            </a>
+            </a>  --}}
         </div>
     </div>		</div>
         </div>
         <div class="kt-portlet__body">
-            <!--begin: Search Form -->
+            {{--  <!--begin: Search Form -->  --}}
             <div class="kt-form kt-form--label-right kt-margin-t-20 kt-margin-b-10">
         <div class="row align-items-center">
             <div class="col-xl-8 order-2 order-xl-1">
@@ -58,7 +58,7 @@ kt-menu__item--open kt-menu__item--here
 
         </div>
     </div>
-            <!--end: Search Form -->
+            {{--  <!--end: Search Form -->  --}}
         </div>
             <div class="kt-portlet__body kt-portlet__body--fit">
 
@@ -96,10 +96,7 @@ kt-menu__item--open kt-menu__item--here
                                 </td>
                                 <td><form action="{{ route('pelamar.destroy', $i->id_pelamar) }}" method="post">
                                     {{ csrf_field() }}
-                                    {{ method_field('DELETE') }}
                                     <a href="{{route('pelamar.show', $i->id_pelamar)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" title="Detail"><i class="fa fa-info"></i></a>
-                                    <a href="{{ route('pelamar.edit',$i->id_pelamar) }}" class="btn btn-sm btn-outline-warning btn-icon btn-icon-sm" title="Edit"><i class="fa fa-pen"></i></a>
-                                    <button class="btn btn-sm btn-outline-danger btn-icon btn-icon-sm" type="submit" title="Hapus" onclick="return confirm('Yakin ingin menghapus data?')"><i class="fa fa-trash"></i></button>
                                 </form></td>
 
 
