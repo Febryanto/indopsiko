@@ -30,15 +30,61 @@ kt-menu__item--open kt-menu__item--here
         <div class="kt-portlet__head-actions">
 
             &nbsp;
-            <a href="#" class="btn btn-brand btn-elevate btn-icon-sm">
-                <i class="la la-plus"></i>
-                New Record
-            </a>
+            <button type="button" class="btn btn-primary btn-brand btn-elevate btn-icon-sm" data-toggle="modal" data-target="#tambah">
+                <i class="la la-plus"></i> Tambah Data
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="tambahLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="tambahLabel">Tambah Klien</h5>
+
+                  </div>
+                  <form action="{{ route('berita.store') }}" method="POST" enctype="multipart/form-data">
+                  <div class="modal-body">
+                                    {{ @csrf_field() }}
+                                    <div class="form-group">
+                                            <label for="judul">judul</label>
+                                            <input type="text" name="judul" class="form-control" placeholder="judul" value="">
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="subjudul">subjudul</label>
+                                            <input type="text" name="subjudul" class="form-control" placeholder="subjudul" value="">
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="logo">Foto</label>
+                                            <input type="file" name="foto" class="form-control" placeholder="foto" value="">
+                                    </div>
+                            <div class="form-group row">
+                                <label for="isi">isi</label>
+                                <textarea id="editor1" name="isi" id="" cols="70" rows="7"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="Status">Status Berita</label>
+                            <select class="form-control" name="status">
+                                <option>Pilih status</option>
+                                <option value="1">Aktif</option>
+                                <option value="0">Nonaktif</option>
+                            </select>
+                        </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                  </div>
+                </form>
+                </div>
+              </div>
+            </div>
+
+
         </div>
     </div>		</div>
         </div>
         <div class="kt-portlet__body">
-            <!--begin: Search Form -->
+            {{--  <!--begin: Search Form -->  --}}
             <div class="kt-form kt-form--label-right kt-margin-t-20 kt-margin-b-10">
         <div class="row align-items-center">
             <div class="col-xl-8 order-2 order-xl-1">
@@ -79,7 +125,7 @@ kt-menu__item--open kt-menu__item--here
                         @foreach ($data as $i)
                             <tr>
                                 <td>
-                                    {{ $i->foto }}
+                                    <img src="{{url('assets/images/berita/'. $i->foto)}}" width="100px" alt="image" style="margin-right: 10px;" />
                                 </td>
                                 <td>
                                     {{ $i->judul }}
@@ -97,7 +143,7 @@ kt-menu__item--open kt-menu__item--here
                                 <td><form action="{{ route('berita.destroy', $i->id_berita) }}" method="post">
                                     {{ csrf_field() }}
                                     {{ method_field('DELETE') }}
-                                    <a href="{{route('berita.show', $i->id_berita)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" title="Detail"><i class="fa fa-info"></i></a>
+                                    {{--  <a href="{{route('berita.show', $i->id_berita)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" title="Detail"><i class="fa fa-info"></i></a>  --}}
                                     <a href="{{ route('berita.edit',$i->id_berita) }}" class="btn btn-sm btn-outline-warning btn-icon btn-icon-sm" title="Edit"><i class="fa fa-pen"></i></a>
                                     <button class="btn btn-sm btn-outline-danger btn-icon btn-icon-sm" type="submit" title="Hapus" onclick="return confirm('Yakin ingin menghapus data?')"><i class="fa fa-trash"></i></button>
                                 </form></td>
@@ -131,6 +177,11 @@ kt-menu__item--open kt-menu__item--here
           $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
       });
+      CKEDITOR.replace('editor1', {
+        height: 260,
+        width: 450,
+      });
+
     });
     </script>
 

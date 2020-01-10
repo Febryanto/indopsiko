@@ -180,5 +180,5 @@ kt-menu__item--open kt-menu__item--here
     });
     </script>
 
-<script src="/assets/ckeditor/ckeditor.js"></script>
+
 @endsection
