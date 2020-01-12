@@ -12,9 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('beranda');
+    return view('dashboard.home');
 });
-
+Route::get('/announce', 'PengumumanController@getPengumuman')->name('getPengumuman');
+Route::get('/client', 'KlienController@getKlien')->name('getKlien');
+Route::get('/apply', 'LowonganController@getLowongan')->name('getLowongan');
 Auth::routes([
     'register' => false
 ]);
