@@ -36,13 +36,13 @@
 											<img class="d-block w-100" width="450px" height="300px" src="/assets/images/galerina/galer2.jpg" alt="Second slide">
 										</div>
 										<div class="carousel-item">
-										    <img class="d-block w-100" width="450px" height="450px" src="/assets/images/galerina/galer7.jpeg" alt="Third slide">
+										    <img class="d-block w-100" width="450px" height="450px" src="/assets/images/galerina/galer3.jpeg" alt="Third slide">
 										</div>
 										<div class="carousel-item">
-											<img class="d-block w-100" width="450px" height="450px" src="/assets/images/galerina/galer5.jpeg" alt="fourth slide">
+											<img class="d-block w-100" width="450px" height="450px" src="/assets/images/galerina/galer4.jpeg" alt="fourth slide">
                                         </div>
                                         <div class="carousel-item">
-											<img class="d-block w-100" width="450px" height="450px" src="/assets/images/galerina/galer6.jpeg" alt="fourth slide">
+											<img class="d-block w-100" width="450px" height="450px" src="/assets/images/galerina/galer5.jpeg" alt="fifth slide">
                                         </div>
 									</div>
 									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -80,7 +80,7 @@
                                 </div>
                                 <div class="kt-portlet kt-portlet--height-fluid kt-widget19">
                                     <div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
-                                        <div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(assets/images/bg/bg-3.png)">
+                                        <div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(/assets/images/bg/bg-3.png)">
                                             <h3 class="kt-widget19__title kt-font-light">
                                                     Profil
                                             </h3>
