@@ -33,7 +33,7 @@
 									</a>
 								</li>
 								<li class="kt-nav__item">
-									<a class="kt-nav__link" href="#karir">
+									<a class="kt-nav__link" href="/apply">
 										<span class="kt-nav__link-icon"><i class="fa fa-briefcase"></i></span>
 										<span class="kt-nav__link-text">KARIR</span>
 									</a>
@@ -108,7 +108,7 @@
                                                 </button></a>
                                         </div>
                                         <div class="dropdown" style="padding:0 5px ;">
-                                            <a href="#karir"><button type="button" class="btn btn-pill btn-default">
+                                            <a href="/apply"><button type="button" class="btn btn-pill btn-default">
                                                 <i class="fa fa-briefcase"></i>
                                                 KARIR
                                             </button></a>

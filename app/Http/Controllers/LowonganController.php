@@ -80,6 +80,7 @@ class LowonganController extends Controller
         $data = DB::table('lowongan AS l')
         ->leftjoin('klien AS k','k.id_klien','=','l.id_klien')
         ->where('id_lowongan',$id)
+        ->select('l.*','k.nama_perusahaan','k.email','k.telp')
         ->get();
         $klien = Klien::all();
         return view('admin.lowongan.edit_lowongan',compact('data','klien'));
@@ -116,5 +117,24 @@ class LowonganController extends Controller
     {
         $data = Lowongan::where('id_lowongan',$id)->delete();
         return redirect()->route('lowongan.index')->with('alert-success','Data berhasi dihapus!');
+    }
+    public function getLowongan()
+    {
+        $data = DB::table('lowongan AS l')
+        ->leftjoin('klien AS k','k.id_klien','=','l.id_klien')
+        ->paginate(15);
+        $klien = Klien::all();
+        // dd($data);
+        return view('lowongan.lowongan',compact('data','klien'));
+    }
+    public function getLowonganbyid($id)
+    {
+        $data = DB::table('lowongan AS l')
+        ->leftjoin('klien AS k','k.id_klien','=','l.id_klien')
+        ->select('l.*','k.nama_perusahaan','k.email','k.telp')
+        ->where('id_lowongan',$id)->get();
+        $klien = Klien::all();
+        // dd($data);
+        return view('lowongan.detail',compact('data','klien'));
     }
 }

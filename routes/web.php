@@ -15,8 +15,10 @@ Route::get('/', function () {
     return view('dashboard.home');
 });
 Route::get('/announce', 'PengumumanController@getPengumuman')->name('getPengumuman');
-Route::get('/client', 'KlienController@getKlien')->name('getKlien');
-Route::get('/apply', 'LowonganController@getLowongan')->name('getLowongan');
+Route::get('/client', 'FrontController@getKlien')->name('getKlien');
+Route::get('/apply', 'FrontController@getLowongan')->name('getLowongan');
+Route::get('/apply/{lowongan}', 'FrontController@getLowonganbyid')->name('getLowonganbyid');
+Route::post('/apply', 'FrontController@applylowongan')->name('apply.store');
 Auth::routes([
     'register' => false
 ]);
