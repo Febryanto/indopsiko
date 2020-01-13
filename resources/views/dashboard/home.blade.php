@@ -186,7 +186,7 @@
             </div>
        <div class="kt-section">
            <div class="kt-divider">
-                <a href="./klienklien.html" class="btn btn-pill btn-default">
+                <a href="client" class="btn btn-pill btn-default">
                     Selengkapnya
                 </a>
             </div>
