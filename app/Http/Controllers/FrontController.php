@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use DB;
 use App\Klien;
 use App\Pelamar;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Session;
 class FrontController extends Controller
 {
     public function getLowongan()
@@ -29,6 +31,15 @@ class FrontController extends Controller
     }
     public function applylowongan(request $request)
     {
+        $validator = Validator::make($request->all(), [
+            'nama_lengkap' => 'required|unique:posts|max:255',
+            'cv' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->route('getLowonganbyid',$request->id_lowongan)
+                        ->withFail('Error Message');
+        }
         $id_lowongan = $request->id_lowongan;
         $file = $request->file('cv');
         if ($file!='') {
@@ -67,7 +78,7 @@ class FrontController extends Controller
                 'created_by' => $request->nama
             ]);
         }
-        return redirect()->route('getLowonganbyid',$id_lowongan)->with('alert-success','Data Anda Berhasil Disimpan');
+        return redirect()->route('getLowonganbyid',$id_lowongan)->with('status','Data anda telah kami simpan');
     }
 
     public function getKlien()

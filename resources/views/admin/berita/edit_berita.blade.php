@@ -45,7 +45,6 @@ kt-menu__item--open kt-menu__item--here
                     <div class="form-group">
                         <label for="Status">Status Berita</label>
                         <select class="form-control" name="status">
-                            <option>Pilih status</option>
                             <option value="1" @if ($u->status === 1 )
                                 selected>
                                 Aktif

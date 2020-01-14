@@ -1,5 +1,26 @@
 @extends('beranda')
 @section('homecontent')
+@if (session('status'))
+<div class="alert alert-primary fade show" role="alert">
+    <div class="alert-text">{{ session('status') }}</div>
+    <div class="alert-close">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true"><i class="la la-close"></i></span>
+        </button>
+    </div>
+</div>
+@endif
+@if(Session::has('fail'))
+<div class="alert alert-danger fade show" role="alert">
+    <div class="alert-text">{{Session::get('fail')}}</div>
+    <div class="alert-close">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true"><i class="la la-close"></i></span>
+        </button>
+    </div>
+</div>
+@endif
+
 <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
     <div class="alert alert-light alert-elevate" role="alert">
         <div class="alert-icon"><i class="flaticon-warning kt-font-brand"></i></div>

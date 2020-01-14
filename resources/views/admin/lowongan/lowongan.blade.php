@@ -7,7 +7,26 @@
 kt-menu__item--open kt-menu__item--here
 @endsection
 @section('content')
-
+@if (session('status'))
+<div class="alert alert-primary fade show" role="alert">
+    <div class="alert-text">{{ session('status') }}</div>
+    <div class="alert-close">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true"><i class="la la-close"></i></span>
+        </button>
+    </div>
+</div>
+@endif
+@if(Session::has('fail'))
+<div class="alert alert-danger fade show" role="alert">
+    <div class="alert-text">{{Session::get('fail')}}</div>
+    <div class="alert-close">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true"><i class="la la-close"></i></span>
+        </button>
+    </div>
+</div>
+@endif
 <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
     <div class="alert alert-light alert-elevate" role="alert">
         <div class="alert-icon"><i class="flaticon-warning kt-font-brand"></i></div>
@@ -66,7 +85,6 @@ kt-menu__item--open kt-menu__item--here
                                     <div class="form-group">
                                         <label for="Status">Status Lowongan</label>
                                         <select class="form-control" name="status">
-                                            <option value="">Pilih status</option>
                                             <option value="1">Dibuka</option>
                                             <option value="0">Ditutup</option>
                                         </select>
