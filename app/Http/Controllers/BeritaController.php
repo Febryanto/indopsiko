@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Berita;
 use Auth;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Session;
 
 class BeritaController extends Controller
 {
@@ -41,6 +43,15 @@ class BeritaController extends Controller
      */
     public function store(Request $request)
     {
+        $validator = Validator::make($request->all(), [
+            'isi' => 'required',
+            'judul' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->route('berita.index')
+                        ->withFail('Error Message');
+        }
         $nama = Auth::user()->name;
         $file = $request->file('foto');
         if ($file !='') {
@@ -67,7 +78,7 @@ class BeritaController extends Controller
                 'created_by' => $nama,
             ]);
         }
-        return redirect()->route('berita.index')->with('alert alert-success','Data Berhasil Ditambah');
+        return redirect()->route('berita.index')->with('status','Data Berhasil Ditambah');
     }
 
     /**
@@ -130,7 +141,7 @@ class BeritaController extends Controller
         }
 
 
-    return redirect()->route('berita.index')->with('alert-success','Data Berhasil Diubah');
+    return redirect()->route('berita.index')->withSuccess('Success message');
     }
 
     /**

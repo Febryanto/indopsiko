@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Klien;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Session;
+
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Auth;
@@ -43,6 +46,15 @@ class KlienController extends Controller
      */
     public function store(Request $request)
     {
+        $validator = Validator::make($request->all(), [
+            'nama_perusahaan' => 'required',
+            'deskripsi' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->route('berita.index')
+                        ->withFail('Error Message');
+        }
         $nama = Auth::user()->name;
         $file = $request->file('logo');
         if ($file!='') {
@@ -73,7 +85,7 @@ class KlienController extends Controller
                 'created_by' => $nama
             ]);
         }
-        return redirect()->route('klien.index')->with('alert-success','Data Berhasil Ditambah');
+        return redirect()->route('klien.index')->with('status','Data Berhasil Ditambah');
     }
 
     /**

@@ -7,6 +7,26 @@
 kt-menu__item--open kt-menu__item--here
 @endsection
 @section('content')
+@if (session('status'))
+<div class="alert alert-primary fade show" role="alert">
+    <div class="alert-text">{{ session('status') }}</div>
+    <div class="alert-close">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true"><i class="la la-close"></i></span>
+        </button>
+    </div>
+</div>
+@endif
+@if(Session::has('fail'))
+<div class="alert alert-danger fade show" role="alert">
+    <div class="alert-text">{{Session::get('fail')}}</div>
+    <div class="alert-close">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true"><i class="la la-close"></i></span>
+        </button>
+    </div>
+</div>
+@endif
 
 <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
     <div class="alert alert-light alert-elevate" role="alert">
@@ -41,20 +61,25 @@ kt-menu__item--open kt-menu__item--here
                     <h5 class="modal-title" id="tambahLabel">Tambah Klien</h5>
 
                   </div>
-                  <form action="{{ route('berita.store') }}" method="POST" enctype="multipart/form-data">
+                  <form action="{{ route('berita.store') }}" name="berita" method="POST" enctype="multipart/form-data">
                   <div class="modal-body">
+                     <style>
+                         .error {
+                             color:red;
+                         }
+                     </style>
                                     {{ @csrf_field() }}
                                     <div class="form-group">
                                             <label for="judul">judul</label>
-                                            <input type="text" name="judul" class="form-control" placeholder="judul" value="">
+                                            <input type="text" name="judul" class="form-control" placeholder="judul" >
                                     </div>
                                     <div class="form-group">
                                             <label for="subjudul">subjudul</label>
-                                            <input type="text" name="subjudul" class="form-control" placeholder="subjudul" value="">
+                                            <input type="text" name="subjudul" class="form-control" placeholder="subjudul" >
                                     </div>
                                     <div class="form-group">
                                             <label for="logo">Foto</label>
-                                            <input type="file" name="foto" class="form-control" placeholder="foto" value="">
+                                            <input type="file" name="foto" class="form-control" placeholder="foto" >
                                     </div>
                             <div class="form-group row">
                                 <label for="isi">isi</label>
@@ -63,7 +88,6 @@ kt-menu__item--open kt-menu__item--here
                         <div class="form-group">
                             <label for="Status">Status Berita</label>
                             <select class="form-control" name="status">
-                                <option>Pilih status</option>
                                 <option value="1">Aktif</option>
                                 <option value="0">Nonaktif</option>
                             </select>
@@ -169,6 +193,8 @@ kt-menu__item--open kt-menu__item--here
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
 <script>
     $(document).ready(function(){
       $("#generalSearch").on("keyup", function() {
@@ -184,5 +210,44 @@ kt-menu__item--open kt-menu__item--here
 
     });
     </script>
-
+   <script type="text/javascript">
+    $(function() {
+        // Initialize form validation on the registration form.
+        // It has the name attribute "registration"
+        $("form[name='berita']").validate({
+          // Specify validation rules
+          rules: {
+            // The key name on the left side is the name attribute
+            // of an input field. Validation rules are defined
+            // on the right side
+            judul: "required",
+            subjudul: "required",
+            foto:{
+                required :true,
+                extension: "jpg,jpeg,png",
+                filesize:2000
+            },
+            isi: "required",
+            status: "required",
+          },
+          // Specify validation error messages
+          messages: {
+            judul: "Masukan Judul",
+            subjudul: "masukan subjudul",
+            foto: {
+              required: "masukan gambar",
+              extension: "file hanya boleh format jpg,jpeg, dan png",
+              filesize: "ukuran file maksimum 2 MB"
+            },
+            isi: "Masukan isi konten",
+            status: "Pilih status"
+          },
+          // Make sure the form is submitted to the destination defined
+          // in the "action" attribute of the form when valid
+          submitHandler: function(form) {
+            form.submit();
+          }
+        });
+      });
+</script>
 @endsection

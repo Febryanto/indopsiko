@@ -70,7 +70,7 @@ kt-menu__item--open kt-menu__item--here
                             <th title="Field #1">Nama Perusahaan</th>
                             <th title="Field #1">Nama Pelamar</th>
                             <th title="Field #1">Jabatan</th>
-                            <th title="Field #3">Status Lowongan</th>
+                            <th title="Field #3">Pendidikan</th>
                             <th title="Field #5">Opsi</th>
 
                         </tr>
@@ -88,11 +88,7 @@ kt-menu__item--open kt-menu__item--here
                                     {{ $i->jabatan }}
                                 </td>
                                 <td>
-                                    @if ($i->status == 1)
-                                        Aktif
-                                    @else
-                                        Nonaktif
-                                    @endif
+                                    {{$i->pendidikan}}
                                 </td>
                                 <td><form action="{{ route('pelamar.destroy', $i->id_pelamar) }}" method="post">
                                     {{ csrf_field() }}

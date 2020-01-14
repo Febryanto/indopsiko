@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Lowongan;
 use Auth;
 use App\Klien;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Session;
 use DB;
 
 class LowonganController extends Controller
@@ -55,7 +57,7 @@ class LowonganController extends Controller
             'status' => $request->status,
             'created_by' => $nama
         ]);
-        return redirect()->route('lowongan.index')->with('alert-success','Data Berhasil Ditambah');
+        return redirect()->route('lowongan.index')->with('status','Data Berhasil Ditambah');
     }
 
     /**
