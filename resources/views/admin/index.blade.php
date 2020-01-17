@@ -146,11 +146,11 @@ License: You must have a valid license purchased only from themeforest(the above
                     <span class="kt-menu__link-text">Klient</span>
                 </a>
             </li>
-            <li class="kt-menu__item @yield('aktif_berita')" aria-haspopup="true" >
+            {{--  <li class="kt-menu__item @yield('aktif_berita')" aria-haspopup="true" >
                 <a  href="/berita" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-newspaper"></i>
                     <span class="kt-menu__link-text">Berita</span>
                 </a>
-            </li>
+            </li>  --}}
             <li class="kt-menu__item @yield('aktif_pengumuman')" aria-haspopup="true" >
                 <a  href="/pengumuman" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-bullhorn"></i>
                     <span class="kt-menu__link-text">Pengumuman</span>
