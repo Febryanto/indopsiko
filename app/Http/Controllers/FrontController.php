@@ -43,15 +43,6 @@ class FrontController extends Controller
     }
     public function applylowongan(request $request)
     {
-        $validator = Validator::make($request->all(), [
-            'nama_lengkap' => 'required|unique:posts|max:255',
-            'cv' => 'required',
-        ]);
-
-        if ($validator->fails()) {
-            return redirect()->route('getLowonganbyid',$request->id_lowongan)
-                        ->withFail('Error Message');
-        }
         $id_lowongan = $request->id_lowongan;
         $file = $request->file('cv');
         if ($file!='') {
@@ -70,7 +61,6 @@ class FrontController extends Controller
                 'pendidikan' => $request->pendidikan,
                 'email' => $request->email,
                 'no_hp' => $request->no_hp,
-                'medsos' => $request->medsos,
                 'alamat' => $request->alamat,
                 'created_by' => $request->nama
             ]);
@@ -85,7 +75,6 @@ class FrontController extends Controller
                 'pendidikan' => $request->pendidikan,
                 'email' => $request->email,
                 'no_hp' => $request->no_hp,
-                'medsos' => $request->medsos,
                 'alamat' => $request->alamat,
                 'created_by' => $request->nama
             ]);
