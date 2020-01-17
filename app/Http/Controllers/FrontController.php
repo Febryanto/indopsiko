@@ -43,15 +43,7 @@ class FrontController extends Controller
     }
     public function applylowongan(request $request)
     {
-        $validator = Validator::make($request->all(), [
-            'nama_lengkap' => 'required|max:255',
-            'cv' => 'required',
-        ]);
 
-        if ($validator->fails()) {
-            return redirect()->route('getLowonganbyid',$request->id_lowongan)
-                        ->withFail('Error Message');
-        }
         $id_lowongan = $request->id_lowongan;
         $file = $request->file('cv');
         if ($file!='') {
