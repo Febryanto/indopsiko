@@ -40,7 +40,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	{{--  <!-- begin:: Header Mobile -->  --}}
 <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed " >
 	<div class="kt-header-mobile__brand">
-		<a class="kt-header-mobile__logo" href="/">
+		<a class="kt-header-mobile__logo" href="/home">
             <img alt="Logo" src="/assets/images/logos/logo-5.png">
 		</a>
         <div class="kt-header-mobile__nav">
@@ -124,7 +124,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 			<ul class="kt-menu__nav ">
                 <li class="kt-menu__item " aria-haspopup="true" >
-                    <a  href="/" class="kt-menu__link ">
+                    <a  href="/home" class="kt-menu__link ">
                         <img alt="Logo" src="/assets/images/logos/logo-4.png"/>&nbsp;
                         <span class="kt-menu__link-text">INDOPSIKO</span>
                     </a>
