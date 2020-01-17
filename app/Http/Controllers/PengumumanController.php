@@ -45,7 +45,7 @@ class PengumumanController extends Controller
         if ($file !='') {
             $file = $request->file('foto');
             $extension=$file->getClientOriginalExtension();
-            $destinationPath = 'assets/images/berita';
+            $destinationPath = 'assets/images/pengumuman';
             $fileName = rand(11111, 99999) . '.' . $extension;
             $request->file('foto')->move($destinationPath, $fileName);
             $data = Pengumuman::insert([
@@ -66,7 +66,7 @@ class PengumumanController extends Controller
                 'created_by' => $nama,
             ]);
         }
-        return redirect()->route('pwngumuman.index')->with('alert alert-success','Data Berhasil Ditambah');
+        return redirect()->route('pengumuman.index')->with('status','Data Berhasil Ditambah');
     }
 
     /**
