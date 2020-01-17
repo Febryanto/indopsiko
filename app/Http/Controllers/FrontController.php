@@ -44,7 +44,7 @@ class FrontController extends Controller
     public function applylowongan(request $request)
     {
         $validator = Validator::make($request->all(), [
-            'nama_lengkap' => 'required|unique:posts|max:255',
+            'nama_lengkap' => 'required|max:255',
             'cv' => 'required',
         ]);
 
@@ -70,7 +70,6 @@ class FrontController extends Controller
                 'pendidikan' => $request->pendidikan,
                 'email' => $request->email,
                 'no_hp' => $request->no_hp,
-                'medsos' => $request->medsos,
                 'alamat' => $request->alamat,
                 'created_by' => $request->nama
             ]);
@@ -85,7 +84,6 @@ class FrontController extends Controller
                 'pendidikan' => $request->pendidikan,
                 'email' => $request->email,
                 'no_hp' => $request->no_hp,
-                'medsos' => $request->medsos,
                 'alamat' => $request->alamat,
                 'created_by' => $request->nama
             ]);
