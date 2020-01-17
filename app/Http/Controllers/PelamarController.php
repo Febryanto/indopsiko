@@ -102,7 +102,7 @@ class PelamarController extends Controller
 
             $headers = ['Content-Type: application/pdf'];
             $newName = $data->nama_lengkap.time().'.pdf';
-            return response()->download($file, $newName, $headers)->with('status','Data Berhasil didownload');
+            return response()->download($file, $newName, $headers);
 
 
 
