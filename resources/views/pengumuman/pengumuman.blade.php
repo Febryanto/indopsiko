@@ -70,7 +70,7 @@
                                     <div class="col-md-3">
                                         <div class="kt-widget__head">
                                             <div class="kt-widget__media">
-                                                <span> <img src="{{url('assets/images/pengumuman/'. $i->foto)}}" id="myImg" alt="image" width="250px" height="250px"></span>
+                                                <span> <img src="{{url('/assets/images/pengumuman/'. $i->foto)}}" id="myImg" alt="image" width="250px" height="250px"></span>
                                                 <div class="kt-widget___info">
                                                     <h5>{{$i->judul}}</h5>
 

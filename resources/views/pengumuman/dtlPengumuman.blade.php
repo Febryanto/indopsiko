@@ -44,7 +44,7 @@
 <article class="uk-comment uk-comment-primary">
 <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
 <div class="uk-width-auto">
-    <img src="{{url('assets/images/pengumuman/'. $i->foto)}}" class="uk-comment-avatar" width="80" height="80" alt="">
+    <img src="{{url('/assets/images/pengumuman/'. $i->foto)}}" class="uk-comment-avatar" width="80" height="80" alt="">
 </div>
 <div class="uk-width-expand">
     <h2 class="uk-comment-title uk-margin-remove">{{$i->judul}}</h2> <br>
