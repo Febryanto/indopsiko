@@ -122,7 +122,7 @@ class BeritaController extends Controller
             $destinationPath = 'assets/images/pengumuman';
             $fileName = rand(11111, 99999) . '.' . $extension;
             $request->file('gambar')->move($destinationPath, $fileName);
-            $data = Berita::where('id_pengumuman',$id)
+            $data = Berita::where('id_berita',$id)
                 ->update([
                     'foto' => $fileName,
                     'judul' => $request->judul,
@@ -131,7 +131,7 @@ class BeritaController extends Controller
                     'updated_by' => $nama
                 ]);
         }else{
-            $data = Berita::where('id_pengumuman',$id)
+            $data = Berita::where('id_berita',$id)
                 ->update([
                     'judul' => $request->judul,
                     'subjudul' => $request->subjudul,
@@ -141,7 +141,7 @@ class BeritaController extends Controller
         }
 
 
-    return redirect()->route('berita.index')->withSuccess('Success message');
+    return redirect()->route('berita.index')->with('status','Data Berhasil Diubah');
     }
 
     /**
@@ -153,7 +153,7 @@ class BeritaController extends Controller
     public function destroy($id)
     {
         $data = Berita::where('id_berita',$id)->delete();
-        return redirect()->route('berita.index')->with('alert-success','Data berhasi dihapus!');
+        return redirect()->route('berita.index')->with('status','Data Berhasil dihapus');
 
     }
 }

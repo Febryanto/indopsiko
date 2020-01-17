@@ -7,6 +7,26 @@
 kt-menu__item--open kt-menu__item--here
 @endsection
 @section('content')
+@if (session('status'))
+<div class="alert alert-primary fade show" role="alert">
+    <div class="alert-text">{{ session('status') }}</div>
+    <div class="alert-close">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true"><i class="la la-close"></i></span>
+        </button>
+    </div>
+</div>
+@endif
+@if(Session::has('fail'))
+<div class="alert alert-danger fade show" role="alert">
+    <div class="alert-text">{{Session::get('fail')}}</div>
+    <div class="alert-close">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true"><i class="la la-close"></i></span>
+        </button>
+    </div>
+</div>
+@endif
 
 <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
     <div class="alert alert-light alert-elevate" role="alert">
@@ -92,7 +112,10 @@ kt-menu__item--open kt-menu__item--here
                                 </td>
                                 <td><form action="{{ route('pelamar.destroy', $i->id_pelamar) }}" method="post">
                                     {{ csrf_field() }}
-                                    <a href="{{route('pelamar.show', $i->id_pelamar)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" title="Detail"><i class="fa fa-info"></i></a>
+                                    {{ method_field('DELETE') }}
+                                    {{--  <a href="{{route('pelamar.show', $i->id_pelamar)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" title="Detail"><i class="fa fa-info"></i></a>  --}}
+                                    <a href="{{route('getDownload.pelamar', $i->id_pelamar)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" type="submit" title="Download" onclick="return confirm('Yakin ingin mendownload data?')"><i class="fa fa-download"></i></a>
+                                    <button class="btn btn-sm btn-outline-danger btn-icon btn-icon-sm" type="submit" title="Hapus" onclick="return confirm('Yakin ingin menghapus data?')"><i class="fa fa-trash"></i></button>
                                 </form></td>
 
 

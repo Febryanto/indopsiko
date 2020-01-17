@@ -82,7 +82,7 @@
                                     <div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
                                         <div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(/assets/images/bg/bg-3.png)">
                                             <h3 class="kt-widget19__title kt-font-light">
-                                                    Profil
+
                                             </h3>
                                         </div>
                                         <div class="kt-widget19__wrapper">
@@ -91,7 +91,7 @@
                                                     <img src="/assets/images/logooo.png " alt="" >
                                                 </div> --}}
                                             </div>
-                                            <div class="kt-widget19__text">
+                                            <div class="kt-widget19__text"style="padding:5px 5px 5px 5px">
                                             Pembangunan manusia seutuhnya. Demikian kalimat sakral yang telah menjadi komitmen dasar bagi Bangsa dan Negara. Aplikasinya menjadi kewajiban bersama, baik pemerintah maupun rakyatnya. {{--Arahnya adalah tercapainya kehidupan yang sejahtera, adil dan makmur, lahir maupun batin. Dalam kerangka itu orang beraktifitas menurut bidang dan keahlian masing-masing, dan satu aktifitas yang menghasilkan produk unggul pasti dikerjakan oleh tangan-tangan yang ahli dan profesional.
                                             Dengan semakin menyempitnya spesifikasi pengetahuan dan keilmuan, maka semakin terfokus pula orang terhadap bidang yang digelutinya. Sebuah perusahaan yang memproduksi satu barang memerlukan sekian banyak bidang keahlian, sehingga pengaturan sumber daya manusia menjadi satu hal tersendiri yang harus ditangani secara baik dan benar, matang dan profesional.
                                                 PT.INDOPSIKO INDONESIA dengan mantap mengambil peran sebagai profesi di bidang Sumber Daya Manusia ini dengan maksud mampu mencakup multi manfaat. Satu sisi membantu dan mempersiapkan calon tenaga kerja dalam memasuki dunia kerja, pada sisi lain mempermudah dan membantu para pengusaha dalam mendapatkan tenaga-tenaga kerja yang dibutuhkannya, dan sisi yang lainnya lagi adalah merupakan bidang kerja/usaha yang menawarkan profit tersendiri.

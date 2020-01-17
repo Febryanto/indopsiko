@@ -39,7 +39,7 @@
 									</a>
 								</li>
 								<li class="kt-nav__item">
-									<a class="kt-nav__link" href="#">
+									<a class="kt-nav__link" href="/announce">
 										<span class="kt-nav__link-icon"><i class="fa fa-info"></i></span>
 										<span class="kt-nav__link-text">PENGUMUMAN</span>
 									</a>
@@ -102,7 +102,7 @@
                                                 </button></a>
                                         </div>
                                         <div class="dropdown" style="padding:0 5px ;">
-                                            <a href="#"><button type="button" class="btn btn-pill btn-default">
+                                            <a href="/announce"><button type="button" class="btn btn-pill btn-default">
                                                     <i class="fa fa-info"></i>
                                                     PENGUMUMAN
                                                 </button></a>
