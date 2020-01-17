@@ -83,7 +83,7 @@
                                         </div>
                                     </div>
                                         <div class="kt-widget__body">
-                                        {{$i->isi}}
+                                        {!! $i->isi !!}
 
                                         </div>
                                 </div>

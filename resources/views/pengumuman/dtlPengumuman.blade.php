@@ -55,7 +55,7 @@
 </div>
 </header>
 <div class="uk-comment-body" style="text-align:justify;">
-<p>  {{$i->isi}}
+<p>  {!! $i->isi !!}
     </p>
 </article>
 

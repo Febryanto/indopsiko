@@ -43,6 +43,10 @@ kt-menu__item--open kt-menu__item--here
                             <input type="text" name="subjudul" class="form-control" placeholder="subjudul" value="{{$u->subjudul}}">
                     </div>
                     <div class="form-group">
+                        <label for="isi">isi</label>
+                        <textarea id="editor1" name="isi" id="" cols="70" rows="7">{{$u->isi}}</textarea>
+                </div>
+                    <div class="form-group">
                         <label for="Status">Status Pengumuman</label>
                         <select class="form-control" name="status">
                             <option>Pilih status</option>
@@ -93,5 +97,14 @@ kt-menu__item--open kt-menu__item--here
   });
 
 </script>
+<script>
+    $(document).ready(function(){
+      CKEDITOR.replace('editor1', {
+        height: 260,
+        width: 750,
+      });
+
+    });
+    </script>
 
 @endsection
