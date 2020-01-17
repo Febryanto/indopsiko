@@ -151,7 +151,7 @@
                                     <span class="kt-pricing-1__icon kt-font-brand"> <img src="assets/images/klien/logo_yamaha.png" alt="JNE"> </span>
                                 </div>
                                 <span class="kt-pricing-1__price"> </span>
-                                <h2 class="kt-pricing-1__subtitle">WWW.yamaha.com</h2>
+                                <h2 class="kt-pricing-1__subtitle">www.yamaha.com</h2>
                                 <span class="kt-pricing-1__description">
                                 </span>
                                 <div class="kt-pricing-1__btn">
