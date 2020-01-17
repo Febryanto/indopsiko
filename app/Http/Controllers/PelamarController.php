@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response as FacadeResponse;
 use App\Pelamar;
+use Illuminate\Support\Facades\File;
 use DB;
 
 class PelamarController extends Controller
@@ -86,7 +88,23 @@ class PelamarController extends Controller
      */
     public function destroy($id)
     {
-        $data = Pelamar::where('id_pelamar',$id)->delete();
-        return redirect()->route('pelamar.index')->with('alert-success','Data berhasi dihapus!');
+        $data = Pelamar::where('id_pelamar',$id)->first();
+        File::delete('assets/dokumen/'.$data->cv);
+        Pelamar::where('id_pelamar',$id)->delete();
+        return redirect()->route('pelamar.index')->with('status','Data Berhasil dihapus');
+    }
+    public function getDownload($id)
+    {
+
+    //PDF file is stored under project/public/download/info.pdf
+        $data = Pelamar::where('id_pelamar',$id)->first();
+        $file= public_path(). '/assets/dokumen/'.$data->cv;
+
+            $headers = ['Content-Type: application/pdf'];
+            $newName = $data->nama_lengkap.time().'.pdf';
+            return response()->download($file, $newName, $headers)->with('status','Data Berhasil didownload');
+
+
+
     }
 }

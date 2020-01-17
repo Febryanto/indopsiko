@@ -52,7 +52,7 @@ class KlienController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return redirect()->route('berita.index')
+            return redirect()->route('klien.index')
                         ->withFail('Error Message');
         }
         $nama = Auth::user()->name;

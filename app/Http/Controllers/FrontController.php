@@ -6,10 +6,16 @@ use Illuminate\Http\Request;
 use DB;
 use App\Klien;
 use App\Pelamar;
+use App\Pengumuman;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Session;
 class FrontController extends Controller
 {
+    public function getPengumuman()
+    {
+        $data = Pengumuman::all();
+        return view('pengumuman.pengumuman',compact('data'));
+    }
     public function getLowongan()
     {
         $data = DB::table('lowongan AS l')
@@ -18,6 +24,12 @@ class FrontController extends Controller
         $klien = Klien::all();
         // dd($data);
         return view('lowongan.lowongan',compact('data','klien'));
+    }
+    public function getDetailPengumuman($id)
+    {
+        $data = Pengumuman::where('id_pengumuman',$id)->get();
+        // dd($data);
+        return view('pengumuman.dtlPengumuman',compact('data'));
     }
     public function getLowonganbyid($id)
     {

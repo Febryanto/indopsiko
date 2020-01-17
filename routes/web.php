@@ -14,7 +14,8 @@
 Route::get('/', function () {
     return view('dashboard.home');
 });
-Route::get('/announce', 'PengumumanController@getPengumuman')->name('getPengumuman');
+Route::get('/announce', 'FrontController@getPengumuman')->name('getPengumuman');
+Route::get('/dtlPengumuman/{pengumuman}', 'FrontController@getDetailPengumuman')->name('pengumuman.dtl');
 Route::get('/client', 'FrontController@getKlien')->name('getKlien');
 Route::get('/apply', 'FrontController@getLowongan')->name('getLowongan');
 Route::get('/apply/{lowongan}', 'FrontController@getLowonganbyid')->name('getLowonganbyid');
@@ -30,3 +31,4 @@ Route::resource('lowongan', 'LowonganController');
 Route::resource('berita', 'BeritaController');
 Route::resource('pengumuman', 'PengumumanController');
 Route::resource('pelamar', 'PelamarController');
+Route::get('/getDownloadpelamar/{pelamar}', 'PelamarController@getDownload')->name('getDownload.pelamar');
