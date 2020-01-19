@@ -4,11 +4,12 @@
 	<div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
 	{{-- begin:: Content --}}
 		{{-- begin banner --}}
-				<div class="row" style=" background-image: url('/assets/images/banner/bg-1.png');height:450px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;">
+        <<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('assets/images/banner/fix.jpeg');">
+            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+                <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">INDOPSIKO INDONESIA</h1>
+                <h5 uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">HUMAN RESOURCE DEVELOPMENT.</h5>
+            </div>
+        </div>
 
                 </div>
     </div>
@@ -43,6 +44,9 @@
                                         </div>
                                         <div class="carousel-item">
 											<img class="d-block w-100" width="450px" height="450px" src="/assets/images/galerina/galer5.jpeg" alt="fifth slide">
+                                        </div>
+                                        <div class="carousel-item">
+											<img class="d-block w-100" width="450px" height="450px" src="/assets/images/galerina/tambahan.jpg" alt="fifth slide">
                                         </div>
 									</div>
 									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
