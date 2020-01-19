@@ -54,33 +54,39 @@ class FrontController extends Controller
             $request->file('cv')->move($destinationPath, $fileName);
             $data = Pelamar::insert([
                 'cv' => $fileName,
-                'id_lowongan' => $request->id_lowongan,
+                'nama_ibu_kandung' => $request->nama_ibu_kandung,
                 'nama_lengkap' => $request->nama,
                 'nik' => $request->nik,
-                'no_kk' => $request->no_kk,
+                'tempat_lahir' => $request->tempat_lahir,
+                'tanggal_lahir' => $request->tanggal_lahir,
+                'jenis_kelamin' => $request->jenis_kelamin,
                 'npwp' => $request->npwp,
                 'pendidikan' => $request->pendidikan,
-                'email' => $request->email,
+                'posisi' => $request->posisi,
+                'sim' => $request->sim,
                 'no_hp' => $request->no_hp,
-                'alamat' => $request->alamat,
-                'created_by' => $request->nama
+                'email' => $request->email,
+                'created_by' => $request->nama,
             ]);
         }else{
             $data = Pelamar::insert([
 
-                'id_lowongan' => $request->id_lowongan,
+                'nama_ibu_kandung' => $request->nama_ibu_kandung,
                 'nama_lengkap' => $request->nama,
                 'nik' => $request->nik,
-                'no_kk' => $request->no_kk,
+                'tempat_lahir' => $request->tempat_lahir,
+                'tanggal_lahir' => $request->tanggal_lahir,
+                'jenis_kelamin' => $request->jenis_kelamin,
                 'npwp' => $request->npwp,
                 'pendidikan' => $request->pendidikan,
-                'email' => $request->email,
+                'posisi' => $request->posisi,
+                'sim' => $request->sim,
                 'no_hp' => $request->no_hp,
-                'alamat' => $request->alamat,
-                'created_by' => $request->nama
+                'email' => $request->email,
+                'created_by' => $request->nama,
             ]);
         }
-        return redirect()->route('getLowonganbyid',$id_lowongan)->with('status','Data anda telah kami simpan');
+        return redirect()->route('getLowongan')->with('status','Data anda telah kami simpan');
     }
 
     public function getKlien()
