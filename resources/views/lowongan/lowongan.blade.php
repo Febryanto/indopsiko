@@ -85,10 +85,22 @@
                                         <input type="text" name="npwp" class="form-control" placeholder="NPWP" value="" required>
                                     </div>
                                     <div class="form-group">
+                                        <label for="sim">SIM</label>
+                                        <input type="text" name="sim" class="form-control" placeholder="SIM" value="" required>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="jenis_kelamin">Jenis Kelamin</label>
                                         <select class="form-control" name="jenis_kelamin" required>
                                             <option value="L">Laki-Laki</option>
                                             <option value="P">Perempuan</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Pearusahaan">Perusahaan</label>
+                                        <select class="form-control" name="id_perusahaan" required>
+                                            @foreach ($klien as $u)
+                                            <option value="{{$u->id_klien}}">{{$u->nama_perusahaan}}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                     <div class="form-group">
@@ -108,7 +120,6 @@
                                             <option value="Leader">Leader</option>
                                             <option value="Custumor service">Costumor service</option>
                                             <option value="Manager">Manager</option>
-
                                         </select>
                                     </div>
                                     <div class="form-group">
@@ -128,7 +139,7 @@
                                         <label for="cv">CV</label>
                                         <input type="file" name="cv" class="form-control" placeholder="CV" value="" required>
                                     </div>
-                    </div>
+                                </div>
 
                                     <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
