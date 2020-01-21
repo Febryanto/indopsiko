@@ -18,8 +18,7 @@ class PelamarController extends Controller
     public function index()
     {
         $data = DB::table('pelamar as a')
-        ->leftjoin('lowongan as b','b.id_lowongan','=','a.id_lowongan')
-        ->leftjoin('klien as c','b.id_klien','=','c.id_klien')
+        ->leftjoin('klien as b','b.id_klien','=','a.id_perusahaan')
         ->paginate(15);
 
         return view('admin.pelamar.pelamar',compact('data'));
@@ -54,7 +53,12 @@ class PelamarController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = DB::table('pelamar as a')
+        ->leftjoin('klien as b','b.id_klien','=','a.id_perusahaan')
+        ->where('a.id_pelamar',$id)
+        ->select('a.email as email_lamar','a.*','b.*')
+        ->get();
+        return view('admin.pelamar.detail_pelamar',compact('data'));
     }
 
     /**
