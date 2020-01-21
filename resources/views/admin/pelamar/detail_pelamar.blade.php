@@ -65,28 +65,12 @@ kt-menu__item--open kt-menu__item--here
                         </div>
 
                         <div class="kt-widget__action">
-                            <a href="#" class="btn btn-label-brand btn-sm  btn-bold dropdown-toggle" data-toggle="dropdown">
-                                Export
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right">
-                                <ul class="kt-nav">
-                                    <li class="kt-nav__section kt-nav__section--first">
-                                        <span class="kt-nav__section-text">Export as</span>
-                                    </li>
-                                    <li class="kt-nav__item">
-                                        <a href="{{route('getExcel.pelamar', $i->id_pelamar)}}" class="kt-nav__link">
-                                            <i class="kt-nav__link-icon flaticon2-graph-1"></i>
-                                            <span class="kt-nav__link-text">Excel</span>
-                                        </a>
-                                    </li>
-                                    <li class="kt-nav__item">
-                                        <a href="#" class="kt-nav__link">
-                                            <i class="kt-nav__link-icon flaticon2-calendar-4"></i>
-                                            <span class="kt-nav__link-text">PDF</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <form action="{{ route('pelamar.destroy', $i->id_pelamar) }}" method="post">
+                                {{ csrf_field() }}
+                                {{ method_field('DELETE') }}
+                                <a href="{{route('getDownload.pelamar', $i->id_pelamar)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" type="submit" title="Download CV" onclick="return confirm('Yakin ingin mendownload cv pelamar?')"><i class="fa fa-download"></i></a>
+                                <button class="btn btn-sm btn-outline-danger btn-icon btn-icon-sm" type="submit" title="Hapus" onclick="return confirm('Yakin ingin menghapus data?')"><i class="fa fa-trash"></i></button>
+                            </form>
                         </div>
                     </div>
                 </div>
