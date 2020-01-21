@@ -74,7 +74,7 @@ kt-menu__item--open kt-menu__item--here
                                         <span class="kt-nav__section-text">Export as</span>
                                     </li>
                                     <li class="kt-nav__item">
-                                        <a href="#" class="kt-nav__link">
+                                        <a href="{{route('getExcel.pelamar', $i->id_pelamar)}}" class="kt-nav__link">
                                             <i class="kt-nav__link-icon flaticon2-graph-1"></i>
                                             <span class="kt-nav__link-text">Excel</span>
                                         </a>
