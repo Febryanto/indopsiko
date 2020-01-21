@@ -48,12 +48,32 @@ kt-menu__item--open kt-menu__item--here
             <div class="kt-portlet__head-toolbar">
                 <div class="kt-portlet__head-wrapper">
         <div class="kt-portlet__head-actions">
+            <div class="dropdown dropdown-inline">
+                <button type="button" class="btn btn-default btn-icon-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="la la-download"></i> Export
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <ul class="kt-nav">
+                        <li class="kt-nav__section kt-nav__section--first">
+                            <span class="kt-nav__section-text">Export As</span>
+                        </li>
+                        <li class="kt-nav__item">
+                            <a href="{{route('getExcel.pelamar')}}" class="kt-nav__link">
+                                <i class="kt-nav__link-icon la la-file-excel-o"></i>
+                                <span class="kt-nav__link-text">Excel</span>
+                            </a>
+                        </li>
+                        <li class="kt-nav__item">
+                            <a href="{{route('getPdf.pelamar')}}" class="kt-nav__link">
+                                <i class="kt-nav__link-icon la la-file-pdf-o"></i>
+                                <span class="kt-nav__link-text">PDF</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    &nbsp;
 
-            &nbsp;
-            {{--  <a href="#" class="btn btn-brand btn-elevate btn-icon-sm">
-                <i class="la la-plus"></i>
-                New Record
-            </a>  --}}
         </div>
     </div>		</div>
         </div>
