@@ -143,7 +143,7 @@ License: You must have a valid license purchased only from themeforest(the above
             </li>
             <li class="kt-menu__item @yield('aktif_klien')" aria-haspopup="true" >
                 <a  href="/klien" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-cube"></i>
-                    <span class="kt-menu__link-text">Klient</span>
+                    <span class="kt-menu__link-text">Klien</span>
                 </a>
             </li>
             {{--  <li class="kt-menu__item @yield('aktif_berita')" aria-haspopup="true" >
@@ -158,12 +158,12 @@ License: You must have a valid license purchased only from themeforest(the above
             </li>
             <li class="kt-menu__item @yield('aktif_lowongan')" aria-haspopup="true" >
                 <a  href="/lowongan" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-briefcase"></i>
-                    <span class="kt-menu__link-text">Lowongan</span>
+                    <span class="kt-menu__link-text">Karir</span>
                 </a>
             </li>
             <li class="kt-menu__item @yield('aktif_lamaran')" aria-haspopup="true" >
                 <a  href="/pelamar" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-users"></i>
-                    <span class="kt-menu__link-text">Lamaran</span>
+                    <span class="kt-menu__link-text">Pelamar</span>
                 </a>
             </li>
             </ul>

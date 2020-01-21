@@ -32,3 +32,4 @@ Route::resource('berita', 'BeritaController');
 Route::resource('pengumuman', 'PengumumanController');
 Route::resource('pelamar', 'PelamarController');
 Route::get('/getDownloadpelamar/{pelamar}', 'PelamarController@getDownload')->name('getDownload.pelamar');
+Route::get('/getExcelpelamar/{pelamar}', 'PelamarController@getExcel')->name('getExcel.pelamar');
