@@ -50,7 +50,7 @@ class FrontController extends Controller
             $file = $request->file('cv');
             $extension=$file->getClientOriginalExtension();
             $destinationPath = 'assets/dokumen';
-            $fileName = rand(11111, 99999) . '.' . $extension;
+            $fileName = $request->nama.rand(11111, 99999) . '.' . $extension;
             $request->file('cv')->move($destinationPath, $fileName);
             $data = Pelamar::insert([
                 'cv' => $fileName,
