@@ -121,9 +121,9 @@ class PelamarController extends Controller
     {
         $data = DB::table('pelamar as a')
         ->leftjoin('klien as b','b.id_klien','=','a.id_perusahaan')
-        ->select('b.nama_perusahaan','a.posisi','a.nama_lengkap','a.nik','a.npwp','a.pendidikan','a.email','a.no_hp','a.sim','a.tempat_lahir','a.tanggal_lahir','a.jenis_kelamin','a.nama_ibu_kandung','a.cv','a.created_at','a.updated_at')
+        ->select('a.id_pelamar','b.nama_perusahaan','a.posisi','a.nama_lengkap','a.nik','a.npwp','a.pendidikan','a.email','a.no_hp','a.sim','a.tempat_lahir','a.tanggal_lahir','a.jenis_kelamin','a.nama_ibu_kandung','a.cv','a.created_at','a.updated_at')
         ->get();
-        $pdf = PDF::loadview('data_pelamar',['data'=>$data]);
-    	return $pdf->download('admin.dataseluruhpelamar');
+        $pdf = PDF::loadview('admin.pelamar.data_pelamar',['data'=>$data])->setPaper('legal', 'landscape');;
+    	return $pdf->stream();
     }
 }
