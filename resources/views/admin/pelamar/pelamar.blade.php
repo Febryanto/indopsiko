@@ -89,7 +89,7 @@ kt-menu__item--open kt-menu__item--here
                         <tr>
                             <th title="Field #1">Nama Perusahaan</th>
                             <th title="Field #1">Nama Pelamar</th>
-                            <th title="Field #1">Jabatan</th>
+                            <th title="Field #1">Posisi</th>
                             <th title="Field #3">Pendidikan</th>
                             <th title="Field #5">Opsi</th>
 
@@ -105,7 +105,7 @@ kt-menu__item--open kt-menu__item--here
                                     {{ $i->nama_lengkap }}
                                 </td>
                                 <td>
-                                    {{ $i->jabatan }}
+                                    {{ $i->posisi }}
                                 </td>
                                 <td>
                                     {{$i->pendidikan}}
@@ -113,12 +113,10 @@ kt-menu__item--open kt-menu__item--here
                                 <td><form action="{{ route('pelamar.destroy', $i->id_pelamar) }}" method="post">
                                     {{ csrf_field() }}
                                     {{ method_field('DELETE') }}
-                                    {{--  <a href="{{route('pelamar.show', $i->id_pelamar)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" title="Detail"><i class="fa fa-info"></i></a>  --}}
-                                    <a href="{{route('getDownload.pelamar', $i->id_pelamar)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" type="submit" title="Download" onclick="return confirm('Yakin ingin mendownload data?')"><i class="fa fa-download"></i></a>
+                                     <a href="{{route('pelamar.show', $i->id_pelamar)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" title="Detail"><i class="fa fa-info"></i></a>
+                                    <a href="{{route('getDownload.pelamar', $i->id_pelamar)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" type="submit" title="Download CV" onclick="return confirm('Yakin ingin mendownload cv pelamar?')"><i class="fa fa-download"></i></a>
                                     <button class="btn btn-sm btn-outline-danger btn-icon btn-icon-sm" type="submit" title="Hapus" onclick="return confirm('Yakin ingin menghapus data?')"><i class="fa fa-trash"></i></button>
                                 </form></td>
-
-
                             </tr>
 
                         @endforeach
