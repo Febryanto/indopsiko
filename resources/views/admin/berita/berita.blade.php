@@ -63,7 +63,7 @@ kt-menu__item--open kt-menu__item--here
                   </div>
                   <form action="{{ route('berita.store') }}" name="berita" method="POST" enctype="multipart/form-data">
                   <div class="modal-body">
-                     <style>
+                    <style>
                          .error {
                              color:red;
                          }
@@ -192,7 +192,7 @@ kt-menu__item--open kt-menu__item--here
 {{--  <!-- end:: Content -->  --}}
 </div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="
 https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
 <script>
