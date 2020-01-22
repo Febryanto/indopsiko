@@ -51,12 +51,12 @@ kt-menu__item--open kt-menu__item--here
             <div class="kt-widget kt-widget--user-profile-1">
                 <div class="kt-widget__head">
                     <div class="kt-widget__media">
-                        <img src="{{url('assets/images/klien/'. $i->logo)}}" width="100px" alt="image" />
+                        {{-- <img src="{{url('assets/images/klien/'. $i->logo)}}" width="100px" alt="image" /> --}}
                     </div>
                     <div class="kt-widget__content">
                         <div class="kt-widget__section">
                             <a href="#" class="kt-widget__username">
-                                {{$i->nama_perusahaan}}
+                                Apply untuk Posisi
                                 <i class="flaticon2-correct kt-font-success"></i>
                             </a>
                             <span class="kt-widget__subtitle">

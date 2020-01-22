@@ -104,7 +104,6 @@ kt-menu__item--open kt-menu__item--here
                 {{-- <table class="kt-datatable" id="html_table" width="100%"> --}}
                     <thead>
                         <tr>
-                            <th title="Field #1">Nama Perusahaan</th>
                             <th title="Field #1">Nama Pelamar</th>
                             <th title="Field #1">Posisi</th>
                             <th title="Field #3">Pendidikan</th>
@@ -115,9 +114,6 @@ kt-menu__item--open kt-menu__item--here
                     <tbody id="myTable">
                         @foreach ($data as $i)
                             <tr>
-                                <td>
-                                    {{ $i->nama_perusahaan }}
-                                </td>
                                 <td>
                                     {{ $i->nama_lengkap }}
                                 </td>

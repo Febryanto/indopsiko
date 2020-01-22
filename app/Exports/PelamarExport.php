@@ -14,8 +14,8 @@ class PelamarExport implements FromCollection
     public function collection()
     {
         return $data = DB::table('pelamar as a')
-        ->leftjoin('klien as b','b.id_klien','=','a.id_perusahaan')
-        ->select('b.nama_perusahaan','a.posisi','a.nama_lengkap','a.nik','a.npwp','a.pendidikan','a.email','a.no_hp','a.sim','a.tempat_lahir','a.tanggal_lahir','a.jenis_kelamin','a.nama_ibu_kandung','a.cv','a.created_at','a.updated_at')
+
+        ->select('a.posisi','a.nama_lengkap','a.nik','a.npwp','a.pendidikan','a.email','a.no_hp','a.sim','a.tempat_lahir','a.tanggal_lahir','a.jenis_kelamin','a.nama_ibu_kandung','a.cv','a.created_at','a.updated_at')
         ->get();
     }
 }

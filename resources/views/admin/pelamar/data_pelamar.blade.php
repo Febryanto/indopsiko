@@ -20,7 +20,6 @@
 		<thead>
 			<tr>
 				<th>No</th>
-				<th>Perusahaan</th>
 				<th>Posisi</th>
 				<th>nama_lengkap</th>
                 <th>nik</th>
@@ -39,7 +38,6 @@
 			@foreach($data as $p)
 			<tr>
 				<td>{{ $i++ }}</td>
-				<td>{{$p->nama_perusahaan}}</td>
 				<td>{{$p->posisi}}</td>
 				<td>{{$p->nama_lengkap}}</td>
 				<td>{{$p->nik}}</td>
@@ -55,7 +53,6 @@
 				<td>{{$p->sim}}</td>
 				<td>{{$p->nama_ibu_kandung}}</td>
 				<td><a href="{{route('getDownload.pelamar', $p->id_pelamar)}}" title="Download CV"><i class="fa fa-download"></i>{{$p->cv}}</a></td>
-
 			</tr>
 			@endforeach
 		</tbody>

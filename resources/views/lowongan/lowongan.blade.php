@@ -96,14 +96,6 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="Pearusahaan">Perusahaan</label>
-                                        <select class="form-control" name="id_perusahaan" required>
-                                            @foreach ($klien as $u)
-                                            <option value="{{$u->id_klien}}">{{$u->nama_perusahaan}}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
                                         <label for="Posisi">Posisi</label>
                                         <select class="form-control" name="posisi" required>
                                             <option value="Ob">Ob</option>
