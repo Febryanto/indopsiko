@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'Frontcontroller@index')->name('fronthome');
+Route::get('/', 'FrontController@index')->name('fronthome');
 Route::get('/announce', 'FrontController@getPengumuman')->name('getPengumuman');
 Route::get('/dtlPengumuman/{pengumuman}', 'FrontController@getDetailPengumuman')->name('pengumuman.dtl');
 Route::get('/client', 'FrontController@getKlien')->name('getKlien');
