@@ -5,12 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use App\Klien;
+use App\Proper;
 use App\Pelamar;
 use App\Pengumuman;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Session;
 class FrontController extends Controller
 {
+    public function index()
+    {
+        $data = Proper::all();
+        $galeri = DB::table('tbl_galeri')->get();
+        return view('dashboard.home',compact('data','galeri'));
+    }
     public function getPengumuman()
     {
         $data = Pengumuman::all();
@@ -62,7 +69,6 @@ class FrontController extends Controller
                 'jenis_kelamin' => $request->jenis_kelamin,
                 'npwp' => $request->npwp,
                 'pendidikan' => $request->pendidikan,
-                'id_perusahaan' => $request->id_perusahaan,
                 'posisi' => $request->posisi,
                 'sim' => $request->sim,
                 'no_hp' => $request->no_hp,
@@ -80,7 +86,6 @@ class FrontController extends Controller
                 'jenis_kelamin' => $request->jenis_kelamin,
                 'npwp' => $request->npwp,
                 'pendidikan' => $request->pendidikan,
-                'id_perusahaan' => $request->id_perusahaan,
                 'posisi' => $request->posisi,
                 'sim' => $request->sim,
                 'no_hp' => $request->no_hp,

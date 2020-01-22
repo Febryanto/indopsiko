@@ -3,17 +3,20 @@
 <div class="kt-body kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch" id="kt_body">
 	<div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
 	{{-- begin:: Content --}}
-		{{-- begin banner --}}
-        <<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('assets/images/banner/fix.jpeg');">
+        {{-- begin banner --}}
+        @foreach ($data as $i)
+
+        <<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('assets/images/logos/{{$i->logo}}');">
             <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
                 <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">INDOPSIKO INDONESIA</h1>
                 <h5 uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">HUMAN RESOURCE DEVELOPMENT.</h5>
             </div>
         </div>
-
                 </div>
     </div>
 </div>
+
+@endforeach
         {{-- end banner --}}
                 {{-- begin galeri & profil --}}
 				<div class="row">
@@ -27,36 +30,20 @@
 								</div>
 							</div>
 							<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
-								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+								<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img class="d-block w-100" width="450px" height="300px" src="/assets/images/galerina/galer1.jpg" alt="First slide">
-										</div>
-										<div class="carousel-item">
-											<img class="d-block w-100" width="450px" height="300px" src="/assets/images/galerina/galer2.jpg" alt="Second slide">
-										</div>
-										<div class="carousel-item">
-										    <img class="d-block w-100" width="450px" height="450px" src="/assets/images/galerina/galer3.jpeg" alt="Third slide">
-										</div>
-										<div class="carousel-item">
-											<img class="d-block w-100" width="450px" height="450px" src="/assets/images/galerina/galer4.jpeg" alt="fourth slide">
-                                        </div>
-                                        <div class="carousel-item">
-											<img class="d-block w-100" width="450px" height="450px" src="/assets/images/galerina/galer5.jpeg" alt="fifth slide">
-                                        </div>
-                                        <div class="carousel-item">
-											<img class="d-block w-100" width="450px" height="450px" src="/assets/images/galerina/tambahan.jpg" alt="fifth slide">
-                                        </div>
-									</div>
-									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-										<span class="sr-only">Previous</span>
-									</a>
-									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-										<span class="carousel-control-next-icon" aria-hidden="true"></span>
-										<span class="sr-only">Next</span>
-									</a>
+                                    <ul class="uk-slideshow-items">
+                                        @foreach ($galeri as $g)
+
+                                        <li>
+                                            <img src="{{url('assets/images/galeri/'.$g->foto)}}" alt="" uk-cover>
+                                        </li>
+                                        @endforeach
+                                    </ul>
+
+                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
                                 </div>
                             </div>
 						</div>

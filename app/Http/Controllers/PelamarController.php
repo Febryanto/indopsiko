@@ -21,7 +21,6 @@ class PelamarController extends Controller
     public function index()
     {
         $data = DB::table('pelamar as a')
-        ->leftjoin('klien as b','b.id_klien','=','a.id_perusahaan')
         ->paginate(15);
 
         return view('admin.pelamar.pelamar',compact('data'));
@@ -57,9 +56,9 @@ class PelamarController extends Controller
     public function show($id)
     {
         $data = DB::table('pelamar as a')
-        ->leftjoin('klien as b','b.id_klien','=','a.id_perusahaan')
+
         ->where('a.id_pelamar',$id)
-        ->select('a.email as email_lamar','a.*','b.*')
+        ->select('a.email as email_lamar','a.*')
         ->get();
         return view('admin.pelamar.detail_pelamar',compact('data'));
     }
@@ -120,8 +119,7 @@ class PelamarController extends Controller
     public function getPdf()
     {
         $data = DB::table('pelamar as a')
-        ->leftjoin('klien as b','b.id_klien','=','a.id_perusahaan')
-        ->select('a.id_pelamar','b.nama_perusahaan','a.posisi','a.nama_lengkap','a.nik','a.npwp','a.pendidikan','a.email','a.no_hp','a.sim','a.tempat_lahir','a.tanggal_lahir','a.jenis_kelamin','a.nama_ibu_kandung','a.cv','a.created_at','a.updated_at')
+        ->select('a.id_pelamar','a.posisi','a.nama_lengkap','a.nik','a.npwp','a.pendidikan','a.email','a.no_hp','a.sim','a.tempat_lahir','a.tanggal_lahir','a.jenis_kelamin','a.nama_ibu_kandung','a.cv','a.created_at','a.updated_at')
         ->get();
         $pdf = PDF::loadview('admin.pelamar.data_pelamar',['data'=>$data])->setPaper('legal', 'landscape');;
     	return $pdf->stream();

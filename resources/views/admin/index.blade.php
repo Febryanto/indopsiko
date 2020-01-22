@@ -141,6 +141,11 @@ License: You must have a valid license purchased only from themeforest(the above
                 <a href="/proper" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-database"></i>
                     <span class="kt-menu__link-text">Profil</span></a>
             </li>
+            <li class="kt-menu__item @yield('aktif_galeri')" aria-haspopup="true" >
+                <a  href="/galeri" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-cube"></i>
+                    <span class="kt-menu__link-text">Galeri</span>
+                </a>
+            </li>
             <li class="kt-menu__item @yield('aktif_klien')" aria-haspopup="true" >
                 <a  href="/klien" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-cube"></i>
                     <span class="kt-menu__link-text">Klien</span>
