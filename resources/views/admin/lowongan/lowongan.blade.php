@@ -135,7 +135,7 @@ kt-menu__item--open kt-menu__item--here
                             <th title="Field #2">Nama Perusahaan</th>
                             <th title="Field #3">Jabatan</th>
                             <th title="Field #3">Status Lowongan</th>
-                            <th title="Field #4">Opsi</th>
+                            <th title="Field #4">Keterangan</th>
                         </tr>
                     </thead>
                     <tbody id="myTable">

@@ -232,7 +232,7 @@
                             <th title="Field #2">Nama Perusahaan</th>
                             <th title="Field #3">Jabatan</th>
                             <th title="Field #3">Status Lowongan</th>
-                            <th title="Field #4">Opsi</th>
+                            <th title="Field #4">Keterangan</th>
                         </tr>
                     </thead>
                     <tbody id="myTable">
@@ -287,15 +287,6 @@ https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.j
       });
       var posisi = $('input[name="posisi"]:checked').val();
 
-      $("#other").hide();
-      $("#apply input" ).change(function() {
-        var val = $("input[name=posisi]:checked", "#apply").val();
-         if (val == "Other") {
-           $("#other").show();
-         } else {
-           $("#other").hide();
-         }
-       });
 
     });
     </script>

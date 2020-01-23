@@ -67,8 +67,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
 		{{--end::Page Vendors --}}
 
-
-		{{--END:MAPS--}}	</body>
+        {{--END:MAPS--}}
+    </body>
 
 	{{-- end::Body --}}
 </html>
