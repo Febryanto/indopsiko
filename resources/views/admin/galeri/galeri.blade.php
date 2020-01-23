@@ -113,7 +113,7 @@ kt-menu__item--open kt-menu__item--here
                     <thead>
                         <tr>
                             <th title="Field #1">Foto Galeri</th>
-                            <th title="Field #3">Opsi</th>
+                            <th title="Field #3">Keterangan</th>
                         </tr>
                     </thead>
                     <tbody id="myTable">

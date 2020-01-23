@@ -141,7 +141,7 @@ kt-menu__item--open kt-menu__item--here
                             <th title="Field #1">Judul</th>
                             <th title="Field #1">Subjudul</th>
                             <th title="Field #3">Status Berita</th>
-                            <th title="Field #5">Opsi</th>
+                            <th title="Field #5">Keterangan</th>
 
                         </tr>
                     </thead>

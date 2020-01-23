@@ -5,8 +5,10 @@
 				<div class="row">
 					<div class="col-lg-7">
 						<div class="kt-footer__section">
-                            <div class="mapouter"><div class="gmap_canvas"><iframe width="650" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=indopsiko&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:350px;width:650px;}.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:650px;}</style></div>
-						</div>
+                            <div class="kt-portlet kt-portlet--height-fluid kt-widget15">
+                                    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="300px;" id="gmap_canvas" src="https://maps.google.com/maps?q=indopsiko&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;}.gmap_canvas {overflow:hidden;background:none!important;}</style></div>
+                            </div>
+                        </div>
 					</div>
 					<div class="col-lg-4">
 						<div class="kt-footer__section">
