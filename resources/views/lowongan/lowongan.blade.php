@@ -186,7 +186,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-3 col-form-label">Alamat</label>
+                                    <label class="col-3 col-form-label">Alamat Domisili</label>
                                     <div class="col-9">
                                         <textarea name="alamat" cols="70" rows="5"></textarea>
                                     </div>
