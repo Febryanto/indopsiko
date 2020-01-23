@@ -132,8 +132,8 @@ kt-menu__item--open kt-menu__item--here
                 {{-- <table class="kt-datatable" id="html_table" width="100%"> --}}
                     <thead>
                         <tr>
-                            <th title="Field #2">Nama Perusahaan</th>
-                            <th title="Field #3">Jabatan</th>
+                            <th title="Field #1">Nama Perusahaan</th>
+                            <th title="Field #2">Jabatan</th>
                             <th title="Field #3">Status Lowongan</th>
                             <th title="Field #4">Keterangan</th>
                         </tr>

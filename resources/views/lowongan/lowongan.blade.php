@@ -252,8 +252,8 @@
                                     @endif
                                 </td>
                                 <td>
-                                    <a href="{{ route('getLowonganbyid',$i->id_lowongan) }}" class="btn btn-sm btn-outline-warning btn-icon btn-icon-sm" title="Edit"><i class="fa fa-pen"></i></a>
-                                </form></td>
+                                    {!! $i->deskripsi !!}
+                                </td>
 
 
                             </tr>
