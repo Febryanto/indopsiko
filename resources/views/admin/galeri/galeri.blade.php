@@ -113,7 +113,6 @@ kt-menu__item--open kt-menu__item--here
                     <thead>
                         <tr>
                             <th title="Field #1">Foto Galeri</th>
-                            <th title="Field #2">Deskripsi</th>
                             <th title="Field #3">Opsi</th>
                         </tr>
                     </thead>
@@ -121,16 +120,13 @@ kt-menu__item--open kt-menu__item--here
                         @foreach ($data as $i)
                             <tr>
                                 <td class="kt-datatable__cell">
-                                <img src="{{url('assets/images/galeri/'. $i->foto)}}" width="100px" alt="image" style="margin-right: 10px;" />
-                            </td>
-                            <td class="kt-datatable__cell">
-                                {{$i->desc}}
+                                <img src="{{url('/assets/images/galeri/'. $i->foto)}}" width="100px" alt="image" style="margin-right: 10px;" />
                             </td>
                                 <td class="kt-datatable__cell"><form action="{{ route('galeri.destroy', $i->id_galeri) }}" method="post">
                                     {{ csrf_field() }}
                                    {{ method_field('DELETE') }}
                                     {{--  <a href="{{route('galeri.show', $i->id_galeri)}}" class="btn btn-sm btn-outline-info btn-icon btn-icon-sm" title="Detail"><i class="fa fa-info"></i></a>  --}}
-                                    <a href="{{ route('galeri.edit',$i->id_galeri) }}" class="btn btn-sm btn-outline-warning btn-icon btn-icon-sm" title="Edit"><i class="fa fa-pen"></i></a>
+                                    {{--  <a href="{{ route('galeri.edit',$i->id_galeri) }}" class="btn btn-sm btn-outline-warning btn-icon btn-icon-sm" title="Edit"><i class="fa fa-pen"></i></a>  --}}
                                     <button class="btn btn-sm btn-outline-danger btn-icon btn-icon-sm" type="submit" title="Hapus" onclick="return confirm('Yakin ingin menghapus data?')"><i class="fa fa-trash"></i></button>
                                 </form></td>
                             </tr>
