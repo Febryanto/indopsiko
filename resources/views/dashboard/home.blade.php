@@ -9,7 +9,7 @@
                       <div class="carousel-inner">
                         @foreach ($data as $i)
                         <div class="carousel-item active">
-                              <img class="d-block w-100" height="200px" src="{{url('assets/images/logos/'.$i->logo)}}" alt="First slide">
+                              <img class="d-block w-100" height="200px" src="assets/images/banner/banner.jpeg" alt="First slide">
                         </div>
                         @endforeach
                       </div>
@@ -21,32 +21,79 @@
         {{-- end banner --}}
                 {{-- begin galeri & profil --}}
 				<div class="row">
-					<div class="col-lg-6">
+                    <div class="col-lg-6">
 						<div class="kt-portlet kt-portlet--height-fluid">
 							<div class="kt-portlet__head">
 								<div class="kt-portlet__head-label">
 									<h3 class="kt-portlet__head-title">
-										GALERI
+										Galeri
 									</h3>
 								</div>
 							</div>
-							<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
-								<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
-
-                                    <ul class="uk-slideshow-items">
-                                        @foreach ($galeri as $g)
-
-                                        <li>
-                                            <img src="{{url('assets/images/galeri/'.$g->foto)}}" alt="" uk-cover>
-                                        </li>
-                                        @endforeach
-                                    </ul>
-
-                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-
-                                </div>
-                            </div>
+							<div class="kt-portlet__body">
+								<div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="4" class=""></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="5" class=""></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="6" class=""></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="7" class=""></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" width="450px" height="450px" src="assets/images/galeri/galeri1.jpg" alt="First slide">
+											<div class="carousel-caption d-none d-md-block">
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" width="450px" height="450px" src="assets/images/galeri/galeri2.jpg" alt="Second slide">
+											<div class="carousel-caption d-none d-md-block">
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" width="450px" height="450px" src="assets/images/galeri/galeri3.jpeg" alt="Third slide">
+											<div class="carousel-caption d-none d-md-block">
+											</div>
+                                        </div>
+                                        <div class="carousel-item">
+											<img class="d-block w-100" width="450px" height="450px" src="assets/images/galeri/galeri4.jpeg" alt="fourth slide">
+											<div class="carousel-caption d-none d-md-block">
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" width="450px" height="450px" src="assets/images/galeri/galeri5.jpeg" alt="Fifth slide">
+											<div class="carousel-caption d-none d-md-block">
+											</div>
+                                        </div>
+                                        <div class="carousel-item">
+											<img class="d-block w-100" width="450px" height="450px" src="assets/images/galeri/galeri6.jpg" alt="Third slide">
+											<div class="carousel-caption d-none d-md-block">
+											</div>
+                                        </div>
+                                        <div class="carousel-item">
+											<img class="d-block w-100" width="450px" height="450px" src="assets/images/galeri/galeri7.jpeg" alt="fourth slide">
+											<div class="carousel-caption d-none d-md-block">
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" width="450px" height="450px" src="assets/images/galeri/galeri8.jpg" alt="Fifth slide">
+											<div class="carousel-caption d-none d-md-block">
+											</div>
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 
@@ -59,22 +106,11 @@
                                             PROFIL
                                         </h3>
                                     </div>
-                                    <div class="kt-portlet__head-toolbar">
-                                        <ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-brand" role="tablist">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" data-toggle="tab" role="tab">
-
-                                                </a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="kt-portlet kt-portlet--height-fluid kt-widget19">
                                     <div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
-                                        <div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(/assets/images/bg/bg-3.png)">
+                                        <div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(/assets/images/galeri/galeri1.jpg)">
                                             <h3 class="kt-widget19__title kt-font-light">
-
                                             </h3>
                                         </div>
                                         <div class="kt-widget19__wrapper">
