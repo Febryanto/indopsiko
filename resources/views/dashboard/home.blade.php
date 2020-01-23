@@ -1,21 +1,23 @@
 @extends('beranda')
 @section('homecontent')
-<div class="kt-body kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch" id="kt_body">
-	<div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
-	{{-- begin:: Content --}}
-        {{-- begin banner --}}
-        @foreach ($data as $i)
 
-        <<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('assets/images/logos/{{$i->logo}}');">
-            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-                <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;"><span style="font-weight:bold;color:red;font-size:50px;">INDOPSIKO INDONESIA</span></h1>
-                <h2 uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;"><span style="font-weight:bold;color:red;">HUMAN RESOURCE DEVELOPMENT.</span></h2>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="kt-portlet kt-portlet--height-fluid kt-widget19">
+            <div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
+                <div id="carouselExampleSlidesOnly" class="carousel slide pointer-event" data-ride="carousel">
+                      <div class="carousel-inner">
+                        @foreach ($data as $i)
+                        <div class="carousel-item active">
+                              <img class="d-block w-100" height="200px" src="{{url('assets/images/logos/'.$i->logo)}}" alt="First slide">
+                        </div>
+                        @endforeach
+                      </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-@endforeach
         {{-- end banner --}}
                 {{-- begin galeri & profil --}}
 				<div class="row">
