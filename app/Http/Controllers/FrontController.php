@@ -52,8 +52,8 @@ class FrontController extends Controller
     {
 
         $id_lowongan = $request->id_lowongan;
-        $file = $request->file('cv');
-        if ($file!='') {
+        $posisi2 = $request->posisi2;
+        if ($posisi2!='') {
             $file = $request->file('cv');
             $extension=$file->getClientOriginalExtension();
             $destinationPath = 'assets/dokumen';
@@ -69,7 +69,7 @@ class FrontController extends Controller
                 'jenis_kelamin' => $request->jenis_kelamin,
                 'npwp' => $request->npwp,
                 'pendidikan' => $request->pendidikan,
-                'posisi' => $request->posisi,
+                'posisi' => $request->posisi2,
                 'sim' => $request->sim,
                 'no_hp' => $request->no_hp,
                 'email' => $request->email,

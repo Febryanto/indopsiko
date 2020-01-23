@@ -39,8 +39,8 @@
                 </h3>
             </div>
             <div class="kt-portlet__head-toolbar">
-                <a href="" class="btn btn-danger btn-md  btn-bold" data-toggle="modal" data-target="#tambah">
-                    Lamar
+                <a href="" class="btn btn-danger btn-lg btn-bold" id="blink" data-toggle="modal" data-target="#tambah">
+                    <i class="fa fa-business-time"> Lamar</i>
                 </a>
                     {{--  <!-- Modal -->  --}}
             <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="tambahLabel" aria-hidden="true">
@@ -50,7 +50,7 @@
                       <h5 class="modal-title" id="tambahLabel">Apply CV Anda</h5>
 
                     </div>
-                    <form action="{{ route('apply.store') }}" name="apply" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('apply.store') }}" name="apply" id="apply" method="POST" enctype="multipart/form-data">
                     <div class="modal-body">
                         <style>
                             .error {
@@ -70,7 +70,7 @@
                                         <input type="date" name="tanggal_lahir" class="form-control" placeholder="Tanggal Lahir">
                                     </div>
                                     <div class="form-group">
-                                        <label for="Pendidikan">Pendidikan</label>
+                                            <label for="Pendidikan">Pendidikan</label>
                                         <select class="form-control" name="pendidikan">
                                             <option value="SD">SD</option>
                                             <option value="SMP">SMP</option>
@@ -159,6 +159,11 @@
                                                     <input type="radio" name="posisi" value="Manager"> Manager
                                                     <span></span>
                                                 </label>
+                                                <label class="kt-radio">
+                                                    <input type="radio" name="posisi" value="Other"> Lainnya
+                                                    <span></span>
+                                                </label>
+                                                <input type="text" id="other" name="posisi2" placeholder="Sebutkan">
                                             </div>
                                         </div>
                                     </div>
@@ -178,6 +183,12 @@
                                       <div class="form-group">
                                         <label for="cv">CV</label>
                                         <input type="file" name="cv" class="form-control" placeholder="CV">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-3 col-form-label">Alamat</label>
+                                    <div class="col-9">
+                                        <textarea name="alamat" cols="70" rows="5"></textarea>
                                     </div>
                                 </div>
 
@@ -275,7 +286,28 @@ https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.j
         });
       });
       var posisi = $('input[name="posisi"]:checked').val();
+
+      $("#other").hide();
+      $("#apply input" ).change(function() {
+        var val = $("input[name=posisi]:checked", "#apply").val();
+         if (val == "Other") {
+           $("#other").show();
+         } else {
+           $("#other").hide();
+         }
+       });
+
     });
+    </script>
+
+    <script>
+        $(document).ready(function blink(){
+
+                $('#blink').fadeOut(500).fadeIn(500, blink);
+
+
+
+        });
     </script>
     <script type="text/javascript">
         $(function() {
@@ -298,7 +330,7 @@ https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.j
                 },
                 nik: {
                     required:true,
-                    minlength:13,
+                    maxlength:16,
                     number:true,
                 },
                 npwp: {
@@ -323,6 +355,7 @@ https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.j
                     email:true,
                 },
                 nama_ibu_kandung: "required",
+                alamat:"required",
               },
               // Specify validation error messages
               messages: {
@@ -336,7 +369,7 @@ https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.j
                   filesize: "ukuran file maksimum 2 MB"
                 },
                 nik: {required: "Masukan Nik",
-                     minlength: "Masukan Minimal 13 digit angka",
+                     maxlength: "Masukan Minimal 13 digit angka",
                      number: "Hanya Boleh Masukan Angka",
                 },
                 npwp: {required: "Masukan NPWP",
@@ -357,7 +390,8 @@ https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.j
                     required: "Masukan Email",
                     email: "email tidak valid",
                 },
-                nama_ibu_kandung: "Masukan Nama Ibu Kandung"
+                nama_ibu_kandung: "Masukan Nama Ibu Kandung",
+                alamat: "Masukan alamat sesuai domisili"
               },
               // Make sure the form is submitted to the destination defined
               // in the "action" attribute of the form when valid

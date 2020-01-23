@@ -53,8 +53,8 @@
 <link rel="stylesheet" href="/assets/css/uikit/css/uikit.min.css" />
 
 <!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+<script src="/assets/uikit/js/uikit.min.js"></script>
+<script src="/assets/uikit/js/uikit-icons.min.js"></script>
 
 		<!--end:: Global Optional Vendors -->
 
