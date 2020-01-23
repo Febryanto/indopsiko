@@ -8,11 +8,10 @@
 
         <<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('assets/images/logos/{{$i->logo}}');">
             <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-                <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">INDOPSIKO INDONESIA</h1>
-                <h5 uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">HUMAN RESOURCE DEVELOPMENT.</h5>
+                <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;"><span style="font-weight:bold;color:blue;font-size:50px;">INDOPSIKO INDONESIA</span></h1>
+                <h2 uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;"><span style="font-weight:bold;">HUMAN RESOURCE DEVELOPMENT.</span></h2>
             </div>
         </div>
-                </div>
     </div>
 </div>
 
