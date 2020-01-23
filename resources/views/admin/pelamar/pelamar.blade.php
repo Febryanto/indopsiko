@@ -105,9 +105,9 @@ kt-menu__item--open kt-menu__item--here
                     <thead>
                         <tr>
                             <th title="Field #1">Nama Pelamar</th>
-                            <th title="Field #1">Posisi</th>
+                            <th title="Field #2">Posisi</th>
                             <th title="Field #3">Pendidikan</th>
-                            <th title="Field #5">Keterangan</th>
+                            <th title="Field #4">Keterangan</th>
 
                         </tr>
                     </thead>
