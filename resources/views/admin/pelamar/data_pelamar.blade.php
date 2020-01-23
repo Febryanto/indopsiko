@@ -31,6 +31,7 @@
                 <th>No Sim</th>
                 <th>Nama Ibu Kandung</th>
                 <th>CV</th>
+                <th>Alamat</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -52,7 +53,8 @@
 				<td>{{$p->no_hp}}</td>
 				<td>{{$p->sim}}</td>
 				<td>{{$p->nama_ibu_kandung}}</td>
-				<td><a href="{{route('getDownload.pelamar', $p->id_pelamar)}}" title="Download CV"><i class="fa fa-download"></i>{{$p->cv}}</a></td>
+                <td><a href="{{route('getDownload.pelamar', $p->id_pelamar)}}" title="Download CV"><i class="fa fa-download"></i>{{$p->cv}}</a></td>
+                <td>{{$p->alamat}}</td>
 			</tr>
 			@endforeach
 		</tbody>

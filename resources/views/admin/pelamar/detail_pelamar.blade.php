@@ -121,6 +121,10 @@ kt-menu__item--open kt-menu__item--here
                             <a href="{{route('getDownload.pelamar', $i->id_pelamar)}}" class="kt-widget__data">{{$i->cv}}</a>
                         </div>
                     </div>
+                    <div class="kt-widget__info">
+                        <span class="kt-widget__label">Alamat:</span>
+                        <span class="kt-widget__data">{{$i->alamat}}</span>
+                    </div>
                 </div>
     </div>
 @endforeach
