@@ -56,8 +56,8 @@ License: You must have a valid license purchased only from themeforest(the above
         {{-- end::Scrolltop --}}
         {{-- begin sticky panel --}}
         <ul class="kt-sticky-toolbar" style="margin-top: 30px;">
-             <li class="kt-sticky-toolbar__item kt-sticky-toolbar__item--danger" id="kt_sticky_toolbar_chat_toggler" data-toggle="kt-tooltip" title="" data-placement="left" data-original-title="Chat Example">
-                 <a  data-toggle="modal" data-target="#kt_chat_modal"><i class="flaticon2-chat-1" height:"50px"></i></a>
+             <li class="kt-sticky-toolbar__item kt-sticky-toolbar__item--danger" id="kt_sticky_toolbar_chat_toggler" data-toggle="kt-tooltip" title="" data-placement="left" data-original-title="Kontak Kami">
+                 <a  href="#kontak"><i class="flaticon2-chat-1" height:"50px"></i></a>
              </li>
          </ul>
          {{-- end sticky panel --}}
