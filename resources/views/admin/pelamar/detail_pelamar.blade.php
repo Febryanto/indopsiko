@@ -76,39 +76,39 @@ kt-menu__item--open kt-menu__item--here
                 </div>
                 <div class="kt-widget__body">
                     <div class="kt-widget__content">
-                        <div class="kt-widget__info">
+                        <div class="kt-widget__info row">
                             <span class="kt-widget__label">Nama Lengkap:</span>
                             <span class="kt-widget__data">{{$i->nama_lengkap}}</span>
                         </div>
-                        <div class="kt-widget__info">
+                        <div class="kt-widget__info row">
                             <span class="kt-widget__label">Nik:</span>
                             <span class="kt-widget__data">{{$i->nik}}</span>
                         </div>
-                        <div class="kt-widget__info">
+                        <div class="kt-widget__info row">
                             <span class="kt-widget__label">Npwp:</span>
                             <span class="kt-widget__data">{{$i->npwp}}</span>
                         </div>
-                        <div class="kt-widget__info">
+                        <div class="kt-widget__info row">
                             <span class="kt-widget__label">Pendidikan:</span>
                             <span class="kt-widget__data">{{$i->pendidikan}}</span>
                         </div>
-                        <div class="kt-widget__info">
+                        <div class="kt-widget__info row">
                             <span class="kt-widget__label">email:</span>
                             <span class="kt-widget__data">{{$i->email_lamar}}</span>
                         </div>
-                        <div class="kt-widget__info">
+                        <div class="kt-widget__info row">
                             <span class="kt-widget__label">No Handphone:</span>
                             <span class="kt-widget__data">{{$i->no_hp}}</span>
                         </div>
-                        <div class="kt-widget__info">
+                        <div class="kt-widget__info row">
                             <span class="kt-widget__label">No Sim:</span>
                             <span class="kt-widget__data">{{$i->sim}}</span>
                         </div>
-                        <div class="kt-widget__info">
+                        <div class="kt-widget__info row">
                             <span class="kt-widget__label">Tempat,Tanggal Lahir:</span>
                             <span class="kt-widget__data">{{$i->tempat_lahir}}, {{$i->tanggal_lahir}}</span>
                         </div>
-                        <div class="kt-widget__info">
+                        <div class="kt-widget__info row">
                             <span class="kt-widget__label">Jenis Kelamin:</span>
                             <span class="kt-widget__data">@if ($i->jenis_kelamin == 'L')
                                 Laki-Laki
@@ -116,16 +116,16 @@ kt-menu__item--open kt-menu__item--here
                                 Perempuan
                             @endif</span>
                         </div>
-                        <div class="kt-widget__info">
+                        <div class="kt-widget__info row">
                             <span class="kt-widget__label">Curriculum Vitae:</span>
                             <a href="{{route('getDownload.pelamar', $i->id_pelamar)}}" class="kt-widget__data">{{$i->cv}}</a>
                         </div>
-                        <div class="kt-widget__info">
+                        <div class="kt-widget__info row">
                             <span class="kt-widget__label">Alamat:</span>
                             <span class="kt-widget__data">{{$i->alamat}}</span>
                         </div>
                     </div>
-                </div>
+</
     </div>
 @endforeach
         </div>
