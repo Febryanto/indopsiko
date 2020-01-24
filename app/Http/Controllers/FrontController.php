@@ -27,6 +27,7 @@ class FrontController extends Controller
     {
         $data = DB::table('lowongan AS l')
         ->leftjoin('klien AS k','k.id_klien','=','l.id_klien')
+        ->select('l.*','k.id_klien','k.nama_perusahaan')
         ->paginate(15);
         $klien = Klien::all();
         // dd($data);
