@@ -74,6 +74,7 @@ class FrontController extends Controller
                 'sim' => $request->sim,
                 'no_hp' => $request->no_hp,
                 'email' => $request->email,
+                'alamat' => $request->alamat,
                 'created_by' => $request->nama,
             ]);
         }else{
@@ -91,6 +92,7 @@ class FrontController extends Controller
                 'sim' => $request->sim,
                 'no_hp' => $request->no_hp,
                 'email' => $request->email,
+                'alamat' => $request->alamat,
                 'created_by' => $request->nama,
             ]);
         }
