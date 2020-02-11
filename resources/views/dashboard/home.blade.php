@@ -121,7 +121,7 @@ Indopsiko- Dashboard
 </section>
 
 <section id="visitor">
-    <div class="container-fluid parallax text-center" style="min-height:280px; background-image:url('/assets/images/bg/37642.jpg');">
+    <div class="container-fluid parallax text-center" style="min-height:280px; background-image:url('/assets/images/bg/bg.jpg');">
         <div class="row">
             <div class="col-md mb-3 mt-3">
                 <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:green"><b>Visitor</b></h2>
@@ -161,27 +161,5 @@ Indopsiko- Dashboard
         </div>
     </div>
 </section>
-<section  class="parallax" style="min-height:350px; background-image:url('/assets/images/bg/banner3.jpg');">
-    <div class="container-fluid text-center" >
-        <div class="row">
-            <div class="col-md mb-3 mt-3">
-                <h2 id="kontak" class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:green"><b>Kontak</b></h2>
-            </div>
-        </div>
-        <div class="row text-justify pb-3">
-            <div class="col-md">
-            <div class="card">
-                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="300px;" id="gmap_canvas" src="https://maps.google.com/maps?q=indopsiko&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;}.gmap_canvas {overflow:hidden;background:none!important;}</style></div>
-                <div class="card-body">
-                  <h5 class="card-title wow bounce" data-wow-duration="1s" animation-duration="0.25s">Kantor Pusat</h5>
-                  <p class="card-text">Jl. Raya Pahlawan Revolusi No. 59
-                    Pondok Bambu Kec. Duren Sawit
-                    Kota Jakarta Timur - DKI Jakarta (13430)
-                    </p>
-                </div>
-              </div>
-          </div>
-        </div>
-    </div>
-</section>
+
 @endsection
