@@ -30,18 +30,18 @@ Indopsiko- Dashboard
 <div class="container-fluid text-center parallax" style="min-height:280px; background-image:url('/assets/images/bg/bg-1.jpg');">
     <div class="row">
         <div class="col-md mb-3 mt-3">
-            <h2 style="color:green" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Tentang Kami</b></h2>
+            <h2 style="color:#0eb493" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Tentang Kami</b></h2>
         </div>
     </div>
     <div class="row text-justify">
         <div class="col-md-4 animated bounce slow">
-            <h3><i class="fas fa-users" style="color:green;"></i> Profil</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
+            <h3><i class="fas fa-users" style="color:#0eb493;"></i> Profil</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
         </div>
         <div class="col-md-4 animated bounce fast">
-            <h3><i class="fas fa-award" style="color:green;"></i> Visi</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
+            <h3><i class="fas fa-award" style="color:#0eb493;"></i> Visi</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
         </div>
         <div class="col-md-4 animated bounce faster">
-            <h3><i class="fas fa-crosshairs" style="color:green;"></i> Misi</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
+            <h3><i class="fas fa-crosshairs" style="color:#0eb493;"></i> Misi</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
         </div>
     </div>
 </div>
@@ -51,7 +51,7 @@ Indopsiko- Dashboard
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 text-center my-3">
-                <h2 class="mb-4 wow slideInLeft" data-wow-duration="0.4s" animation-duration="0.25s" style="color:green;"><b>Galeri</b></h2>
+                <h2 class="mb-4 wow slideInLeft" data-wow-duration="0.4s" animation-duration="0.25s" style="color:#0eb493;"><b>Galeri</b></h2>
             </div>
         </div>
     </div>
@@ -91,7 +91,7 @@ Indopsiko- Dashboard
     <div class="container-fluid bg-light">
         <div class="row text-center">
             <div class="col-md mb-3 mt-3">
-                <h2 class="wow bounce" data-wow-duration="0.5s" animation-duration="0.25s" style="color:green"><b>Klien</b></h2>
+                <h2 class="wow bounce" data-wow-duration="0.5s" animation-duration="0.25s" style="color:#0eb493"><b>Klien</b></h2>
             </div>
         </div>
         <div class="row py-3 my-3">
@@ -124,7 +124,7 @@ Indopsiko- Dashboard
     <div class="container-fluid parallax text-center" style="min-height:280px; background-image:url('/assets/images/bg/bg.jpg');">
         <div class="row">
             <div class="col-md mb-3 mt-3">
-                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:green"><b>Visitor</b></h2>
+                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Visitor</b></h2>
             </div>
         </div>
         <div class="row">
@@ -142,20 +142,20 @@ Indopsiko- Dashboard
     <div class="container-fluid text-center" style="min-height:350px;">
         <div class="row">
             <div class="col-md mb-3 mt-3 bg-light">
-                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:green"><b>Service</b></h2>
+                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Service</b></h2>
             </div>
             <div class="row py-2 ml-2 mr-2 text-justify">
                 <div class="col-md wow bounce" data-wow-duration="0.5s" animation-duration="0.25s">
-                    <h3><i class="fas fa-file-contract" style="color:green;"></i> Outsourcing</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
+                    <h3><i class="fas fa-file-contract" style="color:#0eb493;"></i> Outsourcing</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
                 </div>
                 <div class="col-md wow bounce" data-wow-duration="0.7s" animation-duration="0.25s">
-                    <h3><i class="fas fa-chart-area" style="color:green;"></i> Psikotest</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
+                    <h3><i class="fas fa-chart-area" style="color:#0eb493;"></i> Psikotest</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
                 </div>
                 <div class="col-md wow bounce" data-wow-duration="0.8s" animation-duration="0.25s">
-                    <h3><i class="fas fa-id-card" style="color:green;"></i> Recruitment</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
+                    <h3><i class="fas fa-id-card" style="color:#0eb493;"></i> Recruitment</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
                 </div>
                 <div class="col-md wow bounce" data-wow-duration="0.9s" animation-duration="0.25s"	>
-                    <h3><i class="fas fa-recycle" style="color:green;"></i> Motivation Training</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
+                    <h3><i class="fas fa-recycle" style="color:#0eb493;"></i> Motivation Training</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
                 </div>
             </div>
         </div>
