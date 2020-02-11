@@ -3,7 +3,7 @@
     <div class="container-fluid text-center" >
         <div class="row">
             <div class="col-md mb-3 mt-3">
-                <h2  class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:green"><b>Kontak</b></h2>
+                <h2  class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Kontak</b></h2>
             </div>
         </div>
         <div class="row text-justify pb-3">
@@ -42,7 +42,7 @@
 					<span class="ml-5"><i class="fab fa-chrome"></i> simpeg-indopsiko.com</span>
 				</div>
 			</div>
-			<div class="row bg-success text-light text-center">
+			<div class="row text-light text-center" style="background-color:#0eb493;">
 				<div class="col-md mt-3"><p>Copyright by @Indopsiko</p></div>
 			</div>
 		</div>

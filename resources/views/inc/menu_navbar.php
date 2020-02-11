@@ -1,4 +1,4 @@
-<nav id="scroll-ku" class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+<nav id="scroll-ku" class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#0eb493;">
 		<div class="container">
 			<a class="navbar-brand" href="#banner">
 				<img src="/assets/images/logos/logo.png" alt="Logo"> PT.Indopsiko Indonesia
