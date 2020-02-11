@@ -1,0 +1,39 @@
+.counter
+{
+    background-color: #eaecf0;
+    text-align: center;
+}
+.counter-count
+{
+    font-size: 28px;
+    background-color: #00b3e7;
+    border-radius: 50%;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    line-height: 120px;
+    width: 120px;
+    height: 120px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+.parallax{
+    
+    /* Set a specific height */
+ 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.employee-p,.customer-p,.order-p,.design-p
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: #000000;
+    line-height: 34px;
+}
