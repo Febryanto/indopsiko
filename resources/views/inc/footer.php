@@ -27,16 +27,16 @@
 		<div class="container-fluid">
 			<div class="row bg-light text-justify parallax" style="background-image:url('/assets/images/bg/banner1.jpg');">
 				<div class="col-md-4 py-3">
-					<h5 class="ml-3">PT. Indopsiko Indonesia</h5><p class="ml-3">Pada tanggal 04 Maret 1994, Gunarto Gunotalijendro, SH, MM, mendirikan sebuah perusahaan yang bergerak dalam bidang Pengelolan dan Pemberdayaan Sumber Daya Manusia yakni PT. INDOPSIKO INDONESIA . Dalam perjalanan waktu IPI menjadi perusahaan yang handal dengan staff-staff ahli di bidangnya dan management yang mendukung dan menerapkan system management mutu</p>
+					<h5 class="ml-3 text-center" style="color:#0eb493">PT. Indopsiko Indonesia</h5><p class="ml-3">Pada tanggal 04 Maret 1994, Gunarto Gunotalijendro, SH, MM, mendirikan sebuah perusahaan yang bergerak dalam bidang Pengelolan dan Pemberdayaan Sumber Daya Manusia yakni PT. INDOPSIKO INDONESIA . Dalam perjalanan waktu IPI menjadi perusahaan yang handal dengan staff-staff ahli di bidangnya dan management yang mendukung dan menerapkan system management mutu</p>
 				</div>
 				<div class="col-md-4 text-justify py-3">
-					<h5 class="text-center">Media Sosial</h5>
+					<h5 class="text-center" style="color:#0eb493">Media Sosial</h5>
 					<span class="ml-5"><i class="fab fa-instagram"></i> @indopsiko</span><br>
 					<span class="ml-5"><i class="fab fa-facebook"></i> @indopsiko</span><br>
 					<span class="ml-5"><i class="fab fa-twitter-square"></i> @indopsiko</span>
 				</div>
 				<div class="col-md-4 text-justify py-3">
-					<h5 class="text-center">Link Terkait</h5>
+					<h5 class="text-center" style="color:#0eb493">Link Terkait</h5>
 					<span class="ml-5"><i class="fab fa-firefox"></i> www.ipl-express.com</span><br>
 					<span class="ml-5"><i class="fab fa-internet-explorer"></i> www.garuda-escamas.com</span><br>
 					<span class="ml-5"><i class="fab fa-chrome"></i> simpeg-indopsiko.com</span>
