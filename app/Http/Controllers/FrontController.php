@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+
 use DB;
 use App\Klien;
+use App\Berita;
 use App\Proper;
 use App\Pelamar;
 use App\Pengumuman;
@@ -18,10 +21,17 @@ class FrontController extends Controller
         $galeri = DB::table('tbl_galeri')->get();
         return view('dashboard.home',compact('data','galeri'));
     }
-    public function getPengumuman()
+    
+    public function getBerita()
     {
-        $data = Pengumuman::all();
-        return view('pengumuman.pengumuman',compact('data'));
+        $data = Berita::paginate(15);
+        return view('berita.berita',compact('data'));
+    }
+    
+    public function dtlBerita($id)
+    {
+        $data = Berita::where('id_berita',$id)->get();
+        return view('berita.dtlberita',compact('data'));
     }
     public function getLowongan()
     {
