@@ -6,14 +6,14 @@ Indopsiko- Dashboard
 <section class="banner" id="banner">
     <div id="carouselExampleInterval" class="carousel slide mt-3" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active" data-interval="9000">
+          <div class="carousel-item active" data-interval="10000">
             <img src="/assets/images/banner/banner.jpeg" class="d-block w-100" alt="gambar">
           </div>
           <div class="carousel-item" data-interval="2000">
-            <img src="/assets/images/banner/banner1.jpeg" class="d-block w-100" alt="gambar">
+            <img src="/assets/images/banner/banner.jpeg" class="d-block w-100" alt="gambar">
           </div>
           <div class="carousel-item">
-            <img src="/assets/images/banner/banner2.jpeg" class="d-block w-100" alt="gambar">
+            <img src="/assets/images/banner/banner.jpeg" class="d-block w-100" alt="gambar">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -60,28 +60,28 @@ Indopsiko- Dashboard
   <div class="container-fluid p-0">
     <div class="row no-gutters">
       <div class="col-lg-3 col-sm-6 col-xs-3">
-        <img class=" img-fluid wow rollIn" data-wow-duration="0.4s" animation-duration="0.25s" src="assets/images/galeri/galeri1.jpg" alt="">
+        <img class=" img-fluid wow rollIn" data-wow-duration="0.4s" animation-duration="0.25s" src="assets/images/galeri/galeri2.jpg" alt="">
       </div>
       <div class="col-lg-3 col-sm-6 col-xs-3">
-        <img class=" img-fluid wow shake" data-wow-duration="0.4s" animation-duration="0.25s" src="assets/images/galeri/galeri2.jpg" alt="">
+        <img class=" img-fluid wow shake" data-wow-duration="0.4s" animation-duration="0.25s" src="assets/images/galeri/galeri7.jpeg" alt="">
       </div>
       <div class="col-lg-3 col-sm-6 col-xs-3">
         <img class=" img-fluid wow bounce" data-wow-duration="0.5s" animation-duration="0.25s" src="assets/images/galeri/galeri3.jpeg" alt="">
       </div>
       <div class="col-lg-3 col-sm-6 col-xs-3">
-          <img class=" img-fluid wow bounce" data-wow-duration="0.7s" animation-duration="0.25s" src="assets/images/galeri/galeri4.jpeg" alt="">
+          <img class=" img-fluid wow bounce" data-wow-duration="0.7s" animation-duration="0.25s" src="assets/images/galeri/galeri8.jpg" alt="">
       </div>
       <div class="col-lg-3 col-sm-6 col-xs-3">
-        <img class=" img-fluid wow bounce" data-wow-duration="1s" animation-duration="0.25s" src="assets/images/galeri/galeri5.jpeg" alt="">
+        <img class=" img-fluid wow bounce" data-wow-duration="1s" animation-duration="0.25s" src="assets/images/galeri/galeri3.jpeg" alt="">
       </div>
       <div class="col-lg-3 col-sm-6 col-xs-3">
-        <img class=" img-fluid wow bounce" data-wow-duration="1.7s" animation-duration="0.25s" src="assets/images/galeri/galeri6.jpg" alt="">
+        <img class=" img-fluid wow bounce" data-wow-duration="1.7s" animation-duration="0.25s" src="assets/images/galeri/galeri8.jpg" alt="">
       </div>
       <div class="col-lg-3 col-sm-6">
-        <img class=" img-fluid wow bounce" data-wow-duration="2s" animation-duration="0.25s" src="assets/images/galeri/galeri7.jpg" alt="">
+        <img class=" img-fluid wow bounce" data-wow-duration="2s" animation-duration="0.25s" src="assets/images/galeri/galeri6.jpg" alt="">
       </div>
       <div class="col-lg-3 col-sm-6">
-        <img class=" img-fluid wow bounce" data-wow-duration="1s" animation-duration="0.5s" src="assets/images/galeri/galeri8.jpg" alt="">
+        <img class=" img-fluid wow bounce" data-wow-duration="1s" animation-duration="0.5s" src="assets/images/galeri/galeri5.jpeg" alt="">
       </div>
     </div>
   </div>
@@ -97,23 +97,23 @@ Indopsiko- Dashboard
         <div class="row py-3 my-3">
             <div class="col-md">
                 <div class="card">
-                    <img class="card-img-top wow bounce" data-wow-duration="0.5s" animation-duration="0.25s" src="/assets/images/klien/member-1.png" alt="member-1.png">
+                    <img class="card-img-top wow bounce" data-wow-duration="0.5s" animation-duration="0.25s" src="/assets/images/klien/logo_kimia_farma.png" alt="logo_kimia_farma.jpg">
                  </div>
                  <div class="card-body"></div>
             </div>
             <div class="col-md">
                 <div class="card">
-                    <img class="card-img-top wow bounce" data-wow-duration="0.5s" animation-duration="0.25s" src="/assets/images/klien/member-2.png" alt="member2.png">
+                    <img class="card-img-top wow bounce" data-wow-duration="0.5s" animation-duration="0.25s" src="/assets/images/klien/logo_yamaha.png" alt="logo_kimia_farma.jpg">
                   </div>
             </div>
             <div class="col-md">
                 <div class="card">
-                    <img class="card-img-top wow bounce" data-wow-duration="0.7s" animation-duration="0.25s" src="/assets/images/klien/member-3.png" alt="member-3.png">
+                    <img class="card-img-top wow bounce" data-wow-duration="0.7s" animation-duration="0.25s" src="/assets/images/klien/logo_mayora.png" alt="logo_kimia_farma.jpg">
                   </div>
             </div>
             <div class="col-md">
                 <div class="card">
-                    <img class="card-img-top wow bounce" data-wow-duration="1s" animation-duration="0.25s" src="/assets/images/klien/member-4.png" alt="member-4.png">
+                    <img class="card-img-top wow bounce" data-wow-duration="1s" animation-duration="0.25s" src="/assets/images/klien/56693.jpg" alt="logo_kimia_farma.jpg">
                   </div>
             </div>
         </div>
