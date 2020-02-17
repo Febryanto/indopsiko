@@ -127,6 +127,12 @@ Indopsiko- Dashboard
 
 <section id="galeri" class="galeri">
     <div class="container-fluid">
+        
+      <div class="row text-center">
+        <div class="col">
+          <h2 style="color:#0eb493" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Galeri</b></h2>
+        </div>
+      </div>
         <div class="row text-center">
           <div class="col">
             <div id="myBtnContainer">
@@ -170,7 +176,7 @@ Indopsiko- Dashboard
           </div>
           <div class="column pk">
             <div class="content">
-              <img src="/assets/images/galeri/pegawai2.jpg" alt="pegawai" style="width:100%">
+              <img src="/assets/images/galeri/pegawai2.jpeg" alt="pegawai" style="width:100%">
             </div>
           </div>
         {{-- <!-- END GRID --> --}}
