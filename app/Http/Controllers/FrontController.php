@@ -8,7 +8,6 @@ use Illuminate\Support\Str;
 use DB;
 use App\Klien;
 use App\Berita;
-use Pagination;
 use App\Proper;
 use App\Pelamar;
 use App\Pengumuman;
@@ -19,7 +18,7 @@ class FrontController extends Controller
     public function index()
     {
         $data = Proper::all();
-        $klien = Klien::paginate(4);
+        $klien = Klien::all();
         $galeri = DB::table('tbl_galeri')->paginate(4);
         return view('dashboard.home',compact('data','galeri','klien'));
     }
