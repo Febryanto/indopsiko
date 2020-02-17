@@ -158,7 +158,7 @@ Indopsiko- Dashboard
       
       <div class="column psikotest">
         <div class="content">
-          <img class=" img-fluid wow shake" data-wow-duration="0.4s" animation-duration="0.25s" src="/assets/images/galeri/galeri7.jpeg" alt="">
+          <img class=" img-fluid wow shake" data-wow-duration="0.4s" animation-duration="0.25s" src="/assets/images/galeri/galeri7.jpg" alt="">
         </div>
       </div>
       <div class="column psikotest">
