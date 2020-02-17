@@ -244,12 +244,14 @@ Indopsiko- Dashboard
     <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Klien</b></h2>
     <div id="carouselExample" class="carousel crslide slide" data-ride="carousel" data-interval="9000">
       <div class="carousel-inner cinner row w-100 mx-auto" role="listbox">
-        @foreach ($klien as $k)
         <div class="carousel-item crsitem col-md-3 active">
-          <img class="img-fluid mx-auto d-block" src="{{url('/assets/images/klien',$k->logo)}}" alt="slide 1">
-      </div>  
-        @endforeach
-          
+          <img class="img-fluid mx-auto d-block" src="{{url('/assets/images/klien/logo_yamaha.png')}}" alt="slide 1">
+      </div>
+      @foreach ($klien as $k)
+      <div class="carousel-item crsitem col-md-3">
+        <img class="img-fluid mx-auto d-block" src="{{url('/assets/images/klien',$k->logo)}}" alt="slide 1">
+    </div>  
+      @endforeach
       </div>
       <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
           <i class="fa fa-chevron-left fa-lg text-muted"></i>
