@@ -3,6 +3,76 @@
 Indopsiko- Dashboard    
 @endsection
 @section('content')
+  <style> 
+    @media (min-width: 768px) {
+
+      /* show 3 items */
+      .cinner .active,
+      .cinner .active + .crsitem,
+      .cinner .active + .crsitem + .crsitem,
+      .cinner .active + .crsitem + .crsitem + .crsitem  {
+          display: block;
+      }
+      
+      .cinner .crsitem.active:not(.crsitem-right):not(.crsitem-left),
+      .cinner .crsitem.active:not(.crsitem-right):not(.crsitem-left) + .crsitem,
+      .cinner .crsitem.active:not(.crsitem-right):not(.crsitem-left) + .crsitem + .crsitem,
+      .cinner .crsitem.active:not(.crsitem-right):not(.crsitem-left) + .crsitem + .crsitem + .crsitem {
+          transition: none;
+      }
+      
+      .cinner .crsitem-next,
+      .cinner .crsitem-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+      }
+      
+      .cinner .active.crsitem + .crsitem + .crsitem + .crsitem + .crsitem {
+          position: absolute;
+          top: 0;
+          right: -25%;
+          z-index: -1;
+          display: block;
+          visibility: visible;
+      }
+      
+      /* left or forward direction */
+      .active.crsitem-left + .crsitem-next.crsitem-left,
+      .crsitem-next.crsitem-left + .crsitem,
+      .crsitem-next.crsitem-left + .crsitem + .crsitem,
+      .crsitem-next.crsitem-left + .crsitem + .crsitem + .crsitem,
+      .crsitem-next.crsitem-left + .crsitem + .crsitem + .crsitem + .crsitem {
+          position: relative;
+          transform: translate3d(-100%, 0, 0);
+          visibility: visible;
+      }
+      
+      /* farthest right hidden item must be abso position for animations */
+      .cinner .crsitem-prev.crsitem-right {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          display: block;
+          visibility: visible;
+      }
+      
+      /* right or prev direction */
+      .active.crsitem-right + .crsitem-prev.crsitem-right,
+      .crsitem-prev.crsitem-right + .crsitem,
+      .crsitem-prev.crsitem-right + .crsitem + .crsitem,
+      .crsitem-prev.crsitem-right + .crsitem + .crsitem + .crsitem,
+      .crsitem-prev.crsitem-right + .crsitem + .crsitem + .crsitem + .crsitem {
+          position: relative;
+          transform: translate3d(100%, 0, 0);
+          visibility: visible;
+          display: block;
+          visibility: visible;
+      }
+      
+      }
+      }
+</style> 
 <section class="banner" id="banner">
     <div id="carouselExampleInterval" class="carousel slide mt-3" data-ride="carousel">
         <div class="carousel-inner">
@@ -35,13 +105,21 @@ Indopsiko- Dashboard
     </div>
     <div class="row text-justify">
         <div class="col-md-4 animated bounce slow">
-            <h3><i class="fas fa-users" style="color:#0eb493;"></i> Profil</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
+            <h3><i class="fas fa-users" style="color:#0eb493;"></i> Profil</h3><p>Pembangunan manusia seutuhnya. Demikian kalimat sakral yang telah menjadi komitmen dasar bagi Bangsa dan Negara. Aplikasinya menjadi kewajiban bersama, baik pemerintah maupun rakyatnya. Arahnya adalah tercapainya kehidupan yang sejahtera, adil dan makmur, lahir maupun batin. Dalam kerangka itu orang beraktifitas menurut bidang dan keahlian masing-masing, dan satu aktifitas yang menghasilkan produk unggul pasti dikerjakan oleh tangan-tangan yang ahli dan profesional.
+            </p>
         </div>
         <div class="col-md-4 animated bounce fast">
-            <h3><i class="fas fa-award" style="color:#0eb493;"></i> Visi</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
+            <h3><i class="fas fa-award" style="color:#0eb493;"></i> Visi</h3><p>Menjadi Perusahaan Nomor 1 di Indonesia
+            </p>
         </div>
         <div class="col-md-4 animated bounce faster">
-            <h3><i class="fas fa-crosshairs" style="color:#0eb493;"></i> Misi</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
+            <h3><i class="fas fa-crosshairs" style="color:#0eb493;"></i> Misi</h3><p>Membantu Calon Tenaga Kerja mendapatkan   
+              pekerjaan
+           
+           Memberikan service yang lebih baik kepada Clien
+           
+           Menyediakan tenaga kerja yang kompeten
+           </p>
         </div>
     </div>
 </div>
@@ -54,8 +132,8 @@ Indopsiko- Dashboard
                 <h2 class="mb-4 wow slideInLeft" data-wow-duration="0.4s" animation-duration="0.25s" style="color:#0eb493;"><b>Galeri</b></h2>
                 <div id="myBtnContainer"> 
                 <button class="btn active" onclick="filterSelection('all')"> Semua </button>
-                <button class="btn" onclick="filterSelection('karyawan')"> karyawan</button>
-                <button class="btn" onclick="filterSelection('psikotest')"> Psikotest </button>
+                <button class="btn" onclick="filterSelection('karyawan')"> Pegawai Kami</button>
+                <button class="btn" onclick="filterSelection('psikotest')"> Psikotest</button>
                 <button class="btn" onclick="filterSelection('training')"> Training </button>
                 </div>
               </div>
@@ -127,7 +205,6 @@ Indopsiko- Dashboard
       if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
     }
   }
-  
   function w3AddClass(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
@@ -163,37 +240,28 @@ Indopsiko- Dashboard
   </script>
 
 <section id="klien">
-    <div class="container-fluid bg-light">
-        <div class="row text-center">
-            <div class="col-md mb-3 mt-3">
-                <h2 class="wow bounce" data-wow-duration="0.5s" animation-duration="0.25s" style="color:#0eb493"><b>Klien</b></h2>
-            </div>
-        </div>
-        <div class="row py-3 my-3">
-            <div class="col-md">
-                <div class="card">
-                    <img class="card-img-top wow bounce" data-wow-duration="0.5s" animation-duration="0.25s" src="/assets/images/klien/logo_kimia_farma.png" alt="logo_kimia_farma.jpg">
-                 </div>
-                 <div class="card-body"></div>
-            </div>
-            <div class="col-md">
-                <div class="card">
-                    <img class="card-img-top wow bounce" data-wow-duration="0.5s" animation-duration="0.25s" src="/assets/images/klien/logo_yamaha.png" alt="logo_kimia_farma.jpg">
-                  </div>
-            </div>
-            <div class="col-md">
-                <div class="card">
-                    <img class="card-img-top wow bounce" data-wow-duration="0.7s" animation-duration="0.25s" src="/assets/images/klien/logo_mayora.png" alt="logo_kimia_farma.jpg">
-                  </div>
-            </div>
-            <div class="col-md">
-                <div class="card">
-                    <img class="card-img-top wow bounce" data-wow-duration="1s" animation-duration="0.25s" src="/assets/images/klien/56693.jpg" alt="logo_kimia_farma.jpg">
-                  </div>
-            </div>
-        </div>
-    </div>
-</section>
+  <div class="container bg-white text-center my-3">
+    <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Klien</b></h2>
+    <div id="carouselExample" class="carousel crslide slide" data-ride="carousel" data-interval="9000">
+      <div class="carousel-inner cinner row w-100 mx-auto" role="listbox">
+        @foreach ($klien as $k)
+        <div class="carousel-item crsitem col-md-3 active">
+          <img class="img-fluid mx-auto d-block" src="{{url('/assets/images/klien',$k->logo)}}" alt="slide 1">
+      </div>  
+        @endforeach
+          
+      </div>
+      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+          <i class="fa fa-chevron-left fa-lg text-muted"></i>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+          <i class="fa fa-chevron-right fa-lg text-muted"></i>
+          <span class="sr-only">Next</span>
+      </a>
+  </div>
+    
+</div></section>
 
 <section id="visitor">
     <div class="container-fluid parallax text-center" style="min-height:280px; background-image:url('/assets/images/bg/bg.jpg');">
@@ -219,22 +287,29 @@ Indopsiko- Dashboard
             <div class="col-md mb-3 mt-3 bg-light">
                 <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Service</b></h2>
             </div>
+        </div>
             <div class="row py-2 ml-2 mr-2 text-justify">
                 <div class="col-md wow bounce" data-wow-duration="0.5s" animation-duration="0.25s">
-                    <h3><i class="fas fa-file-contract" style="color:#0eb493;"></i> Outsourcing</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
+                    <h3><i class="fas fa-file-contract" style="color:#0eb493;"></i> Kontraktor Tenaga Kerja</h3><p>Sehubungan dengan Peraturan Menteri Tenaga Kerja Republik Indonesia NO.19 Tahun 2012 tentang SYARAT-SYARAT PENYERAHAN SEBAGIAN PELAKSANAAN PEKERJAAN KEPADA PIHAK LAIN dan Surat Edaran NO. SE-04/MEN/VIII/2013 tentang Pedoman Pelaksanannya, bersama ini kami PT. INDOPSIKO INDONESIA menawarkan kerjasama dalam PEMBORONGAN PEKERJAAN di perusahaan Bapak.
+                      Karena berkembangnya pekerjaan perusahaan yang berakibat tidak memungkinkan masalah tenaga kerja ditangani oleh perusahaan sendiri, hal ini disebabkan oleh tuntutan globalisasi dan ketatnya persaingan sehingga perusahaan lebih berkonsentrasi kepada inovasi produk.</p>
                 </div>
                 <div class="col-md wow bounce" data-wow-duration="0.7s" animation-duration="0.25s">
-                    <h3><i class="fas fa-chart-area" style="color:#0eb493;"></i> Psikotest</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
+                    <h3><i class="fas fa-chart-area" style="color:#0eb493;"></i> Psikotest</h3><p>Dalam menjalankan Psikotes Unjuk Kerja  Manageral PT. INDOPSIKO INDONESIA bekerjasama dengan GRAHITA INDONESIA suatu Lembaga Psikologi Terapan untuk melakukan Psikotes guna meningkatkan kwalitas Sumber Daya Manusia.
+                      Psikotes kami memiliki Standard Internasional karena diciptakan oleh anak bangsa dengan study banding di Canada dan memiliki status Nasional karena telah mempunyai Hak Cipta yang di akui oleh Departemen Hukum dan Hak Asasi Manusia Repubik Indonesia tertanggal 4 Desember 2009.</p>
                 </div>
-                <div class="col-md wow bounce" data-wow-duration="0.8s" animation-duration="0.25s">
-                    <h3><i class="fas fa-id-card" style="color:#0eb493;"></i> Recruitment</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
-                </div>
+                {{-- <div class="col-md wow bounce" data-wow-duration="0.8s" animation-duration="0.25s">
+                    <h3><i class="fas fa-id-card" style="color:#0eb493;"></i> Recruitment</h3>
+                    <p></p>
+                </div> --}}
                 <div class="col-md wow bounce" data-wow-duration="0.9s" animation-duration="0.25s"	>
-                    <h3><i class="fas fa-recycle" style="color:#0eb493;"></i> Motivation Training</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Eos nemo vel veritatis harum excepturi alias beatae unde, quam accusamus iure dolor nam eius nesciunt similique pariatur sed? Quos?</p>
+                    <h3><i class="fas fa-recycle" style="color:#0eb493;"></i> Motivation Training</h3>
+                    <p>Dengan adanya tuntutan globalisasi di era yang serba maju ini yang semuanya serba  cepat dan tepat di dalam persaingan yg semakin luas, sebagai manusia yang produktif pastilah mempunyai tantangan berat dalam menghadapi dunia modren. Untuk itu di perlukan Motivasi Kerja yang menghasil kan Good Skill, melalui training diharapkan peserta memahami, mengalami dan berlatih, sehingga Motivasi Kerja muncul secara reflek saat menghadapi permasalahan.
+                      Peserta training akan  mendapatkan pengetahuan yang dapat memberikan kenyamanan dalam bekerja, sekaligus  akan menikmati hasil pekerjaanya.
+                      Training Motivasi Kerja dikemas tidak sekedar teori tetapi juga disertai permainan ( game ) sehingga peserta  diharapkan berperan aktif</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
+</script> 
 @endsection
