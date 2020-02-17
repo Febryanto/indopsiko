@@ -9,7 +9,7 @@
         <div class="row text-justify pb-3">
             <div class="col-md">
             <div class="card">
-                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="300px;" id="gmap_canvas" src="https://maps.google.com/maps?q=indopsiko&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;}.gmap_canvas {overflow:hidden;background:none!important;}</style></div>
+                <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2868346309697!2d106.89668561423076!3d-6.2258610954932045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f34706d82fbf%3A0x147f4719639399a8!2sPT.%20INDOPSIKO%20INDONESIA!5e0!3m2!1sid!2sid!4v1581921860640!5m2!1sid!2sid" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div><style>.mapouter{position:relative;text-align:right;}.gmap_canvas {overflow:hidden;background:none!important;}</style></div>
                 <div class="card-body">
                   <h5 class="card-title wow bounce" data-wow-duration="1s" animation-duration="0.25s">Kantor Pusat</h5>
                   <p class="card-text">Jl. Raya Pahlawan Revolusi No. 59
