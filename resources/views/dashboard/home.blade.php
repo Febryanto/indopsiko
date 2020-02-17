@@ -240,10 +240,12 @@ Indopsiko- Dashboard
   </script>
 
 <section id="klien">
-  <div class="container bg-white text-center my-3">
+  <div class="container-fluid bg-white text-center py-3 my-3">
+    <div class="row">
+      <div class="col-sm-12">
     <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Klien</b></h2>
     <div id="carouselExample" class="carousel crslide slide" data-ride="carousel" data-interval="9000">
-      <div class="carousel-inner cinner row w-100 mx-auto" role="listbox">
+      <div class="carousel-inner cinner row w-50 mx-auto" role="listbox">
         <div class="carousel-item crsitem col-md-3 active">
           <img class="img-fluid mx-auto d-block" src="{{url('/assets/images/klien/logo_yamaha.png')}}" alt="slide 1">
       </div>
@@ -262,7 +264,8 @@ Indopsiko- Dashboard
           <span class="sr-only">Next</span>
       </a>
   </div>
-    
+</div>
+</div>
 </div></section>
 
 <section id="visitor">
