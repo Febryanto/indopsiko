@@ -127,117 +127,56 @@ Indopsiko- Dashboard
 
 <section id="galeri" class="galeri">
     <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col">
+            <div id="myBtnContainer">
+              <button class="btn tmbl activex" onclick="filterSelection('all')"> Show all</button>
+              <button class="btn tmbl" onclick="filterSelection('pk')"> Pegawai Kami</button>
+              <button class="btn tmbl" onclick="filterSelection('psikotes')"> Psikotes</button>
+              <button class="btn tmbl" onclick="filterSelection('training')"> Training</button>  
+            </div> 
+          </div>
+        </div>
         <div class="row">
-            <div class="col-sm-12 text-center my-3">
-                <h2 class="mb-4 wow slideInLeft" data-wow-duration="0.4s" animation-duration="0.25s" style="color:#0eb493;"><b>Galeri</b></h2>
-                <div id="myBtnContainer"> 
-                <button class="btn active" onclick="filterSelection('all')"> Semua </button>
-                <button class="btn" onclick="filterSelection('karyawan')"> Pegawai Kami</button>
-                <button class="btn" onclick="filterSelection('psikotest')"> Psikotest</button>
-                <button class="btn" onclick="filterSelection('training')"> Training </button>
-                </div>
-              </div>
+          <div class="column pk">
+            <div class="content">
+              <img src="/assets/images/galeri/pegawai.jpeg" alt="pegawai" style="width:100%">
+            </div>
+          </div>
+          <div class="column training">
+            <div class="content">
+              <img src="/assets/images/galeri/training1.jpeg" alt="training" style="width:100%">
+            </div>
+          </div>
+          <div class="column psikotes">
+            <div class="content">
+              <img src="/assets/images/galeri/psikotes.jpg" alt="Psikotes" style="width:100%">
+            </div>
+          </div>
+          <div class="column training">
+            <div class="content">
+              <img src="/assets/images/galeri/training2.jpg" alt="training" style="width:100%">
+            </div>
+          </div>
+          <div class="column pk">
+            <div class="content">
+              <img src="/assets/images/galeri/pegawai1.jpg" alt="pegawai" style="width:100%">
+            </div>
+          </div>
+          <div class="column psikotes">
+            <div class="content">
+              <img src="/assets/images/galeri/psikotes1.jpg" alt="Psikotes" style="width:100%">
+            </div>
+          </div>
+          <div class="column pk">
+            <div class="content">
+              <img src="/assets/images/galeri/pegawai2.jpg" alt="pegawai" style="width:100%">
+            </div>
+          </div>
+        {{-- <!-- END GRID --> --}}
         </div>
     </div>
-    <div class="row">
-      <div class="column karyawan">
-        <div class="content">
-          <img class=" img-fluid wow bounce" data-wow-duration="2s" animation-duration="0.25s" src="/assets/images/galeri/galeri6.jpg" alt="">
-        </div>
-      </div>
-      <div class="column karyawan">
-        <div class="content">
-          <img class=" img-fluid wow bounce" data-wow-duration="1s" animation-duration="0.5s" src="/assets/images/galeri/galeri5.jpeg" alt="">
-        </div>
-      </div>
-      <div class="column karyawan">
-        <div class="content">
-          <img class=" img-fluid wow rollIn" data-wow-duration="0.4s" animation-duration="0.25s" src="/assets/images/galeri/galeri2.jpg" alt="">
-        </div>
-      </div>
-      
-      <div class="column psikotest">
-        <div class="content">
-          <img class=" img-fluid wow shake" data-wow-duration="0.4s" animation-duration="0.25s" src="/assets/images/galeri/galeri7.jpeg" alt="">
-        </div>
-      </div>
-      <div class="column psikotest">
-        <div class="content">
-          <img class=" img-fluid wow bounce" data-wow-duration="0.5s" animation-duration="0.25s" src="/assets/images/galeri/galeri3.jpeg" alt="">
-
-        </div>
-      </div>
-      <div class="column psikotest">
-        <div class="content">
-          <img class=" img-fluid wow bounce" data-wow-duration="0.7s" animation-duration="0.25s" src="/assets/images/galeri/galeri8.jpg" alt="">
-        </div>
-      </div>
     
-      <div class="column training">
-        <div class="content">
-          <img class=" img-fluid wow bounce" data-wow-duration="1s" animation-duration="0.25s" src="/assets/images/galeri/galeri3.jpeg" alt="">
-        </div>
-      </div>
-      <div class="column training">
-        <div class="content">
-          <img class=" img-fluid wow bounce" data-wow-duration="1.7s" animation-duration="0.25s" src="/assets/images/galeri/galeri8.jpg" alt="">
-        </div>
-      </div>
-      <div class="column training">
-        <div class="content">
-          <img class=" img-fluid wow bounce" data-wow-duration="2s" animation-duration="0.25s" src="/assets/images/galeri/galeri6.jpg" alt="">
-        </div>
-      </div>
-    <!-- END GRID -->
-    </div>
-    
-    <!-- END MAIN -->
-    </div>
-    
-<script>
-  filterSelection("all")
-  function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("column");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-      w3RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-  }
-  function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-    }
-  }
-  
-  function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);     
-      }
-    }
-    element.className = arr1.join(" ");
-  }
-  
-  
-  // Add active class to the current button (highlight it)
-  var btnContainer = document.getElementById("myBtnContainer");
-  var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-  </script>
 
 <section id="klien">
   <div class="container-fluid bg-white text-center py-3 my-3">
@@ -316,5 +255,55 @@ Indopsiko- Dashboard
         </div>
     </div>
 </section>
-</script> 
+<script>
+  
+  filterSelection("all") // Execute the function and show all columns
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+  
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+  
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("tmbl");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("activex");
+      current[0].className = current[0].className.replace(" activex", "");
+      this.className += " activex";
+    });
+  }
+</script>
+
 @endsection
