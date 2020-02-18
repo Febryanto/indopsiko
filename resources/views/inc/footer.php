@@ -31,15 +31,13 @@
 				</div>
 				<div class="col-md-4 text-justify py-3">
 					<h5 class="text-center" style="color:#0eb493">Media Sosial</h5>
-					<span class="ml-5"><i class="fab fa-instagram"></i> @indopsiko</span><br>
-					<span class="ml-5"><i class="fab fa-facebook"></i> @indopsiko</span><br>
-					<span class="ml-5"><i class="fab fa-twitter-square"></i> @indopsiko</span>
+					<span class="ml-5"><a href="https://instagram.com/indopsiko.pt?igshid=ulwabie1oqde" class="navbar-brand"><i class="fab fa-instagram"></i> @indopsiko_indonesia</span></a><br>
+					<span class="ml-5"><a href="https://www.facebook.com/indopsiko.indonesia" class="navbar-brand"><i class="fab fa-facebook"></i> @indopsiko_indonesia</span></a><br>
 				</div>
 				<div class="col-md-4 text-justify py-3">
 					<h5 class="text-center" style="color:#0eb493">Link Terkait</h5>
-					<span class="ml-5"><i class="fab fa-firefox"></i> www.ipl-express.com</span><br>
-					<span class="ml-5"><i class="fab fa-internet-explorer"></i> www.garuda-escamas.com</span><br>
-					<span class="ml-5"><i class="fab fa-chrome"></i> simpeg-indopsiko.com</span>
+					<span class="ml-5"><a href="Ipl-express.com" class="navbar-brand"><i class="fab fa-firefox"></i> www.ipl-express.com</span></a><br>
+					<span class="ml-5"><a href="Garudaescamas.com" class="navbar-brand"><i class="fab fa-internet-explorer"></i> www.garuda-escamas.com</span></a><br>
 				</div>
 			</div>
 			<div class="row text-light text-center" style="background-color:#0eb493;">

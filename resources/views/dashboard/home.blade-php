@@ -80,7 +80,7 @@ Indopsiko- Dashboard
             <img src="/assets/images/banner/banner.jpeg" class="d-block w-100" alt="gambar">
           </div>
           <div class="carousel-item" data-interval="2000">
-            <img src="/assets/images/banner/banner1.jpeg" class="d-block w-100" alt="gambar">
+            <img src="/assets/images/banner/banner.jpeg" class="d-block w-100" alt="gambar">
           </div>
           <div class="carousel-item">
             <img src="/assets/images/banner/banner.jpeg" class="d-block w-100" alt="gambar">
@@ -148,7 +148,27 @@ Indopsiko- Dashboard
               <img src="/assets/images/galeri/pegawai.jpg" alt="pegawai" style="width:100%">
             </div>
           </div>
-		  <div class="column pk">
+          <div class="column training">
+            <div class="content">
+              <img src="/assets/images/galeri/training1.jpeg" alt="training" style="width:100%">
+            </div>
+          </div>
+          <div class="column psikotes">
+            <div class="content">
+              <img src="/assets/images/galeri/psikotes.jpg" alt="Psikotes" style="width:100%">
+            </div>
+          </div>
+          <div class="column training">
+            <div class="content">
+              <img src="/assets/images/galeri/training2.jpg" alt="training" style="width:100%">
+            </div>
+	  </div>
+          <div class="column training">
+            <div class="content">
+              <img src="/assets/images/galeri/training3.jpg" alt="training" style="width:100%">
+            </div>
+          </div>
+          <div class="column pk">
             <div class="content">
              <img src="/assets/images/galeri/pegawai1.jpg" alt="pegawai" style="width:100%">	    
           </div>
@@ -162,30 +182,10 @@ Indopsiko- Dashboard
             <div class="content">
               <img src="/assets/images/galeri/pegawai3.jpeg" alt="pegawai" style="width:100%">
             </div>
-	        </div>
+	  </div>
           <div class="column psikotes">
             <div class="content">
-              <img src="/assets/images/galeri/psikotes.jpg" alt="Psikotes" style="width:100%">
-            </div>
-          </div>
-		  <div class="column psikotes">
-            <div class="content">
               <img src="/assets/images/galeri/psikotes1.jpg" alt="Psikotes" style="width:100%">
-            </div>
-          </div>
-		  <div class="column training">
-            <div class="content">
-              <img src="/assets/images/galeri/training1.jpeg" alt="training" style="width:100%">
-            </div>
-          </div>
-          <div class="column training">
-            <div class="content">
-              <img src="/assets/images/galeri/training2.jpg" alt="training" style="width:100%">
-            </div>
-	  </div>
-          <div class="column training">
-            <div class="content">
-              <img src="/assets/images/galeri/training3.jpg" alt="training" style="width:100%">
             </div>
           </div>
         {{-- <!-- END GRID --> --}}
