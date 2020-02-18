@@ -240,7 +240,7 @@
         </table>
         <nav aria-label="Page navigation example">
             <ul class="pagination">
-        {{ $klien->links() }}</div>
+        {{ $data->links() }}</div>
             </ul>
         </nav>
     
