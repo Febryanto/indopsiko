@@ -3,7 +3,7 @@
     <div class="container-fluid text-center" >
         <div class="row">
             <div class="col-md mb-3 mt-3">
-                <h2  class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#2AEEC7"><b>Kontak</b></h2>
+                <h2  class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#2AEEC7"><b>PT. Indopsiko Indonesia</b></h2>
             </div>
         </div>
         <div class="row text-justify pb-3">
@@ -25,9 +25,12 @@
 
 	<section id="footer">
 		<div class="container-fluid">
-			<div class="row bg-light text-justify parallax" style="background-image:url('/assets/images/bg/banner1.jpg');">
+			<div class="row bg-light parallax" style="background-image:url('/assets/images/bg/banner1.jpg');">
 				<div class="col-md-4 py-3">
-					<h5 class="ml-3 text-center" style="color:#2AEEC7">PT. Indopsiko Indonesia</h5><p class="ml-3">Pada tanggal 04 Maret 1994, Gunarto Gunotalijendro, SH, MM, mendirikan sebuah perusahaan yang bergerak dalam bidang Pengelolan dan Pemberdayaan Sumber Daya Manusia yakni PT. INDOPSIKO INDONESIA . Dalam perjalanan waktu IPI menjadi perusahaan yang handal dengan staff-staff ahli di bidangnya dan management yang mendukung dan menerapkan system management mutu</p>
+					<h5 class="ml-3 text-center" style="color:#2AEEC7">Marketing</h5>
+					<span class="text-center">PT.Indopsiko Indonesia</span><br>
+					<span class="text-justify">Telp.</span><br>
+					<span class="text-justify">Fax</span>
 				</div>
 				<div class="col-md-4 text-justify py-3">
 					<h5 class="text-center" style="color:#2AEEC7">Media Sosial</h5>

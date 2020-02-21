@@ -7,6 +7,7 @@
 kt-menu__item--open kt-menu__item--here
 @endsection
 @section('content')
+
 @if (session('status'))
 <div class="alert alert-primary fade show" role="alert">
     <div class="alert-text">{{ session('status') }}</div>
@@ -47,7 +48,7 @@ kt-menu__item--open kt-menu__item--here
             <div class="kt-portlet__head-toolbar">
                 <div class="kt-portlet__head-wrapper">
         <div class="kt-portlet__head-actions">
-
+            
             &nbsp;
             <button type="button" class="btn btn-primary btn-brand btn-elevate btn-icon-sm" data-toggle="modal" data-target="#tambah">
                 <i class="la la-plus"></i> Tambah Data
@@ -64,15 +65,18 @@ kt-menu__item--open kt-menu__item--here
                   <div class="modal-body">
                                     {{ @csrf_field() }}
                                     <div class="form-group">
-                                        <label for="nama_perusahaan">Nama Perusahaan</label>
-                                        <select name="id_klien" id="id_klien" class="form-control input-lg dynamic">
-                                            <option value="">Select Perusahaan</option>
-                                            @foreach ($klien as $item)
-                                                <option value="{{$item->id_klien}}">
-                                                    {{$item->nama_perusahaan}}
-                                                </option>
-                                            @endforeach
-                                        </select>
+                                        <div class="dropdown">
+                                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                              Dropdown
+                                              <span class="caret"></span>
+                                            </button>
+                                            <ul id="dropselect-demo1" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                              <li role="presentation" class="divider"></li>
+                                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                                            </ul>
                                     </div>
                                     <div class="form-group">
                                             <label for="jabatan">jabatan</label>
@@ -100,7 +104,7 @@ kt-menu__item--open kt-menu__item--here
               </div>
             </div>
 
-
+        </div>
         </div>
     </div>		</div>
         </div>
@@ -197,6 +201,4 @@ kt-menu__item--open kt-menu__item--here
       });
     });
     </script>
-
-
 @endsection
