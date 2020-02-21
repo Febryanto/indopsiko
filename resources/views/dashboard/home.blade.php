@@ -100,20 +100,20 @@ Indopsiko- Dashboard
 <div class="container-fluid text-center parallax" style="min-height:280px; background-image:url('/assets/images/bg/bg-1.jpg');">
     <div class="row">
         <div class="col-md mb-3 mt-3">
-            <h2 style="color:#0eb493" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Tentang Kami</b></h2>
+            <h2 style="color:#42F0CD" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Tentang Kami</b></h2>
         </div>
     </div>
     <div class="row text-justify">
         <div class="col-md-4 animated bounce slow">
-            <h3><i class="fas fa-users" style="color:#0eb493;"></i> Profil</h3><p>Pembangunan manusia seutuhnya. Demikian kalimat sakral yang telah menjadi komitmen dasar bagi Bangsa dan Negara. Aplikasinya menjadi kewajiban bersama, baik pemerintah maupun rakyatnya. Arahnya adalah tercapainya kehidupan yang sejahtera, adil dan makmur, lahir maupun batin. Dalam kerangka itu orang beraktifitas menurut bidang dan keahlian masing-masing, dan satu aktifitas yang menghasilkan produk unggul pasti dikerjakan oleh tangan-tangan yang ahli dan profesional.
+            <h3><i class="fas fa-users" style="color:#42F0CD;"></i> Profil</h3><p>Pembangunan manusia seutuhnya. Demikian kalimat sakral yang telah menjadi komitmen dasar bagi Bangsa dan Negara. Aplikasinya menjadi kewajiban bersama, baik pemerintah maupun rakyatnya. Arahnya adalah tercapainya kehidupan yang sejahtera, adil dan makmur, lahir maupun batin. Dalam kerangka itu orang beraktifitas menurut bidang dan keahlian masing-masing, dan satu aktifitas yang menghasilkan produk unggul pasti dikerjakan oleh tangan-tangan yang ahli dan profesional.
             </p>
         </div>
         <div class="col-md-4 animated bounce fast">
-            <h3><i class="fas fa-award" style="color:#0eb493;"></i> Visi</h3><p>Menjadi Perusahaan Nomor 1 di Indonesia
+            <h3><i class="fas fa-award" style="color:#42F0CD;"></i> Visi</h3><p>Menjadi Perusahaan management sumber daya manusia terkemuka di Indonesia
             </p>
         </div>
         <div class="col-md-4 animated bounce faster">
-            <h3><i class="fas fa-crosshairs" style="color:#0eb493;"></i> Misi</h3><p>Membantu Calon Tenaga Kerja mendapatkan   
+            <h3><i class="fas fa-crosshairs" style="color:#42F0CD;"></i> Misi</h3><p>Membantu Calon Tenaga Kerja mendapatkan   
               pekerjaan
            
            Memberikan service yang lebih baik kepada Clien
@@ -129,7 +129,7 @@ Indopsiko- Dashboard
     <div class="container-fluid">
       <div class="row text-center">
         <div class="col">
-          <h2 style="color:#0eb493" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Galeri</b></h2>
+          <h2 style="color:#42F0CD" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Galeri</b></h2>
         </div>
       </div>
         <div class="row text-center">
@@ -197,7 +197,7 @@ Indopsiko- Dashboard
   <div class="container-fluid bg-white text-center py-3 my-3">
     <div class="row">
       <div class="col-sm-12">
-    <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Klien</b></h2>
+    <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#42F0CD"><b>Klien</b></h2>
     <div id="carouselExample" class="carousel crslide slide" data-ride="carousel" data-interval="9000">
       <div class="carousel-inner cinner row w-50 mx-auto" role="listbox">
         <div class="carousel-item crsitem col-md-3 active">
@@ -226,7 +226,7 @@ Indopsiko- Dashboard
     <div class="container-fluid parallax text-center" style="min-height:280px; background-image:url('/assets/images/bg/bg.jpg');">
         <div class="row">
             <div class="col-md mb-3 mt-3">
-                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Visitor</b></h2>
+                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#42F0CD"><b>Visitor</b></h2>
             </div>
         </div>
         <div class="row">
@@ -244,24 +244,24 @@ Indopsiko- Dashboard
     <div class="container-fluid text-center" style="min-height:350px;">
         <div class="row">
             <div class="col-md mb-3 mt-3 bg-light">
-                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Service</b></h2>
+                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#42F0CD"><b>Service</b></h2>
             </div>
         </div>
             <div class="row py-2 ml-2 mr-2 text-justify">
                 <div class="col-md wow bounce" data-wow-duration="0.5s" animation-duration="0.25s">
-                    <h3><i class="fas fa-file-contract" style="color:#0eb493;"></i> Kontraktor Tenaga Kerja</h3><p>Sehubungan dengan Peraturan Menteri Tenaga Kerja Republik Indonesia NO.19 Tahun 2012 tentang SYARAT-SYARAT PENYERAHAN SEBAGIAN PELAKSANAAN PEKERJAAN KEPADA PIHAK LAIN dan Surat Edaran NO. SE-04/MEN/VIII/2013 tentang Pedoman Pelaksanannya, bersama ini kami PT. INDOPSIKO INDONESIA menawarkan kerjasama dalam PEMBORONGAN PEKERJAAN di perusahaan Bapak.
+                    <h3><i class="fas fa-file-contract" style="color:#42F0CD;"></i> Kontraktor Tenaga Kerja</h3><p>Sehubungan dengan Peraturan Menteri Tenaga Kerja Republik Indonesia NO.19 Tahun 2012 tentang SYARAT-SYARAT PENYERAHAN SEBAGIAN PELAKSANAAN PEKERJAAN KEPADA PIHAK LAIN dan Surat Edaran NO. SE-04/MEN/VIII/2013 tentang Pedoman Pelaksanannya, bersama ini kami PT. INDOPSIKO INDONESIA menawarkan kerjasama dalam PEMBORONGAN PEKERJAAN di perusahaan Bapak.
                       Karena berkembangnya pekerjaan perusahaan yang berakibat tidak memungkinkan masalah tenaga kerja ditangani oleh perusahaan sendiri, hal ini disebabkan oleh tuntutan globalisasi dan ketatnya persaingan sehingga perusahaan lebih berkonsentrasi kepada inovasi produk.</p>
                 </div>
                 <div class="col-md wow bounce" data-wow-duration="0.7s" animation-duration="0.25s">
-                    <h3><i class="fas fa-chart-area" style="color:#0eb493;"></i> Psikotest</h3><p>Dalam menjalankan Psikotes Unjuk Kerja  Manageral PT. INDOPSIKO INDONESIA bekerjasama dengan GRAHITA INDONESIA suatu Lembaga Psikologi Terapan untuk melakukan Psikotes guna meningkatkan kwalitas Sumber Daya Manusia.
+                    <h3><i class="fas fa-chart-area" style="color:#42F0CD;"></i> Psikotest</h3><p>Dalam menjalankan Psikotes Unjuk Kerja  Manageral PT. INDOPSIKO INDONESIA bekerjasama dengan GRAHITA INDONESIA suatu Lembaga Psikologi Terapan untuk melakukan Psikotes guna meningkatkan kwalitas Sumber Daya Manusia.
                       Psikotes kami memiliki Standard Internasional karena diciptakan oleh anak bangsa dengan study banding di Canada dan memiliki status Nasional karena telah mempunyai Hak Cipta yang di akui oleh Departemen Hukum dan Hak Asasi Manusia Repubik Indonesia tertanggal 4 Desember 2009.</p>
                 </div>
                 {{-- <div class="col-md wow bounce" data-wow-duration="0.8s" animation-duration="0.25s">
-                    <h3><i class="fas fa-id-card" style="color:#0eb493;"></i> Recruitment</h3>
+                    <h3><i class="fas fa-id-card" style="color:#42F0CD;"></i> Recruitment</h3>
                     <p></p>
                 </div> --}}
                 <div class="col-md wow bounce" data-wow-duration="0.9s" animation-duration="0.25s"	>
-                    <h3><i class="fas fa-recycle" style="color:#0eb493;"></i> Motivation Training</h3>
+                    <h3><i class="fas fa-recycle" style="color:#42F0CD;"></i> Motivation Training</h3>
                     <p>Dengan adanya tuntutan globalisasi di era yang serba maju ini yang semuanya serba  cepat dan tepat di dalam persaingan yg semakin luas, sebagai manusia yang produktif pastilah mempunyai tantangan berat dalam menghadapi dunia modren. Untuk itu di perlukan Motivasi Kerja yang menghasil kan Good Skill, melalui training diharapkan peserta memahami, mengalami dan berlatih, sehingga Motivasi Kerja muncul secara reflek saat menghadapi permasalahan.
                       Peserta training akan  mendapatkan pengetahuan yang dapat memberikan kenyamanan dalam bekerja, sekaligus  akan menikmati hasil pekerjaanya.
                       Training Motivasi Kerja dikemas tidak sekedar teori tetapi juga disertai permainan ( game ) sehingga peserta  diharapkan berperan aktif</p>

@@ -3,7 +3,7 @@
     <div class="container-fluid text-center" >
         <div class="row">
             <div class="col-md mb-3 mt-3">
-                <h2  class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Kontak</b></h2>
+                <h2  class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#2AEEC7"><b>Kontak</b></h2>
             </div>
         </div>
         <div class="row text-justify pb-3">
@@ -27,20 +27,20 @@
 		<div class="container-fluid">
 			<div class="row bg-light text-justify parallax" style="background-image:url('/assets/images/bg/banner1.jpg');">
 				<div class="col-md-4 py-3">
-					<h5 class="ml-3 text-center" style="color:#0eb493">PT. Indopsiko Indonesia</h5><p class="ml-3">Pada tanggal 04 Maret 1994, Gunarto Gunotalijendro, SH, MM, mendirikan sebuah perusahaan yang bergerak dalam bidang Pengelolan dan Pemberdayaan Sumber Daya Manusia yakni PT. INDOPSIKO INDONESIA . Dalam perjalanan waktu IPI menjadi perusahaan yang handal dengan staff-staff ahli di bidangnya dan management yang mendukung dan menerapkan system management mutu</p>
+					<h5 class="ml-3 text-center" style="color:#2AEEC7">PT. Indopsiko Indonesia</h5><p class="ml-3">Pada tanggal 04 Maret 1994, Gunarto Gunotalijendro, SH, MM, mendirikan sebuah perusahaan yang bergerak dalam bidang Pengelolan dan Pemberdayaan Sumber Daya Manusia yakni PT. INDOPSIKO INDONESIA . Dalam perjalanan waktu IPI menjadi perusahaan yang handal dengan staff-staff ahli di bidangnya dan management yang mendukung dan menerapkan system management mutu</p>
 				</div>
 				<div class="col-md-4 text-justify py-3">
-					<h5 class="text-center" style="color:#0eb493">Media Sosial</h5>
+					<h5 class="text-center" style="color:#2AEEC7">Media Sosial</h5>
 					<span class="ml-5"><a href="https://instagram.com/indopsiko.pt?igshid=ulwabie1oqde" class="navbar-brand"><i class="fab fa-instagram"></i> @indopsiko_indonesia</span></a><br>
 					<span class="ml-5"><a href="https://www.facebook.com/indopsiko.indonesia" class="navbar-brand"><i class="fab fa-facebook"></i> @indopsiko_indonesia</span></a><br>
 				</div>
 				<div class="col-md-4 text-justify py-3">
-					<h5 class="text-center" style="color:#0eb493">Link Terkait</h5>
-					<span class="ml-5"><a href="Ipl-express.com" class="navbar-brand"><i class="fab fa-firefox"></i> www.ipl-express.com</span></a><br>
-					<span class="ml-5"><a href="Garudaescamas.com" class="navbar-brand"><i class="fab fa-internet-explorer"></i> www.garuda-escamas.com</span></a><br>
+					<h5 class="text-center" style="color:#2AEEC7">Link Terkait</h5>
+					<span class="ml-5"><a href="https://ipl-express.com" class="navbar-brand"><i class="fab fa-firefox"> </i> www.ipl-express.com</span></a><br>
+					<span class="ml-5"><a href="http://www.garudaescamas.com" class="navbar-brand"><i class="fab fa-internet-explorer"> </i> www.garudaescamas.com</span></a><br>
 				</div>
 			</div>
-			<div class="row text-light text-center" style="background-color:#0eb493;">
+			<div class="row text-light text-center" style="background-color:#2AEEC7;">
 				<div class="col-md mt-3"><p>Copyright by @Indopsiko</p></div>
 			</div>
 		</div>
