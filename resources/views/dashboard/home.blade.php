@@ -100,20 +100,20 @@ Indopsiko- Dashboard
 <div class="container-fluid text-center parallax" style="min-height:280px; background-image:url('/assets/images/bg/bg-1.jpg');">
     <div class="row">
         <div class="col-md mb-3 mt-3">
-            <h2 style="color:#0eb493" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Tentang Kami</b></h2>
+            <h4 style="color:#0eb493" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Tentang Kami</b></h4>
         </div>
     </div>
     <div class="row text-justify">
         <div class="col-md-4 animated bounce slow">
-            <h3><i class="fas fa-users" style="color:#0eb493;"></i> Profil</h3><p>Pembangunan manusia seutuhnya. Demikian kalimat sakral yang telah menjadi komitmen dasar bagi Bangsa dan Negara. Aplikasinya menjadi kewajiban bersama, baik pemerintah maupun rakyatnya. Arahnya adalah tercapainya kehidupan yang sejahtera, adil dan makmur, lahir maupun batin. Dalam kerangka itu orang beraktifitas menurut bidang dan keahlian masing-masing, dan satu aktifitas yang menghasilkan produk unggul pasti dikerjakan oleh tangan-tangan yang ahli dan profesional.
+            <h5><i class="fas fa-users" style="color:#0eb493;"></i> Profil</h5><p>Pembangunan manusia seutuhnya. Demikian kalimat sakral yang telah menjadi komitmen dasar bagi Bangsa dan Negara. Aplikasinya menjadi kewajiban bersama, baik pemerintah maupun rakyatnya. Arahnya adalah tercapainya kehidupan yang sejahtera, adil dan makmur, lahir maupun batin. Dalam kerangka itu orang beraktifitas menurut bidang dan keahlian masing-masing, dan satu aktifitas yang menghasilkan produk unggul pasti dikerjakan oleh tangan-tangan yang ahli dan profesional.
             </p>
         </div>
         <div class="col-md-4 animated bounce fast">
-            <h3><i class="fas fa-award" style="color:#0eb493;"></i> Visi</h3><p>Menjadi Perusahaan Nomor 1 di Indonesia
+            <h5><i class="fas fa-award" style="color:#0eb493;"></i> Visi</h5><p>Menjadi Perusahaan Nomor 1 di Indonesia
             </p>
         </div>
         <div class="col-md-4 animated bounce faster">
-            <h3><i class="fas fa-crosshairs" style="color:#0eb493;"></i> Misi</h3><p>Membantu Calon Tenaga Kerja mendapatkan   
+            <h5><i class="fas fa-crosshairs" style="color:#0eb493;"></i> Misi</h5><p>Membantu Calon Tenaga Kerja mendapatkan   
               pekerjaan
            
            Memberikan service yang lebih baik kepada Clien
@@ -130,12 +130,12 @@ Indopsiko- Dashboard
         
       <div class="row text-center">
         <div class="col">
-          <h2 style="color:#0eb493" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Galeri</b></h2>
+          <h4 style="color:#0eb493" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Galeri</b></h4>
         </div>
       </div>
         <div class="row text-center">
           <div class="col">
-            <div id="myBtnContainer">
+            <div id="myBtnContainer" class="myImg">
               <button class="btn tmbl activex" onclick="filterSelection('all')"> Show all</button>
               <button class="btn tmbl" onclick="filterSelection('pk')"> Pegawai Kami</button>
               <button class="btn tmbl" onclick="filterSelection('psikotes')"> Psikotes</button>
@@ -147,36 +147,78 @@ Indopsiko- Dashboard
           <div class="column pk">
             <div class="content">
               <img src="/assets/images/galeri/pegawai.jpeg" alt="pegawai" style="width:100%">
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
             </div>
           </div>
           <div class="column training">
             <div class="content">
               <img src="/assets/images/galeri/training1.jpeg" alt="training" style="width:100%">
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
             </div>
           </div>
           <div class="column psikotes">
             <div class="content">
               <img src="/assets/images/galeri/psikotes.jpg" alt="Psikotes" style="width:100%">
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
             </div>
           </div>
           <div class="column training">
             <div class="content">
               <img src="/assets/images/galeri/training2.jpg" alt="training" style="width:100%">
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
             </div>
           </div>
           <div class="column pk">
             <div class="content">
               <img src="/assets/images/galeri/pegawai1.jpg" alt="pegawai" style="width:100%">
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
             </div>
           </div>
           <div class="column psikotes">
             <div class="content">
               <img src="/assets/images/galeri/psikotes1.jpg" alt="Psikotes" style="width:100%">
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
             </div>
           </div>
           <div class="column pk">
             <div class="content">
               <img src="/assets/images/galeri/pegawai2.jpeg" alt="pegawai" style="width:100%">
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
             </div>
           </div>
         {{-- <!-- END GRID --> --}}
@@ -184,11 +226,36 @@ Indopsiko- Dashboard
     </div>
     
 
+
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+  </script>
+  
+
 <section id="klien">
   <div class="container-fluid bg-white text-center py-3 my-3">
     <div class="row">
       <div class="col-sm-12">
-    <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Klien</b></h2>
+    <h4 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Klien</b></h4>
     <div id="carouselExample" class="carousel crslide slide" data-ride="carousel" data-interval="9000">
       <div class="carousel-inner cinner row w-50 mx-auto" role="listbox">
         <div class="carousel-item crsitem col-md-3 active">
@@ -217,7 +284,7 @@ Indopsiko- Dashboard
     <div class="container-fluid parallax text-center" style="min-height:280px; background-image:url('/assets/images/bg/bg.jpg');">
         <div class="row">
             <div class="col-md mb-3 mt-3">
-                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Visitor</b></h2>
+                <h4 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Visitor</b></h4>
             </div>
         </div>
         <div class="row">
@@ -235,7 +302,7 @@ Indopsiko- Dashboard
     <div class="container-fluid text-center" style="min-height:350px;">
         <div class="row">
             <div class="col-md mb-3 mt-3 bg-light">
-                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Service</b></h2>
+                <h4 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#0eb493"><b>Service</b></h4>
             </div>
         </div>
             <div class="row py-2 ml-2 mr-2 text-justify">
