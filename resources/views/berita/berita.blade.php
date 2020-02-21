@@ -2,7 +2,7 @@
 @section('content')
 <div class="container-fluid bg-light">
     <div class="row pt-5">
-        <div class="alert text-dark" role="alert" style="background-color:#0eb493;">
+        <div class="alert text-dark" role="alert" style="background-color:#42F0CD;">
             Berita Terkini
           </div>
     </div>

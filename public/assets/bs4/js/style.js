@@ -27,6 +27,26 @@ $(document).ready(function(){
         }
       );
       wow.init();
-       
+        
+        var scroll_start = 0;
+        var startchange = $('#tentang');
+        var offset = startchange.offset();
+
+        if(startchange.length){
+          $(document).scroll(function(){
+            scroll_start = $(this).scrollTop();
+
+          if(scroll_start>offset.top){
+          $('.navbar-custom').css('background-color', '#2AEEC7');
+          }else{
+            $('.navbar-custom').css('background-color','rgba(0 , 64 , 123 , 0.3)');
+          }
+        })
+      }      
+      $('.pop').click(function() {
+        $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+        $('#imagemodal').modal('show');   
+      });		
+
     });
     

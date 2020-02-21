@@ -201,43 +201,42 @@
               </div>
         </div>
       </div>
-      <table class="table  table-hover table-checkable" id="kt_table_1">
-        {{-- <table class="kt-datatable" id="html_table" width="100%"> --}}
-            <thead>
-                <tr>
-                    <th title="Field #2">Nama Perusahaan</th>
-                    <th title="Field #3">Jabatan</th>
-                    <th title="Field #3">Status Lowongan</th>
-                    <th title="Field #4">Keterangan</th>
-                </tr>
-            </thead>
-            <tbody id="myTable">
-                @foreach ($data as $i)
-                    <tr>
-                        <td>
-                            {{ $i->nama_perusahaan }}
-                        </td>
-                        <td>
-                            {{ $i->jabatan }}
-                        </td>
-                        <td>
-                            @if ($i->status == 1)
-                                Aktif
-                            @else
-                                Nonaktif
-                            @endif
-                        </td>
-                        <td>
-                            {!! $i->deskripsi !!}
-                        </td>
-
-
-                    </tr>
-
-                @endforeach
-
-            </tbody>
-        </table>
+      <div class="row">
+          <div class="col">
+                
+      <div class="table-responsive-sm">
+        <table class="table  table-hover table-checkable" id="kt_table_1">
+          {{-- <table class="kt-datatable" id="html_table" width="100%"> --}}
+              <thead>
+                  <tr>
+                      <th scope="col">Perusahaan</th>
+                      <th scope="col">Jabatan</th>
+                      <th scope="col">Keterangan</th>
+                  </tr>
+              </thead>
+              <tbody id="myTable">
+                  @foreach ($data as $i)
+                      <tr>
+                          <td>
+                              {{ $i->nama_perusahaan }}
+                          </td>
+                          <td>
+                              {{ $i->jabatan }}
+                          </td>
+                          <td>
+                              {!! $i->deskripsi !!}
+                          </td>
+  
+  
+                      </tr>
+  
+                  @endforeach
+  
+              </tbody>
+          </table>
+        </div>
+          </div>
+      </div>
         <nav aria-label="Page navigation example">
             <ul class="pagination">
         {{ $data->links() }}</div>

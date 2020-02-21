@@ -10,8 +10,9 @@
 <body> 	
 	@include('inc.menu_navbar')
 <br>
+<div id="tentang">
 	@yield('content')
-
+</div>
 	@include('inc.footer')
 	@include('inc.bs_4js')
 </body> 
