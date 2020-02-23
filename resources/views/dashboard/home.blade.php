@@ -97,7 +97,7 @@ Indopsiko- Dashboard
       </div>
 </section>
 <section class="tentang" id="tentang"> 
-<div class="container-fluid text-center parallax" style="min-height:280px; background-image:url('/assets/images/bg/peta.png');">
+<div class="container-fluid text-center peta" style="min-height:280px; background-image:url('/assets/images/bg/peta.png');">
     <div class="row">
         <div class="col-md mb-3 mt-3">
             <h2 style="color:#42F0CD" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"> <b>Our Vision</b></h2>

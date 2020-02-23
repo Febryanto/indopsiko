@@ -20,7 +20,7 @@
     -o-border-radius: 50%;
     display: inline-block;
 }
-.parallax{
+.peta{
   width:100%;
     /* Set a specific height */
  
@@ -29,6 +29,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+}
+.parallax{
+    /* Set a specific height */
+ 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .employee-p,.customer-p,.order-p,.design-p
 {
