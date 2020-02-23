@@ -376,7 +376,6 @@ Indopsiko- Dashboard
           
           <h4 class="card-title title-service"> Motivation Training</h4>
           <p class="card-text isi-service">Motivasi Kerja yang menghasil kan Good Skill, melalui training diharapkan peserta memahami, mengalami dan berlatih</p>
-
         </div>
       </div>
 
