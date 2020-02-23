@@ -97,103 +97,142 @@ Indopsiko- Dashboard
       </div>
 </section>
 <section class="tentang" id="tentang"> 
-<div class="container-fluid text-center parallax" style="min-height:280px; background-image:url('/assets/images/bg/bg-1.jpg');">
+<div class="container-fluid text-center parallax" style="min-height:280px; background-image:url('/assets/images/bg/peta.png');">
     <div class="row">
         <div class="col-md mb-3 mt-3">
-            <h2 style="color:#0eb493" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Tentang Kami</b></h2>
+            <h2 style="color:#42F0CD" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"> <b>Our Vision</b></h2>
         </div>
     </div>
-    <div class="row text-justify">
-        <div class="col-md-4 animated bounce slow">
-            <h5><i class="fas fa-users" style="color:#42F0CD;"></i> Profil</h5><p>Pembangunan manusia seutuhnya. Demikian kalimat sakral yang telah menjadi komitmen dasar bagi Bangsa dan Negara. Aplikasinya menjadi kewajiban bersama, baik pemerintah maupun rakyatnya. Arahnya adalah tercapainya kehidupan yang sejahtera, adil dan makmur, lahir maupun batin. Dalam kerangka itu orang beraktifitas menurut bidang dan keahlian masing-masing, dan satu aktifitas yang menghasilkan produk unggul pasti dikerjakan oleh tangan-tangan yang ahli dan profesional.
+    <div class="row text-justify text-center">
+        
+        <div class="col-md-12 animated bounce fast mt-4">
+          <p class="isi-visi">"Menjadi Perusahaan management sumber daya manusia terkemuka di Indonesia"
             </p>
         </div>
-        <div class="col-md-4 animated bounce fast">
-            <h5><i class="fas fa-award" style="color:#42F0CD;"></i> Visi</h5><p>Menjadi Perusahaan management sumber daya manusia terkemuka di Indonesia
-            </p>
-        </div>
-        <div class="col-md-4 animated bounce faster">
-            <h5><i class="fas fa-crosshairs" style="color:#42F0CD;"></i> Misi</h5><p>Membantu Calon Tenaga Kerja mendapatkan   
-              pekerjaan
-           
-           Memberikan service yang lebih baik kepada Clien
-           
-           Menyediakan tenaga kerja yang kompeten
-           </p>
-        </div>
+        
     </div>
 </div>
 </section>
+<section class="mission">
+  <div class="container-fluid"> 
+<div class="row bg-light text-center py-3">
+  <div class="col-md-12">
+    <h2 style="color:#42F0CD" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><i class="fas fa-crooshair"></i> <b>Our Mission</b></h2>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="box-part text-center">
+          <i class="fas fa-hands-helping fa-6x icon-misi animated bounce" data-wow-duration="2s" data-wow-delay="5s" aria-hidden="true"></i>          
+          <div class="text">
+              <span class="misi-text animated bounce" data-wow-duration="2s" data-wow-delay="5s">Membantu Calon Tenaga Kerja mendapatkan   
+                pekerjaan</span>
+          </div>
+    </div>
+  </div>
 
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="box-part text-center">
+          <i class="fas fa-people-carry fa-6x icon-misi animated bounce" data-wow-duration="2s" data-wow-delay="5s" aria-hidden="true"></i>          
+          <div class="text">
+              <span class="misi-text animated bounce" data-wow-duration="2s" data-wow-delay="5s" aria-hidden="true">Memberikan service yang lebih baik kepada Client</span>
+          </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="box-part text-center">
+          <i class="fas fa-users-cog fa-6x icon-misi animated bounce" data-wow-duration="2s" data-wow-delay="5s" aria-hidden="true" aria-hidden="true"></i>          
+          <div class="text">
+              <span class="misi-text animated bounce" data-wow-duration="2s" data-wow-delay="5s" aria-hidden="true">Menyediakan tenaga kerja yang kompeten</span>
+          </div>
+    </div>
+  </div>
+
+
+</div>  
+</div>
+</section>
+  
 <section id="galeri" class="galeri">
-    <div class="container-fluid">
-      <div class="row text-center">
-        <div class="col">
+    <div class="container">
+      <div class="row text-center mt-3 py-3">
+        <div class="col-md-12">
           <h2 style="color:#42F0CD" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Galeri</b></h2>
         </div>
-      </div>
-        <div class="row text-center">
-          <div class="col">
-            <div id="myBtnContainer" class="myImg">
+          <div class="col-md-12">
+            <div id="myBtnContainer" class="myImg text-center">
               <button class="btn tmbl activex" onclick="filterSelection('all')"> Show all</button>
               <button class="btn tmbl" onclick="filterSelection('pk')"> Pegawai Kami</button>
               <button class="btn tmbl" onclick="filterSelection('psikotes')"> Psikotes</button>
               <button class="btn tmbl" onclick="filterSelection('training')"> Training</button>  
             </div> 
           </div>
-        </div>
-        <div class="row">
+        <div class="row-galery">
           <div class="column pk">
             <div class="content">
               <div class="pop" >
               <img id="gambar" src="/assets/images/galeri/pegawai.jpg" alt="pegawai" style="width:100%"> </div>
             </div>
           </div>
-		  <div class="column pk">
-            <div class="content"><div class="pop">
-
-             <img id="gambar" src="/assets/images/galeri/pegawai1.jpg" alt="pegawai" style="width:100%">	    
-          </div></div>
+		      <div class="column pk">
+            <div class="content">
+              <div class="pop">
+               <img id="gambar" src="/assets/images/galeri/pegawai1.jpg" alt="pegawai" style="width:100%">	    
+              </div>
+            </div>
           </div>
            <div class="column pk">
-            <div class="content"><div class="pop">	     
-           <img id="gambar" src="/assets/images/galeri/pegawai2.jpeg" alt="pegawai" style="width:100%">
-            </div></div>
+            <div class="content">
+              <div class="pop">	     
+                <img id="gambar" src="/assets/images/galeri/pegawai2.jpeg" alt="pegawai" style="width:100%">
+               </div>
+            </div>
           </div>
           <div class="column pk">
-            <div class="content"><div class="pop">
+            <div class="content">
+              <div class="pop">
               <img id="gambar" src="/assets/images/galeri/pegawai3.jpeg" alt="pegawai" style="width:100%">
-            </div></div>
+              </div>
+            </div>
 	        </div>
           <div class="column psikotes">
-            <div class="content"><div class="pop">
+            <div class="content">
+              <div class="pop">
               <img id="gambar" src="/assets/images/galeri/psikotes.jpg" alt="Psikotes" style="width:100%">
-            </div></div>
+            </div>
+           </div>
           </div>
-		  <div class="column psikotes">
-            <div class="content"><div class="pop">
-              <img id="gambar" src="/assets/images/galeri/psikotes1.jpg" alt="Psikotes" style="width:100%">
-            </div></div>
-          </div>
-		  <div class="column training">
-            <div class="content"><div class="pop">
-              <img id="gambar" src="/assets/images/galeri/training1.jpeg" alt="training" style="width:100%">
-            </div></div>
+          <div class="column psikotes">
+              <div class="content">
+                <div class="pop">
+                  <img id="gambar" src="/assets/images/galeri/psikotes1.jpg" alt="Psikotes" style="width:100%">
+                </div>
+              </div>
           </div>
           <div class="column training">
-            <div class="content"><div class="pop">
-              <img id="gambar" src="/assets/images/galeri/training2.jpg" alt="training" style="width:100%">
-            </div></div>
-	  </div>
+              <div class="content">
+                <div class="pop">
+                <img id="gambar" src="/assets/images/galeri/training1.jpeg" alt="training" style="width:100%">
+              </div>
+              </div>
+            </div>
+            <div class="column training">
+              <div class="content"><div class="pop">
+                <img id="gambar" src="/assets/images/galeri/training2.jpg" alt="training" style="width:100%">
+              </div></div>
+          </div>
           <div class="column training">
-            <div class="content"><div class="pop">
+            <div class="content">
+              <div class="pop">
               <img id="gambar" src="/assets/images/galeri/training3.jpg" alt="training" style="width:100%">
-            </div></div>
+            </div>
+            </div>
           </div>
         {{-- <!-- END GRID --> --}}
         </div>
     </div>
-    
+  </div>
+</div>
+</section>
 <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">              
@@ -205,8 +244,26 @@ Indopsiko- Dashboard
   </div>
 </div>
 
+<section id="visitor">
+    <div class="container-fluid parallax text-center" style="min-height:280px; background-image:url('/assets/images/bg/bg.jpg');">
+        <div class="row">
+            <div class="col-md mb-3 mt-3">
+                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#42F0CD"><b>Visitor</b></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="employees">
+                    <p class="counter-count text-light">99088</p>
+                    <p class="employee-p text-light wow bounce" data-wow-duration="1s" animation-duration="0.25s"><b>Pengunjung</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="klien">
-  <div class="container-fluid bg-white text-center py-3 my-3">
+  <div class="container-fluid bg-light text-center py-3" style="min-height:280px;">
     <div class="row">
       <div class="col-sm-12">
     <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#42F0CD"><b>Klien</b></h2>
@@ -232,55 +289,64 @@ Indopsiko- Dashboard
   </div>
 </div>
 </div>
-</div></section>
-
-<section id="visitor">
-    <div class="container-fluid parallax text-center" style="min-height:280px; background-image:url('/assets/images/bg/bg.jpg');">
-        <div class="row">
-            <div class="col-md mb-3 mt-3">
-                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#42F0CD"><b>Visitor</b></h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md">
-                <div class="employees">
-                    <p class="counter-count text-light">99088</p>
-                    <p class="employee-p text-light wow bounce" data-wow-duration="1s" animation-duration="0.25s"><b>Pengunjung</b></p>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
 </section>
 
 <section id="service" class="service">
-    <div class="container-fluid text-center" style="min-height:350px;">
-        <div class="row">
-            <div class="col-md mb-3 mt-3 bg-light">
-                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#42F0CD"><b>Service</b></h2>
-            </div>
+  <div class="container-fluid py-3 paralax" style="min-height:280px; background-image:url('/assets/images/bg/bg-servis.jpg');"> 
+      <div class="row text-center py-3">
+        <div class="col-md-12">
+          <h2 style="color:#42F0CD" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><i class="fas fa-crooshair"></i> <b>Our Services</b></h2>
         </div>
-            <div class="row py-2 ml-2 mr-2 text-justify">
-                <div class="col-md wow bounce" data-wow-duration="0.5s" animation-duration="0.25s">
-                    <h5><i class="fas fa-file-contract" style="color:#42F0CD;"></i> Kontraktor Tenaga Kerja</h5><p>Sehubungan dengan Peraturan Menteri Tenaga Kerja Republik Indonesia NO.19 Tahun 2012 tentang SYARAT-SYARAT PENYERAHAN SEBAGIAN PELAKSANAAN PEKERJAAN KEPADA PIHAK LAIN dan Surat Edaran NO. SE-04/MEN/VIII/2013 tentang Pedoman Pelaksanannya, bersama ini kami PT. INDOPSIKO INDONESIA menawarkan kerjasama dalam PEMBORONGAN PEKERJAAN di perusahaan Bapak.
-                      Karena berkembangnya pekerjaan perusahaan yang berakibat tidak memungkinkan masalah tenaga kerja ditangani oleh perusahaan sendiri, hal ini disebabkan oleh tuntutan globalisasi dan ketatnya persaingan sehingga perusahaan lebih berkonsentrasi kepada inovasi produk.</p>
-                </div>
-                <div class="col-md wow bounce" data-wow-duration="0.7s" animation-duration="0.25s">
-                    <h5><i class="fas fa-chart-area" style="color:#42F0CD;"></i> Psikotest</h5><p>Dalam menjalankan Psikotes Unjuk Kerja  Manageral PT. INDOPSIKO INDONESIA bekerjasama dengan GRAHITA INDONESIA suatu Lembaga Psikologi Terapan untuk melakukan Psikotes guna meningkatkan kwalitas Sumber Daya Manusia.
-                      Psikotes kami memiliki Standard Internasional karena diciptakan oleh anak bangsa dengan study banding di Canada dan memiliki status Nasional karena telah mempunyai Hak Cipta yang di akui oleh Departemen Hukum dan Hak Asasi Manusia Repubik Indonesia tertanggal 4 Desember 2009.</p>
-                </div>
-                {{-- <div class="col-md wow bounce" data-wow-duration="0.8s" animation-duration="0.25s">
-                    <h3><i class="fas fa-id-card" style="color:#42F0CD;"></i> Recruitment</h3>
-                    <p></p>
-                </div> --}}
-                <div class="col-md wow bounce" data-wow-duration="0.9s" animation-duration="0.25s"	>
-                    <h5><i class="fas fa-recycle" style="color:#42F0CD;"></i> Motivation Training</h5>
-                    <p>Dengan adanya tuntutan globalisasi di era yang serba maju ini yang semuanya serba  cepat dan tepat di dalam persaingan yg semakin luas, sebagai manusia yang produktif pastilah mempunyai tantangan berat dalam menghadapi dunia modren. Untuk itu di perlukan Motivasi Kerja yang menghasil kan Good Skill, melalui training diharapkan peserta memahami, mengalami dan berlatih, sehingga Motivasi Kerja muncul secara reflek saat menghadapi permasalahan.
-                      Peserta training akan  mendapatkan pengetahuan yang dapat memberikan kenyamanan dalam bekerja, sekaligus  akan menikmati hasil pekerjaanya.
-                      Training Motivasi Kerja dikemas tidak sekedar teori tetapi juga disertai permainan ( game ) sehingga peserta  diharapkan berperan aktif</p>
-                </div>
+      </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card card-service">
+          <div class="card-horizontal">
+            <div class="col-md-6 col-xs-12 text-right">  
+            <div class="img-square-wrapper">
+                  <img class="img-fluid img-service animated bounce" data-wow-duration="2s" data-wow-delay="5s" src="/assets/images/bg/bg-8.jpg" alt="Card image cap">
+              </div>
             </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="card-body text-center mt-3">
+                  <h4 class="card-title title-service"> Kontraktor Tenaga Kerja</h4>
+                  <p class="card-text isi-service">Kami menawarkan kerjasama dalam pemborongan pekerjaan di perusahaan Bapak.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-horizontal">
+            <div class="col-md-6 col-xs-12">
+            <div class="card-body text-center mt-3">
+                <h4 class="card-title title-service">Psikotes</h4>
+                <p class="card-text isi-service">kami memiliki Standard Internasional karena diciptakan oleh anak bangsa dengan study banding di Canada</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <div class="img-square-wrapper">
+              <img class="img-fluid img-service animated bounce" data-wow-duration="2s" data-wow-delay="5s" src="/assets/images/bg/bg-5.jpg" alt="Card image cap">
+            </div>
+          </div>
         </div>
+        <div class="card-horizontal">
+         <div class="col-md-6 col-xs-12 text-right">
+          <div class="img-square-wrapper">
+            <img class="img-fluid img-service animated bounce" data-wow-duration="2s" data-wow-delay="5s" src="/assets/images/bg/bg-7.jpg" alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="card-body text-center mt-3">
+              <h4 class="card-title title-service"> Motivation Training</h4>
+              <p class="card-text isi-service">Motivasi Kerja yang menghasil kan Good Skill, melalui training diharapkan peserta memahami, mengalami dan berlatih</p>
+          </div>
+        </div>
+        </div>
+      </div>
+  </div>
+      </div>
     </div>
+      
+        
 </section>
 
 <script>
@@ -332,6 +398,46 @@ Indopsiko- Dashboard
       this.className += " activex";
     });
   }
-		
+
 </script>
 @endsection
+
+{{-- 
+<div class="col-md-4 animated bounce faster">
+  <h5><i class="fas fa-crosshairs" style="color:#42F0CD;"></i> Misi</h5><p>Membantu Calon Tenaga Kerja mendapatkan   
+    pekerjaan
+ 
+ Memberikan service yang lebih baik kepada Clien
+ 
+ Menyediakan tenaga kerja yang kompeten
+ </p>
+</div> --}}
+{{-- 
+<div class="container-fluid text-center" style="min-height:350px;">
+  <div class="row">
+      <div class="col-md mb-3 mt-3 ">
+          <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#42F0CD"><b>Service</b></h2>
+      </div>
+  </div>
+      <div class="row py-2 ml-2 mr-2 text-justify">
+          <div class="col-md wow bounce" data-wow-duration="0.5s" animation-duration="0.25s">
+              <h5><i class="fas fa-file-contract" style="color:#42F0CD;"></i> Kontraktor Tenaga Kerja</h5><p>Sehubungan dengan Peraturan Menteri Tenaga Kerja Republik Indonesia NO.19 Tahun 2012 tentang SYARAT-SYARAT PENYERAHAN SEBAGIAN PELAKSANAAN PEKERJAAN KEPADA PIHAK LAIN dan Surat Edaran NO. SE-04/MEN/VIII/2013 tentang Pedoman Pelaksanannya, bersama ini kami PT. INDOPSIKO INDONESIA menawarkan kerjasama dalam PEMBORONGAN PEKERJAAN di perusahaan Bapak.
+                Karena berkembangnya pekerjaan perusahaan yang berakibat tidak memungkinkan masalah tenaga kerja ditangani oleh perusahaan sendiri, hal ini disebabkan oleh tuntutan globalisasi dan ketatnya persaingan sehingga perusahaan lebih berkonsentrasi kepada inovasi produk.</p>
+          </div>
+          <div class="col-md wow bounce" data-wow-duration="0.7s" animation-duration="0.25s">
+              <h5><i class="fas fa-chart-area" style="color:#42F0CD;"></i> Psikotest</h5><p>Dalam menjalankan Psikotes Unjuk Kerja  Manageral PT. INDOPSIKO INDONESIA bekerjasama dengan GRAHITA INDONESIA suatu Lembaga Psikologi Terapan untuk melakukan Psikotes guna meningkatkan kwalitas Sumber Daya Manusia.
+                Psikotes kami memiliki Standard Internasional karena diciptakan oleh anak bangsa dengan study banding di Canada dan memiliki status Nasional karena telah mempunyai Hak Cipta yang di akui oleh Departemen Hukum dan Hak Asasi Manusia Repubik Indonesia tertanggal 4 Desember 2009.</p>
+          </div>
+          {{-- <div class="col-md wow bounce" data-wow-duration="0.8s" animation-duration="0.25s">
+              <h3><i class="fas fa-id-card" style="color:#42F0CD;"></i> Recruitment</h3>
+              <p></p>
+          </div> --}}
+          {{-- <div class="col-md wow bounce" data-wow-duration="0.9s" animation-duration="0.25s"	>
+              <h5><i class="fas fa-recycle" style="color:#42F0CD;"></i> Motivation Training</h5>
+              <p>Dengan adanya tuntutan globalisasi di era yang serba maju ini yang semuanya serba  cepat dan tepat di dalam persaingan yg semakin luas, sebagai manusia yang produktif pastilah mempunyai tantangan berat dalam menghadapi dunia modren. Untuk itu di perlukan Motivasi Kerja yang menghasil kan Good Skill, melalui training diharapkan peserta memahami, mengalami dan berlatih, sehingga Motivasi Kerja muncul secara reflek saat menghadapi permasalahan.
+                Peserta training akan  mendapatkan pengetahuan yang dapat memberikan kenyamanan dalam bekerja, sekaligus  akan menikmati hasil pekerjaanya.
+                Training Motivasi Kerja dikemas tidak sekedar teori tetapi juga disertai permainan ( game ) sehingga peserta  diharapkan berperan aktif</p>
+          </div>
+      </div>
+  </div>
+</div> --}}
