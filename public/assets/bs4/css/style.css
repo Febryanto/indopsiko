@@ -321,3 +321,35 @@ color: #5867dd;
 .isi-service{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.img-service2{
+  min-height: 300px;
+  background-size: 100%;
+  background-image:url('/assets/images/bg/bg-8.jpg');
+  width:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.img-service3{
+  min-height: 300px;
+  background-size: 100%;
+  background-image:url('/assets/images/bg/bg-7.jpg');
+  width:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.img-service4{
+  min-height: 300px;
+  background-size: 100%;
+  background-image:url('/assets/images/bg/bg-6.jpg');
+  width:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}

@@ -293,59 +293,43 @@ Indopsiko- Dashboard
 </section>
 
 <section id="service" class="service">
-  <div class="container-fluid py-3 paralax" style="min-height:280px; background-image:url('/assets/images/bg/bg-servis.jpg');"> 
-      <div class="row text-center py-3">
+  
+    <div class="container-fluid py-3 parallax" style="min-height:280px; background-image:url('/assets/images/bg/bg-servis.jpg');"> 
+      <div class="row text-center my-3 py-3">
         <div class="col-md-12">
           <h2 style="color:#42F0CD" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><i class="fas fa-crooshair"></i> <b>Our Services</b></h2>
         </div>
       </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card card-service">
-          <div class="card-horizontal">
-            <div class="col-md-6 col-xs-12 text-right">  
-            <div class="img-square-wrapper">
-                  <img class="img-fluid img-service animated bounce" data-wow-duration="2s" data-wow-delay="5s" src="/assets/images/bg/bg-8.jpg" alt="Card image cap">
-              </div>
-            </div>
-            <div class="col-md-6 col-xs-12">
-              <div class="card-body text-center mt-3">
-                  <h4 class="card-title title-service"> Kontraktor Tenaga Kerja</h4>
-                  <p class="card-text isi-service">Kami menawarkan kerjasama dalam pemborongan pekerjaan di perusahaan Bapak.</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-horizontal">
-            <div class="col-md-6 col-xs-12">
-            <div class="card-body text-center mt-3">
-                <h4 class="card-title title-service">Psikotes</h4>
+      <div class="row py-3">
+        <div class="col-md-6 img-service2">
+        </div>
+        <div class="col-md-6 text-center mt-3">          
+          <h4 class="card-title title-service"> Kontraktor Tenaga Kerja</h4>
+          <p class="card-text isi-service">Kami menawarkan kerjasama dalam pemborongan pekerjaan di perusahaan Bapak.</p>
+        </div>
+      </div>
+
+      <div class="row py-3">
+        <div class="col-md-6 text-center mt-3">          
+          <h4 class="card-title title-service">Psikotes</h4>
                 <p class="card-text isi-service">kami memiliki Standard Internasional karena diciptakan oleh anak bangsa dengan study banding di Canada</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-xs-12">
-            <div class="img-square-wrapper">
-              <img class="img-fluid img-service animated bounce" data-wow-duration="2s" data-wow-delay="5s" src="/assets/images/bg/bg-5.jpg" alt="Card image cap">
-            </div>
-          </div>
         </div>
-        <div class="card-horizontal">
-         <div class="col-md-6 col-xs-12 text-right">
-          <div class="img-square-wrapper">
-            <img class="img-fluid img-service animated bounce" data-wow-duration="2s" data-wow-delay="5s" src="/assets/images/bg/bg-7.jpg" alt="Card image cap">
-          </div>
-        </div>
-        <div class="col-md-6 col-xs-12">
-          <div class="card-body text-center mt-3">
-              <h4 class="card-title title-service"> Motivation Training</h4>
-              <p class="card-text isi-service">Motivasi Kerja yang menghasil kan Good Skill, melalui training diharapkan peserta memahami, mengalami dan berlatih</p>
-          </div>
-        </div>
+        <div class="col-md-6 img-service3">
         </div>
       </div>
-  </div>
+
+      <div class="row py-3">
+        <div class="col-md-6 img-service4">
+        </div>
+        <div class="col-md-6 text-center mt-3">          
+          
+          <h4 class="card-title title-service"> Motivation Training</h4>
+          <p class="card-text isi-service">Motivasi Kerja yang menghasil kan Good Skill, melalui training diharapkan peserta memahami, mengalami dan berlatih</p>
+
+        </div>
       </div>
+
     </div>
-      
         
 </section>
 
@@ -401,8 +385,6 @@ Indopsiko- Dashboard
 
 </script>
 @endsection
-<<<<<<< HEAD
-=======
 
 {{-- 
 <div class="col-md-4 animated bounce faster">
@@ -443,4 +425,3 @@ Indopsiko- Dashboard
       </div>
   </div>
 </div> --}}
->>>>>>> 7194981cd0d72ae6dbd775d3d0af6e87bf9398c4
