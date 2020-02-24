@@ -1,5 +1,44 @@
 @extends('beranda')
-@section('homecontent')
+@section('title')
+Indopsiko- Dashboard    
+@endsection
+
+@section('content')
+<div class="container-fluid mt-5 pt-5">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Klien</li>
+    </ol>
+  </nav>
+</div>
+<div class="container-fluid mt-3 mb-3 bg-white">
+    <div class="row text-center pt-3">
+        <div class="col-md">
+            <h2 class="wow bounce fast judul-profil" style="color:#42F0CD"><b>Our Client</b></h2>
+        </div>
+    </div>
+    <div class="row">
+        @foreach ($data as $i)
+            
+        <div class="col-sm-4 py-4">
+            <div class="card-columns-fluid wow bounce fast">
+                <div class="card  bg-light">
+                    <img class="card-img-top logo-klien"  src="{{url('assets/images/klien/'. $i->logo)}}" alt="Card image cap">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><b>{{ $i->nama_perusahaan }}</b></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        @endforeach
+    </div>
+</div>
+@endsection
+
+{{-- 
 
 <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
     <div class="alert alert-light alert-elevate" role="alert">
@@ -58,6 +97,4 @@
         });
       });
     });
-    </script>
-
-@endsection
+    </script> --}}

@@ -34,6 +34,10 @@ class FrontController extends Controller
         $data = Berita::where('id_berita',$id)->get();
         return view('berita.dtlberita',compact('data'));
     }
+    public function getProfil()
+    {
+        return view('profil.profil');
+    }
     public function getLowongan()
     {
         $data = DB::table('lowongan AS l')
@@ -115,5 +119,13 @@ class FrontController extends Controller
         $data = Klien::paginate(16);
         // dd($data);
         return view('klien.klien',compact('data'));
+    }
+    public function getService()
+    {
+        return view('service.service');
+    }
+    public function getKontak()
+    {
+        return view('kontak.kontak');
     }
 }

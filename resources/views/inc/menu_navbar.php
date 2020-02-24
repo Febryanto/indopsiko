@@ -9,19 +9,16 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-					<a class="nav-link" href="#banner">Beranda</a>
+					<a class="nav-link" href="/">Beranda</a>
 					</li>
 					<li class="nav-item">
-					<a  class="nav-link" href="#tentang">Tentang Kami</a>
+					<a  class="nav-link" href="/profil">Tentang Kami</a>
 					</li>
 					<li class="nav-item">
-					<a  class="nav-link" href="#galeri">Galeri</a>
+						<a class="nav-link" href="/client">Klien</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#klien">Klien</a>
-					</li>
-					<li class="nav-item">
-						<a  class="nav-link" href="#service">Service</a>
+						<a  class="nav-link" href="/service">Service</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="/apply">Lowongan</a>
@@ -30,7 +27,7 @@
 						<a class="nav-link" href="/news">Berita</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link"  href="#kontak">Kontak Kami</a>
+						<a class="nav-link"  href="/kontak">Kontak Kami</a>
 					</li>
 				</ul>
 				</div>

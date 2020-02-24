@@ -136,7 +136,7 @@
           <div class="footer-widget">
             <div class="footer-menu no-padding">
               <h4 class="footer-widget-title">Profil PT.Indopsiko</h4>
-              <p>Pada tanggal 04 Maret 1994, Gunarto Gunotalijendro, SH, MM, mendirikan sebuah perusahaan yang bergerak dalam bidang Pengelolan dan Pemberdayaan Sumber Daya Manusia yakni PT. INDOPSIKO INDONESIA . <a href="">Lihat Selengkapnya</a></p>
+              <p>Pada tanggal 04 Maret 1994, Gunarto Gunotalijendro, SH, MM, mendirikan sebuah perusahaan yang bergerak dalam bidang Pengelolan dan Pemberdayaan Sumber Daya Manusia yakni PT. INDOPSIKO INDONESIA . <a href="/profil">Lihat Selengkapnya</a></p>
             </div>
             <!-- end /.footer-menu -->
           </div>
@@ -157,7 +157,7 @@
         <div class="col-md-12">
           <div class="copyright-text">
             <p>© 2020
-              <a href="#">PT. Indopsiko Indonesia</a>. All rights reserved
+              <a href="/">PT. Indopsiko Indonesia</a>. All rights reserved
             </p>
           </div>
 

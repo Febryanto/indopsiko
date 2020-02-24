@@ -100,12 +100,12 @@ Indopsiko- Dashboard
 <div class="container-fluid text-center peta" style="min-height:280px; background-image:url('/assets/images/bg/peta.png');">
     <div class="row">
         <div class="col-md mb-3 mt-3">
-            <h2 style="color:#42F0CD" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"> <b>Our Vision</b></h2>
+            <h2 style="color:#42F0CD" class="wow bounce slow"> <b>Our Vision</b></h2>
         </div>
     </div>
     <div class="row text-justify text-center">
         
-        <div class="col-md-12 animated bounce fast mt-4">
+        <div class="col-md-12 wow bounce fast mt-4">
           <p class="isi-visi">"Menjadi Perusahaan management sumber daya manusia terkemuka di Indonesia"
             </p>
         </div>
@@ -117,13 +117,13 @@ Indopsiko- Dashboard
   <div class="container-fluid"> 
 <div class="row bg-light text-center py-3">
   <div class="col-md-12">
-    <h2 style="color:#42F0CD" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><i class="fas fa-crooshair"></i> <b>Our Mission</b></h2>
+    <h2 style="color:#42F0CD" class="wow bounce slow"><i class="fas fa-crooshair"></i> <b>Our Mission</b></h2>
   </div>
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <div class="box-part text-center">
-          <i class="fas fa-hands-helping fa-6x icon-misi animated bounce" data-wow-duration="2s" data-wow-delay="5s" aria-hidden="true"></i>          
+          <i class="fas fa-hands-helping fa-6x icon-misi wow bounce slow" aria-hidden="true"></i>          
           <div class="text">
-              <span class="misi-text animated bounce" data-wow-duration="2s" data-wow-delay="5s">Membantu Calon Tenaga Kerja mendapatkan   
+              <span class="misi-text wow bounce fast">Membantu Calon Tenaga Kerja mendapatkan   
                 pekerjaan</span>
           </div>
     </div>
@@ -131,18 +131,18 @@ Indopsiko- Dashboard
 
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <div class="box-part text-center">
-          <i class="fas fa-people-carry fa-6x icon-misi animated bounce" data-wow-duration="2s" data-wow-delay="5s" aria-hidden="true"></i>          
+          <i class="fas fa-people-carry fa-6x icon-misi wow bounce slow" aria-hidden="true"></i>          
           <div class="text">
-              <span class="misi-text animated bounce" data-wow-duration="2s" data-wow-delay="5s" aria-hidden="true">Memberikan service yang lebih baik kepada Client</span>
+              <span class="misi-text wow bounce fast" aria-hidden="true">Memberikan service yang lebih baik kepada Client</span>
           </div>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <div class="box-part text-center">
-          <i class="fas fa-users-cog fa-6x icon-misi animated bounce" data-wow-duration="2s" data-wow-delay="5s" aria-hidden="true" aria-hidden="true"></i>          
+          <i class="fas fa-users-cog fa-6x icon-misi wow bounce slow" aria-hidden="true" aria-hidden="true"></i>          
           <div class="text">
-              <span class="misi-text animated bounce" data-wow-duration="2s" data-wow-delay="5s" aria-hidden="true">Menyediakan tenaga kerja yang kompeten</span>
+              <span class="misi-text wow bounce fast" aria-hidden="true">Menyediakan tenaga kerja yang kompeten</span>
           </div>
     </div>
   </div>
@@ -156,7 +156,7 @@ Indopsiko- Dashboard
     <div class="container">
       <div class="row text-center mt-3 py-3">
         <div class="col-md-12">
-          <h2 style="color:#42F0CD" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><b>Galeri</b></h2>
+          <h2 style="color:#42F0CD" class="wow bounce slow"><b>Galeri</b></h2>
         </div>
           <div class="col-md-12">
             <div id="myBtnContainer" class="myImg text-center">
@@ -248,14 +248,14 @@ Indopsiko- Dashboard
     <div class="container-fluid parallax text-center" style="min-height:280px; background-image:url('/assets/images/bg/bg.jpg');">
         <div class="row">
             <div class="col-md mb-3 mt-3">
-                <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#42F0CD"><b>Visitor</b></h2>
+                <h2 class="wow bounce slow" style="color:#42F0CD"><b>Visitor</b></h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md">
                 <div class="employees">
                     <p class="counter-count text-light">99088</p>
-                    <p class="employee-p text-light wow bounce" data-wow-duration="1s" animation-duration="0.25s"><b>Pengunjung</b></p>
+                    <p class="employee-p text-light wow bounce slow" ><b>Pengunjung</b></p>
                 </div>
             </div>
         </div>
@@ -266,7 +266,7 @@ Indopsiko- Dashboard
   <div class="container-fluid bg-light text-center py-3" style="min-height:280px;">
     <div class="row">
       <div class="col-sm-12">
-    <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#42F0CD"><b>Klien</b></h2>
+    <h2 class="wow bounce fast"  style="color:#42F0CD"><b>Klien</b></h2>
     <div id="carouselExample" class="carousel crslide slide" data-ride="carousel" data-interval="9000">
       <div class="carousel-inner cinner row w-50 mx-auto" role="listbox">
         <div class="carousel-item crsitem col-md-3 active">
@@ -297,21 +297,21 @@ Indopsiko- Dashboard
     <div class="container-fluid py-3 parallax" style="min-height:280px; background-image:url('/assets/images/bg/bg-servis.jpg');"> 
       <div class="row text-center my-3 py-3">
         <div class="col-md-12">
-          <h2 style="color:#42F0CD" class="animated bounce" data-wow-duration="2s" data-wow-delay="5s"><i class="fas fa-crooshair"></i> <b>Our Services</b></h2>
+          <h2 style="color:#42F0CD" class="wow bounce fast"><i class="fas fa-crooshair"></i> <b>Our Services</b></h2>
         </div>
       </div>
       <div class="row py-3">
         <div class="col-md-6 img-service2">
         </div>
         <div class="col-md-6 text-center mt-3">          
-          <h4 class="card-title title-service"> Kontraktor Tenaga Kerja</h4>
+          <h4 class="card-title title-service  wow bounce fast"> Kontraktor Tenaga Kerja</h4>
           <p class="card-text isi-service">Kami menawarkan kerjasama dalam pemborongan pekerjaan di perusahaan Bapak.</p>
         </div>
       </div>
 
       <div class="row py-3">
         <div class="col-md-6 text-center mt-3">          
-          <h4 class="card-title title-service">Psikotes</h4>
+          <h4 class="card-title title-service wow bounce fast">Psikotes</h4>
                 <p class="card-text isi-service">kami memiliki Standard Internasional karena diciptakan oleh anak bangsa dengan study banding di Canada</p>
         </div>
         <div class="col-md-6 img-service3">
@@ -323,7 +323,7 @@ Indopsiko- Dashboard
         </div>
         <div class="col-md-6 text-center mt-3">          
           
-          <h4 class="card-title title-service"> Motivation Training</h4>
+          <h4 class="card-title title-service wow bounce fast"> Motivation Training</h4>
           <p class="card-text isi-service">Motivasi Kerja yang menghasil kan Good Skill, melalui training diharapkan peserta memahami, mengalami dan berlatih</p>
 
         </div>
@@ -387,7 +387,7 @@ Indopsiko- Dashboard
 @endsection
 
 {{-- 
-<div class="col-md-4 animated bounce faster">
+<div class="col-md-4 wow bounce faster">
   <h5><i class="fas fa-crosshairs" style="color:#42F0CD;"></i> Misi</h5><p>Membantu Calon Tenaga Kerja mendapatkan   
     pekerjaan
  
@@ -400,23 +400,23 @@ Indopsiko- Dashboard
 <div class="container-fluid text-center" style="min-height:350px;">
   <div class="row">
       <div class="col-md mb-3 mt-3 ">
-          <h2 class="wow bounce" data-wow-duration="1s" animation-duration="0.25s" style="color:#42F0CD"><b>Service</b></h2>
+          <h2 class="wow bounce fast"  style="color:#42F0CD"><b>Service</b></h2>
       </div>
   </div>
       <div class="row py-2 ml-2 mr-2 text-justify">
-          <div class="col-md wow bounce" data-wow-duration="0.5s" animation-duration="0.25s">
+          <div class="col-md wow bounce fast" data-wow-duration="0.5s" animation-duration="0.25s">
               <h5><i class="fas fa-file-contract" style="color:#42F0CD;"></i> Kontraktor Tenaga Kerja</h5><p>Sehubungan dengan Peraturan Menteri Tenaga Kerja Republik Indonesia NO.19 Tahun 2012 tentang SYARAT-SYARAT PENYERAHAN SEBAGIAN PELAKSANAAN PEKERJAAN KEPADA PIHAK LAIN dan Surat Edaran NO. SE-04/MEN/VIII/2013 tentang Pedoman Pelaksanannya, bersama ini kami PT. INDOPSIKO INDONESIA menawarkan kerjasama dalam PEMBORONGAN PEKERJAAN di perusahaan Bapak.
                 Karena berkembangnya pekerjaan perusahaan yang berakibat tidak memungkinkan masalah tenaga kerja ditangani oleh perusahaan sendiri, hal ini disebabkan oleh tuntutan globalisasi dan ketatnya persaingan sehingga perusahaan lebih berkonsentrasi kepada inovasi produk.</p>
           </div>
-          <div class="col-md wow bounce" data-wow-duration="0.7s" animation-duration="0.25s">
+          <div class="col-md wow bounce fast" data-wow-duration="0.7s" animation-duration="0.25s">
               <h5><i class="fas fa-chart-area" style="color:#42F0CD;"></i> Psikotest</h5><p>Dalam menjalankan Psikotes Unjuk Kerja  Manageral PT. INDOPSIKO INDONESIA bekerjasama dengan GRAHITA INDONESIA suatu Lembaga Psikologi Terapan untuk melakukan Psikotes guna meningkatkan kwalitas Sumber Daya Manusia.
                 Psikotes kami memiliki Standard Internasional karena diciptakan oleh anak bangsa dengan study banding di Canada dan memiliki status Nasional karena telah mempunyai Hak Cipta yang di akui oleh Departemen Hukum dan Hak Asasi Manusia Repubik Indonesia tertanggal 4 Desember 2009.</p>
           </div>
-          {{-- <div class="col-md wow bounce" data-wow-duration="0.8s" animation-duration="0.25s">
+          {{-- <div class="col-md wow bounce fast" data-wow-duration="0.8s" animation-duration="0.25s">
               <h3><i class="fas fa-id-card" style="color:#42F0CD;"></i> Recruitment</h3>
               <p></p>
           </div> --}}
-          {{-- <div class="col-md wow bounce" data-wow-duration="0.9s" animation-duration="0.25s"	>
+          {{-- <div class="col-md wow bounce fast" data-wow-duration="0.9s" animation-duration="0.25s"	>
               <h5><i class="fas fa-recycle" style="color:#42F0CD;"></i> Motivation Training</h5>
               <p>Dengan adanya tuntutan globalisasi di era yang serba maju ini yang semuanya serba  cepat dan tepat di dalam persaingan yg semakin luas, sebagai manusia yang produktif pastilah mempunyai tantangan berat dalam menghadapi dunia modren. Untuk itu di perlukan Motivasi Kerja yang menghasil kan Good Skill, melalui training diharapkan peserta memahami, mengalami dan berlatih, sehingga Motivasi Kerja muncul secara reflek saat menghadapi permasalahan.
                 Peserta training akan  mendapatkan pengetahuan yang dapat memberikan kenyamanan dalam bekerja, sekaligus  akan menikmati hasil pekerjaanya.
