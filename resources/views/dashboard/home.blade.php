@@ -266,29 +266,34 @@ Indopsiko- Dashboard
   <div class="container-fluid bg-light text-center py-3" style="min-height:280px;">
     <div class="row">
       <div class="col-sm-12">
-    <h2 class="wow bounce fast"  style="color:#42F0CD"><b>Klien</b></h2>
-    <div id="carouselExample" class="carousel crslide slide" data-ride="carousel" data-interval="9000">
-      <div class="carousel-inner cinner row w-50 mx-auto" role="listbox">
-        <div class="carousel-item crsitem col-md-3 active">
-          <img class="img-fluid mx-auto d-block" src="{{url('/assets/images/klien/logo_yamaha.png')}}" alt="slide 1">
-      </div>
-      @foreach ($klien as $k)
-      <div class="carousel-item crsitem col-md-3">
-        <img class="img-fluid mx-auto d-block" src="{{url('/assets/images/klien',$k->logo)}}" alt="slide 1">
-    </div>  
-      @endforeach
-      </div>
-      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-          <i class="fa fa-chevron-left fa-lg text-muted"></i>
-          <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-          <i class="fa fa-chevron-right fa-lg text-muted"></i>
-          <span class="sr-only">Next</span>
-      </a>
+        <h2 class="wow bounce fast"  style="color:#42F0CD"><b>Klien</b></h2>
+        <div id="carouselExample" class="carousel crslide slide" data-ride="carousel" data-interval="9000">
+          <div class="carousel-inner cinner row w-50 mx-auto" role="listbox">
+            <div class="carousel-item crsitem col-md-3 active">
+              <img class="img-fluid mx-auto d-block" src="{{url('/assets/images/klien/logo_yamaha.png')}}" alt="slide 1">
+            </div>
+            @foreach ($klien as $k)
+              <div class="carousel-item crsitem col-md-3">
+                <img class="img-fluid mx-auto d-block" src="{{url('/assets/images/klien',$k->logo)}}" alt="slide 1">
+            </div>  
+            @endforeach
+          </div>
+              <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                  <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                  <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                  <span class="sr-only">Next</span>
+              </a>
+        </div>
+    </div>
+</div>
+<div class="d-flex flex-row-reverse text-light">
+  <div class="p-2">
+      <a href="/client" class="btn bg-success text-light btn-sm"> Lihat Selengkapnya</a>
   </div>
-</div>
-</div>
+
 </div>
 </section>
 
@@ -385,43 +390,3 @@ Indopsiko- Dashboard
 
 </script>
 @endsection
-
-{{-- 
-<div class="col-md-4 wow bounce faster">
-  <h5><i class="fas fa-crosshairs" style="color:#42F0CD;"></i> Misi</h5><p>Membantu Calon Tenaga Kerja mendapatkan   
-    pekerjaan
- 
- Memberikan service yang lebih baik kepada Clien
- 
- Menyediakan tenaga kerja yang kompeten
- </p>
-</div> --}}
-{{-- 
-<div class="container-fluid text-center" style="min-height:350px;">
-  <div class="row">
-      <div class="col-md mb-3 mt-3 ">
-          <h2 class="wow bounce fast"  style="color:#42F0CD"><b>Service</b></h2>
-      </div>
-  </div>
-      <div class="row py-2 ml-2 mr-2 text-justify">
-          <div class="col-md wow bounce fast" data-wow-duration="0.5s" animation-duration="0.25s">
-              <h5><i class="fas fa-file-contract" style="color:#42F0CD;"></i> Kontraktor Tenaga Kerja</h5><p>Sehubungan dengan Peraturan Menteri Tenaga Kerja Republik Indonesia NO.19 Tahun 2012 tentang SYARAT-SYARAT PENYERAHAN SEBAGIAN PELAKSANAAN PEKERJAAN KEPADA PIHAK LAIN dan Surat Edaran NO. SE-04/MEN/VIII/2013 tentang Pedoman Pelaksanannya, bersama ini kami PT. INDOPSIKO INDONESIA menawarkan kerjasama dalam PEMBORONGAN PEKERJAAN di perusahaan Bapak.
-                Karena berkembangnya pekerjaan perusahaan yang berakibat tidak memungkinkan masalah tenaga kerja ditangani oleh perusahaan sendiri, hal ini disebabkan oleh tuntutan globalisasi dan ketatnya persaingan sehingga perusahaan lebih berkonsentrasi kepada inovasi produk.</p>
-          </div>
-          <div class="col-md wow bounce fast" data-wow-duration="0.7s" animation-duration="0.25s">
-              <h5><i class="fas fa-chart-area" style="color:#42F0CD;"></i> Psikotest</h5><p>Dalam menjalankan Psikotes Unjuk Kerja  Manageral PT. INDOPSIKO INDONESIA bekerjasama dengan GRAHITA INDONESIA suatu Lembaga Psikologi Terapan untuk melakukan Psikotes guna meningkatkan kwalitas Sumber Daya Manusia.
-                Psikotes kami memiliki Standard Internasional karena diciptakan oleh anak bangsa dengan study banding di Canada dan memiliki status Nasional karena telah mempunyai Hak Cipta yang di akui oleh Departemen Hukum dan Hak Asasi Manusia Repubik Indonesia tertanggal 4 Desember 2009.</p>
-          </div>
-          {{-- <div class="col-md wow bounce fast" data-wow-duration="0.8s" animation-duration="0.25s">
-              <h3><i class="fas fa-id-card" style="color:#42F0CD;"></i> Recruitment</h3>
-              <p></p>
-          </div> --}}
-          {{-- <div class="col-md wow bounce fast" data-wow-duration="0.9s" animation-duration="0.25s"	>
-              <h5><i class="fas fa-recycle" style="color:#42F0CD;"></i> Motivation Training</h5>
-              <p>Dengan adanya tuntutan globalisasi di era yang serba maju ini yang semuanya serba  cepat dan tepat di dalam persaingan yg semakin luas, sebagai manusia yang produktif pastilah mempunyai tantangan berat dalam menghadapi dunia modren. Untuk itu di perlukan Motivasi Kerja yang menghasil kan Good Skill, melalui training diharapkan peserta memahami, mengalami dan berlatih, sehingga Motivasi Kerja muncul secara reflek saat menghadapi permasalahan.
-                Peserta training akan  mendapatkan pengetahuan yang dapat memberikan kenyamanan dalam bekerja, sekaligus  akan menikmati hasil pekerjaanya.
-                Training Motivasi Kerja dikemas tidak sekedar teori tetapi juga disertai permainan ( game ) sehingga peserta  diharapkan berperan aktif</p>
-          </div>
-      </div>
-  </div>
-</div> --}}

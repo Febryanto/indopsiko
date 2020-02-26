@@ -32,7 +32,6 @@ kt-menu__item--open kt-menu__item--here
     </div>
 
 </div>
-<script src="assets/js/pages/dashboard.js" type="text/javascript"></script>
 <script src="assets/vendors/general/chart.js/dist/Chart.min.js" type="text/javascript"></script>
 <script src="assets/vendors/general/chart.js/dist/createChart.js" type="text/javascript"></script>
 @endsection

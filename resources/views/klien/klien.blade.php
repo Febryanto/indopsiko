@@ -18,11 +18,21 @@ Indopsiko- Dashboard
             <h2 class="wow bounce fast judul-profil" style="color:#42F0CD"><b>Our Client</b></h2>
         </div>
     </div>
+    <div class="d-flex flex-row-reverse bg-light">
+        <div class="p-2">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+                </div>
+                <input type="text" id="generalSearch" class="form-control" placeholder="Cari Perusahaan" aria-label="GeneralSearch" aria-describedby="basic-addon1">
+              </div>
+        </div>
+      </div>
     <div class="row">
         @foreach ($data as $i)
-            
-        <div class="col-sm-4 py-4">
-            <div class="card-columns-fluid wow bounce fast">
+        <div class="col-sm-4 py-4 text-center">
+            <div id="myCorp">
+                <div class="OneCorp card-columns-fluid wow bounce fast">
                 <div class="card  bg-light">
                     <img class="card-img-top logo-klien"  src="{{url('assets/images/klien/'. $i->logo)}}" alt="Card image cap">
 
@@ -32,10 +42,23 @@ Indopsiko- Dashboard
                 </div>
             </div>
         </div>
-        
+        </div>
         @endforeach
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $("#generalSearch").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myCorp .OneCorp").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+
 @endsection
 
 {{-- 
