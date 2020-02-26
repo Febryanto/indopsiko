@@ -34,8 +34,9 @@ kt-menu__item--open kt-menu__item--here
                            color:red;
                        }
                    </style>
-                                  {{ @csrf_field() }}
-
+                                  {{ csrf_field() }}
+                                  {{ method_field('PUT') }}
+            
 
                                   <div class="form-group">
                                           <label for="nama_lengkap">nama lengkap</label>
