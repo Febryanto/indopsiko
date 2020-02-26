@@ -126,7 +126,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <li class="kt-menu__item " aria-haspopup="true" >
                     <a  href="/home" class="kt-menu__link ">
                         <img alt="Logo" src="/assets/images/logos/logo-4.png"/>&nbsp;
-                        <span class="kt-menu__link-text">INDOPSIKO</span>
+                       
                     </a>
                 </li>
                 <li class="kt-menu__section " aria-haspopup="true">

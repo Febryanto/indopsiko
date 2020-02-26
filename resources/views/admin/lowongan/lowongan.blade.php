@@ -65,18 +65,14 @@ kt-menu__item--open kt-menu__item--here
                   <div class="modal-body">
                                     {{ @csrf_field() }}
                                     <div class="form-group">
-                                        <div class="dropdown">
-                                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                                              Dropdown
-                                              <span class="caret"></span>
-                                            </button>
-                                            <ul id="dropselect-demo1" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                                              <li role="presentation" class="divider"></li>
-                                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-                                            </ul>
+                                        <label for="Nama Perusahaan">Nama Perusahaan</label>
+                                        <select class="form-control" name="id_klien">
+                                            @foreach ($klien as $m)
+                                               <option value="{{$m->id_klien}}">{{$m->nama_perusahaan}}</option> 
+                                            @endforeach
+                                          </select>
+                                          <br>
+                                          <input type="text" class="form-control" placeholder="Cari Perusahaan berdasarkan klien">
                                     </div>
                                     <div class="form-group">
                                             <label for="jabatan">jabatan</label>
@@ -187,6 +183,8 @@ kt-menu__item--open kt-menu__item--here
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <script>
     $(document).ready(function(){
       $("#generalSearch").on("keyup", function() {
@@ -199,6 +197,44 @@ kt-menu__item--open kt-menu__item--here
         height: 260,
         width: 450,
       });
+
+      jQuery.fn.filterByText = function(textbox) {
+        return this.each(function() {
+          var select = this;
+          var options = [];
+          $(select).find('option').each(function() {
+            options.push({
+              value: $(this).val(),
+              text: $(this).text()
+            });
+          });
+          $(select).data('options', options);
+      
+          $(textbox).bind('change keyup', function() {
+            var options = $(select).empty().data('options');
+            var search = $.trim($(this).val());
+            var regex = new RegExp(search, "gi");
+      
+            $.each(options, function(i) {
+              var option = options[i];
+              if (option.text.match(regex) !== null) {
+                $(select).append(
+                  $('<option>').text(option.text).val(option.value)
+                );
+              }
+            });
+          });
+        });
+      };
+      
+      // You could use it like this:
+      
+      $(function() {
+        $('select').filterByText($('input'));
+      });
+ 
     });
+    </script>
+    <script>
     </script>
 @endsection

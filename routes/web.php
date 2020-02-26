@@ -17,6 +17,7 @@ Route::get('/dtlnews/{berita}', 'FrontController@dtlBerita')->name('dtlBerita');
 Route::get('/client', 'FrontController@getKlien')->name('getKlien');
 Route::get('/service', 'FrontController@getService')->name('getService');
 Route::get('/kontak', 'FrontController@getKontak')->name('getKontak');
+Route::POST('/kontak', 'FrontController@storeKontak')->name('Kontak.Store');
 Route::get('/profil', 'FrontController@getProfil')->name('getProfil');
 Route::get('/apply', 'FrontController@getLowongan')->name('getLowongan');
 Route::get('/apply/{lowongan}', 'FrontController@getLowonganbyid')->name('getLowonganbyid');

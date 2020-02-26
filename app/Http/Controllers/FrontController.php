@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
 use DB;
+use App\Kontak;
 use App\Klien;
 use App\Berita;
 use App\Proper;
@@ -128,4 +129,25 @@ class FrontController extends Controller
     {
         return view('kontak.kontak');
     }
+    public function storeKontak(request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'nama' => 'required',
+            'desc' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->route('getKontak')
+                        ->withFail('Error Message');
+        }        
+    
+    $data = Kontak::insert([
+        'nama' => $request->nama,
+                'email' => $request->email,
+                'desc' => $request->desc,
+                'created_by' => $request->nama
+    ]);
+    return redirect()->route('getKontak')->with('status','terima kasih telah menghubungi kami,pesan anda telah kami simpan ');
+    
+}
 }

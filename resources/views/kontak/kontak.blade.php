@@ -12,6 +12,28 @@ Indopsiko- Dashboard
     </ol>
   </nav>
 </div>
+@if (session('status'))
+<div class="row text-center">
+    <div class="col-md">
+        <div class="alert alert-primary mt-5 alert-dismissible fade show" role="alert">
+            {{session('status') }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        @endif
+        @if(Session::has('fail'))
+        <div class="alert alert-danger mt-5 fade show" role="alert">
+            <div class="alert-text">{{Session::get('fail')}}</div>
+            <div class="alert-close">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true"><i class="la la-close"></i></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+@endif
 
 <div class="container-fluid mt-3 mb-3 bg-white">
     <div class="row text-center py-3">
@@ -22,12 +44,13 @@ Indopsiko- Dashboard
     <div class="row py-3">
         <div class="col-md-12 col-md-offset-3">
             <div class="well well-sm">
-              <form class="form-horizontal" action="" method="post">
+              <form class="form-horizontal" action="{{ route('Kontak.Store') }}" method="POST" enctype="multipart/form-data">
               <fieldset>
+                {{ @csrf_field() }}
                 <div class="form-group">
                   <label class="col-md-3 control-label" for="name">Name</label>
                   <div class="col-md-9">
-                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                    <input id="name" name="nama" type="text" placeholder="Your name" class="form-control">
                   </div>
                 </div>
                 <div class="form-group">
@@ -39,7 +62,7 @@ Indopsiko- Dashboard
                 <div class="form-group">
                   <label class="col-md-3 control-label" for="message">Your message</label>
                   <div class="col-md-9">
-                    <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                    <textarea class="form-control" id="message" name="desc" placeholder="Please enter your message here..." rows="5"></textarea>
                   </div>
                 </div>
         
