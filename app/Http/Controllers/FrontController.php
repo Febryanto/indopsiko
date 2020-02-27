@@ -117,7 +117,7 @@ class FrontController extends Controller
 
     public function getKlien()
     {
-        $data = Klien::paginate(16);
+        $data = Klien::all();
         // dd($data);
         return view('klien.klien',compact('data'));
     }

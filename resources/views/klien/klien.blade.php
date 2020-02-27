@@ -30,7 +30,7 @@ Indopsiko- Dashboard
       </div>
     <div class="row">
         @foreach ($data as $i)
-        <div class="col-sm-4 py-4 text-center">
+        <div class="col-sm-3 py-4 text-center">
             <div id="myCorp">
                 <div class="OneCorp card-columns-fluid wow bounce fast">
                 <div class="card  bg-light">
