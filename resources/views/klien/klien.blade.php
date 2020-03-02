@@ -16,6 +16,7 @@ Indopsiko- Dashboard
     <div class="row text-center pt-3">
         <div class="col-md">
             <h2 class="wow bounce fast judul-profil" style="color:#42F0CD"><b>Our Client</b></h2>
+            <h4><small>lebih dari 100 klien</small></h4>
         </div>
     </div>
     <div class="d-flex flex-row-reverse bg-light">
