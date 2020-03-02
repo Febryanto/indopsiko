@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'FrontController@index')->name('fronthome');
+Route::POST('/update/{visit}', 'FrontController@UpdateVisit')->name('visit.update');
 Route::get('/news', 'FrontController@getBerita')->name('getBerita');
 Route::get('/dtlnews/{berita}', 'FrontController@dtlBerita')->name('dtlBerita');
 Route::get('/client', 'FrontController@getKlien')->name('getKlien');

@@ -15,5 +15,6 @@
 </div>
 	@include('inc.footer')
 	@include('inc.bs_4js')
+	@yield('js_visitor')
 </body> 
 </html>

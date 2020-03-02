@@ -251,14 +251,31 @@ Indopsiko- Dashboard
                 <h2 class="wow bounce slow" style="color:#42F0CD"><b>Visitor</b></h2>
             </div>
         </div>
+        {{--  @foreach ($visitor as $v)  --}}
         <div class="row">
             <div class="col-md">
                 <div class="employees">
-                    <p class="counter-count text-light">99088</p>
+                      <div id="sfc3ks2j24gkt8bzl3bmrbgmg8m72j533gt"></div>
+                      <script type="text/javascript" src="https://counter1.stat.ovh/private/counter.js?c=3ks2j24gkt8bzl3bmrbgmg8m72j533gt&down=async" async></script>
+                      <noscript><a href="https://www.freecounterstat.com" title="hit counter free"><img src="https://counter1.stat.ovh/private/freecounterstat.php?c=3ks2j24gkt8bzl3bmrbgmg8m72j533gt" border="0" title="hit counter free" alt="hit counter free"></a></noscript>
                     <p class="employee-p text-light wow bounce slow" ><b>Pengunjung</b></p>
                 </div>
             </div>
         </div>
+        {{--  <div id="fbCommentCount" style="display: none;">
+          <span class="fb-comments-count" data-href="{{ Request::url() }}"></span>
+        </div>
+        <form  name="fbCommentCountform" id="fbCommentCountForm" action="{{ route('visit.update', $v->id_visitor) }}" method="POST">
+          {{ csrf_field() }}
+          <input type="hidden" name="_method" value="PUT">
+          
+          <input type="text" name="commentCount" id="fbFormCommentCount">
+          <input type="text" name="visitCount" id="hiddenFormPostVisitCounter" value="{{ $v->jumlah_visitor }}">
+        </form>
+        <div class="row text-center" id="facebookCommentContainer">
+          <div class="fb-comments" data-href="{{ Request::url() }}" data-width="800" data-numposts="10"></div>
+        </div>
+        @endforeach  --}}
     </div>
 </section>
 
@@ -387,6 +404,88 @@ Indopsiko- Dashboard
       this.className += " activex";
     });
   }
-
+</script>
+@endsection
+@section('js_visitor')
+    
+<script>
+  let fbCommentCount = document.getElementById('fbCommentCount').getElementsByClassName('fb_comments_count');
+  setTimeout(function() {
+    document.getElementById('fbFormCommentCount').value = fbCommentCount[0].innerHTML;
+    
+    var $formVar = $('#fbCommentCountForm');
+    
+    let visitCount = document.getElementById('hiddenFormPostVisitCounter').value;
+    
+    let visitCountPlusOne = parseInt(visitCount) + 1;
+    document.getElementById('hiddenFormPostVisitCounter').value = visitCountPlusOne;
+    
+    $.ajax({
+      url: $formVar.prop('{{ route('visit.update', $v->id_visitor) }}'),
+      method: 'PUT',
+      data: $formVar.serialize(),
+    });
+    }, 1000);
+  
+  {{--setTimeout(function() {--}}
+    {{--let $visitCountForm = $('#formPostVisitCount');--}}
+    {{----}}
+    {{--$.ajax({--}}
+      {{--url: $visitCountForm.prop('{{ route('blogs.update', ['id'=>$id]) }}'),--}}
+      {{--method: 'PUT',--}}
+      {{--data: $visitCountForm.serialize()--}}
+    {{--});--}}
+  {{--}, 1500);--}}
+  {{--$('form').on('submit', function(e){--}}
+    {{--e.preventDefault();--}}
+    {{--var $this = $(this);--}}
+    {{--$.ajax({--}}
+      {{--url: $this.prop('{{ route('blogs.update', ['id'=>$id]) }}'),--}}
+      {{--method: 'PUT',--}}
+      {{--data: $this.serialize(),--}}
+    {{--}).done(function(response){--}}
+      {{--alert('success');--}}
+    {{--}).error(function(err){--}}
+      {{--alert('error');--}}
+    {{--});--}}
+  {{--});--}}
+  
+//    function submitForm() {
+//      $('form').on('submit', function(e){
+//        e.preventDefault();
+//        var $this = $(this);
+//
+//        $.ajax({
+//          url: $this.prop('action'),
+//          method: 'PUT',
+//          data: $this.serialize(),
+//        }).done(function(response){
+//          alert('success');
+//        }).error(function(err){
+//          alert('error');
+//        });
+//      });
+//    }
+  {{--function submitForm() {--}}
+    {{--var http = new XMLHttpRequest();--}}
+    {{--http.open("PUT", "{{ route('blogs.update', ['id'=>$id]) }}", true);--}}
+    {{--http.setRequestHeader("Content-type","application/x-www-form-urlencoded");--}}
+    {{--var method = document.getElementsByName('_method')[0].value;--}}
+    {{--var token = document.getElementsByName('_token')[0].value;--}}
+    {{--var commentCount = document.getElementById('fbFormCommentCount').value;--}}
+    {{--var params = "commentCount=" + commentCount;--}}
+    {{--http.send(params);--}}
+    {{--http.onload = function() {--}}
+      {{--alert(http.responseText);--}}
+    {{--}--}}
+  {{--}--}}
+  {{--function submitForm() {--}}
+    {{--$.ajax({--}}
+      {{--url: '{{ route('blogs.update', ['id'=>$id]) }}',--}}
+      {{--success: function () {--}}
+        {{--alert("worked");--}}
+      {{--}--}}
+    {{--});--}}
+  {{--}--}}
 </script>
 @endsection
