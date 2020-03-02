@@ -49,14 +49,14 @@ License: You must have a valid license purchased only from themeforest(the above
 	{{--  <!--begin: User bar -->  --}}
 	<div class="kt-header__topbar-item kt-header__topbar-item--user">
 		<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,10px">
-			<img class="kt-hidden-" alt="Pic" src="/assets/images/users/user1.jpg" style="width: 60%;"/>
+			<img class="kt-hidden-" alt="Pic" src="/assets/images/users/default.jpg" style="width: 60%;"/>
 			<span class="kt-header__topbar-icon kt-header__topbar-icon--brand kt-hidden"><b>S</b></span>
 		</div>
 		<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
 			{{--  <!--begin: Head -->  --}}
     <div class="kt-user-card kt-user-card--skin-light kt-notification-item-padding-x">
         <div class="kt-user-card__avatar">
-            <img class="kt-hidden-" alt="Pic" src="/assets/images/users/user1.jpg" />
+            <img class="kt-hidden-" alt="Pic" src="/assets/images/users/defalut.jpg" />
             {{--  <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->  --}}
             <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden">S</span>
         </div>
@@ -210,7 +210,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			{{--  <!--begin: Head -->  --}}
                     <div class="kt-user-card kt-user-card--skin-light kt-notification-item-padding-x">
                         <div class="kt-user-card__avatar">
-                            <img class="kt-hidden-" alt="Pic" src="/assets/images/users/user1.jpg" />
+                            <img class="kt-hidden-" alt="Pic" src="/assets/images/users/default.jpg" />
                             <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden">S</span>
                         </div>
                         <div class="kt-user-card__name">
