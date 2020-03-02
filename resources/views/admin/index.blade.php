@@ -203,7 +203,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	        <div class="kt-header__topbar-item kt-header__topbar-item--user">
 		        <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,10px">
                     <span class="kt-header__topbar-icon kt-header__topbar-icon--brand" style="font-size:10px;"><b>Hi, {{Auth::user()->name}}</b></span>
-			        <img class="kt-hidden-" alt="Pic" src="/assets/images/users/user1.jpg" style="width: 50%;padding: 10px;"/>
+			        <img class="kt-hidden-" alt="Pic" src="/assets/images/users/default.jpg" style="width: 50%;padding: 10px;"/>
 
 		        </div>
 		        <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
