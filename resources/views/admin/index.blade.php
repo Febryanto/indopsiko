@@ -323,7 +323,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 {{--  <!--begin:: Global Mandatory Vendors -->  --}}
 @include('admin.inc.js_script_bot')
-
+@yield('highchart')
 {{--  <!--end::Page Scripts -->  --}}
 
             </body>
