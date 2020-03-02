@@ -77,7 +77,7 @@
         <div class="col-md-3 col-sm-12">
           <div class="footer-widget">
             <div class="widget-about">
-              <img src="/assets/images/logos/logo.png" alt="logo" width="30%" class="img-fluid">
+              <img src="/assets/images/logos/logo.png" alt="logo" width="37%" class="img-fluid">
               <p>Jalan Pahlawan Revolusi No.59, RT.6/RW.1, Pondok Bambu, Duren Sawit, RT.6/RW.1, Pd. Bambu, Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13430</p>
               <ul class="contact-details">
                 <li>

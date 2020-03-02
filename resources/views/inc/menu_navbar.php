@@ -1,7 +1,7 @@
 <nav id="scroll-ku" class="navbar navbar-white navbar-expand-lg fixed-top navbar-custom ">
 		<div class="container">
 			<a class="navbar-brand" href="#banner">
-				<img src="/assets/images/logos/logo.png" alt="Logo" width="57" height="61"> Indopsiko Indonesia
+				<img src="/assets/images/logos/logo.png" alt="Logo" width="77" height="63"> Indopsiko Indonesia
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<i class="fa fa-align-right" style="color:white;"></i>

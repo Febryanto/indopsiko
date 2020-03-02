@@ -16,7 +16,7 @@ Indopsiko- Dashboard
     <div class="row">
         <div class="col-md">
             <div class="card text-center">
-                <img class="card-img-top profil-banner" src="/assets/images/banner/XXXbanner.jpeg" alt="Card image cap">
+                <img class="card-img-top profil-banner" src="/assets/images/banner/banner.jpeg" alt="Card image cap">
                 <div class="card-body py-3">
                   <h2 class="judul-profil wow bounce fast" >Profil</h2>
                     <p class="card-text wow bounce slow"  > Pada tanggal 04 Maret 1994, Gunarto Gunotalijendro, SH, MM, mendirikan sebuah perusahaan yang bergerak dalam bidang Pengelolan dan Pemberdayaan Sumber Daya Manusia yakni PT. INDOPSIKO INDONESIA .

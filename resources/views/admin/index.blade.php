@@ -41,7 +41,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed " >
 	<div class="kt-header-mobile__brand">
 		<a class="kt-header-mobile__logo" href="/home">
-            <img alt="Logo" src="/assets/images/logos/logo-5.png">
+            <img alt="Logo" src="/assets/images/logos/logo-5.png" width="7%" class="img-fluid">
 		</a>
         <div class="kt-header-mobile__nav">
 			<div class="dropdown">
@@ -125,7 +125,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			<ul class="kt-menu__nav ">
                 <li class="kt-menu__item " aria-haspopup="true" >
                     <a  href="/home" class="kt-menu__link ">
-                        <img alt="Logo" src="/assets/images/logos/logo-4.png"/>&nbsp;
+                        <img alt="Logo" src="/assets/images/logos/logo-4.png" width="100" height="130"/>&nbsp;
                        
                     </a>
                 </li>
