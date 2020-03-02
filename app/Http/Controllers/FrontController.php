@@ -20,9 +20,8 @@ class FrontController extends Controller
     {
         $data = Proper::all();
         $klien = Klien::all();
-        $visitor = DB::table('visit')->get();
         $galeri = DB::table('tbl_galeri')->paginate(4);
-        return view('dashboard.home',compact('data','galeri','klien','visitor'));
+        return view('dashboard.home',compact('data','galeri','klien'));
     }
     
     public function getBerita()
