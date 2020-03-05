@@ -66,13 +66,7 @@ kt-menu__item--open kt-menu__item--here
                                     {{ @csrf_field() }}
                                     <div class="form-group">
                                         <label for="Nama Perusahaan">Nama Perusahaan</label>
-                                        <select class="form-control" name="id_klien">
-                                            @foreach ($klien as $m)
-                                               <option value="{{$m->id_klien}}">{{$m->nama_perusahaan}}</option> 
-                                            @endforeach
-                                          </select>
-                                          <br>
-                                          <input type="text" class="form-control" placeholder="Cari Perusahaan berdasarkan klien">
+                                        <input type="text" name="perusahaan" class="form-control" placeholder="perusahaan" value="">
                                     </div>
                                     <div class="form-group">
                                             <label for="jabatan">jabatan</label>
@@ -142,7 +136,7 @@ kt-menu__item--open kt-menu__item--here
                         @foreach ($data as $i)
                             <tr>
                                 <td>
-                                    {{ $i->nama_perusahaan }}
+                                    {{ $i->perusahaan }}
                                 </td>
                                 <td>
                                     {{ $i->jabatan }}

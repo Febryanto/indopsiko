@@ -29,20 +29,8 @@ kt-menu__item--open kt-menu__item--here
                       {{ method_field('PUT') }}
                       <div class="kt-portlet__body">
                         <div class="form-group">
-                            <label for="nama_perusahaan">Nama Perusahaan</label>
-                            <select name="id_klien" id="id_klien" class="form-control input-lg dynamic">
-                                <option value="">Select Perusahaan</option>
-                                @foreach ($klien as $item)
-                                    <option value="{{$item->id_klien}}"
-                                        @if ($item->id_klien === $u->id_klien)
-                                            selected>
-                                            {{$item->nama_perusahaan}}
-                                    </option>
-                                        @else
-                                        <option value="{{$item->id_klien}}">{{$item->nama_perusahaan}}</option>
-                                        @endif>
-                                @endforeach
-                            </select>
+                            <label for="Nama Perusahaan">Nama Perusahaan</label>
+                            <input type="text" name="perusahaan" class="form-control" placeholder="perusahaan" value="{{$u->perusahaan}}">
                         </div>
                         <div class="form-group">
                             <label for="jabatan">jabatan</label>

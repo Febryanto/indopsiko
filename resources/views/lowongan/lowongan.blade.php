@@ -72,7 +72,7 @@ Indopsiko- Dashboard
                             @foreach ($data as $i)
                                 <tr class="wow bounce fast">
                                     <td>
-                                        {{ $i->nama_perusahaan }}
+                                        {{ $i->perusahaan }}
                                     </td>
                                     <td>
                                         {{ $i->jabatan }}
@@ -140,9 +140,45 @@ Indopsiko- Dashboard
                             <label for="npwp">NPWP</label>
                             <input type="text" name="npwp" class="form-control" placeholder="NPWP">
                         </div>
-                        <div class="form-group">
-                            <label for="sim">SIM</label>
-                            <input type="text" name="sim" class="form-control" placeholder="SIM">
+                        <div class="form-group row">
+                            <label class="col-3 col-form-label" for="sim">SIM</label>
+                            <div class="col-9">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="checkbox" class="form-check-input" name="sim[]" value="SIM A">SIM A
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="checkbox" class="form-check-input" name="sim[]" value="SIM A UMUM">SIM A UMUM
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="checkbox" class="form-check-input" name="sim[]" value="SIM B I">SIM B I
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="checkbox" class="form-check-input" name="sim[]" value="SIM B I UMUM">SIM B I UMUM
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="checkbox" class="form-check-input" name="sim[]" value="SIM B II">SIM B II
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="checkbox" class="form-check-input" name="sim[]" value="SIM B II UMUM">SIM B II UMUM
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="checkbox" class="form-check-input" name="sim[]" value="SIM C">SIM C
+                                    </label>
+                                  </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="jenis_kelamin">Jenis Kelamin</label>
@@ -156,7 +192,7 @@ Indopsiko- Dashboard
                             <div class="col-9">
                                 <div class="kt-radio-list">
                                     <label class="kt-radio">
-                                        <input type="radio" name="posisi"> Office Boy
+                                        <input type="radio" value="Office Boy" name="posisi"> Office Boy
                                         <span></span>
                                     </label>
                                     <label class="kt-radio">
