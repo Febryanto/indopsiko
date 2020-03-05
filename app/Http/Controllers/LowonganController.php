@@ -24,7 +24,6 @@ class LowonganController extends Controller
     public function index()
     {
         $data = DB::table('lowongan AS l')
-        ->leftjoin('klien AS k','k.id_klien','=','l.id_klien')
         ->paginate(15);
         $klien = Klien::all();
         // dd($data);
@@ -51,7 +50,7 @@ class LowonganController extends Controller
     {
         $nama = Auth::user()->name;
         $data = Lowongan::insert([
-            'id_klien' => $request->id_klien,
+            'perusahaan' => $request->perusahaan,
             'jabatan' => $request->jabatan,
             'deskripsi' => $request->deskripsi,
             'status' => $request->status,
@@ -80,9 +79,7 @@ class LowonganController extends Controller
     public function edit($id)
     {
         $data = DB::table('lowongan AS l')
-        ->leftjoin('klien AS k','k.id_klien','=','l.id_klien')
         ->where('id_lowongan',$id)
-        ->select('l.*','k.nama_perusahaan','k.email','k.telp')
         ->get();
         $klien = Klien::all();
         return view('admin.lowongan.edit_lowongan',compact('data','klien'));
@@ -100,7 +97,7 @@ class LowonganController extends Controller
         $nama = Auth::user()->name;
         $data = Lowongan::where('id_lowongan',$id)
         ->update([
-            'id_klien' => $request->id_klien,
+            'perusahaan' => $request->perusahaan,
             'jabatan' => $request->jabatan,
             'deskripsi' =>$request->deskripsi,
             'status' => $request->status,
