@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
 use DB;
+use App\Lowongan;
 use App\Kontak;
 use App\Klien;
 use App\Berita;
@@ -26,7 +27,8 @@ class FrontController extends Controller
     
     public function getBerita()
     {
-        $data = Berita::paginate(15);
+        $data = Berita::where('status','=', '1')
+        ->paginate(15);
         return view('berita.berita',compact('data'));
     }
     
@@ -41,8 +43,9 @@ class FrontController extends Controller
     }
     public function getLowongan()
     {
-        $data = DB::table('lowongan AS l')
+        $data = DB::table('lowongan')->where('status','=', '1')
         ->paginate(15);
+        
         $klien = Klien::all();
         // dd($data);
         return view('lowongan.lowongan',compact('data','klien'));

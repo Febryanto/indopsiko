@@ -47,15 +47,15 @@ kt-menu__item--open kt-menu__item--here
                         <div class="form-group">
                             <label for="Status">Status Lowongan</label>
                             <select class="form-control" name="status">
-                                <option>Pilih status</option>
-                                <option value="1" @if ($u->status === 1 )
+                                <option value="1" @if ($u->status == 1 )
                                     selected>
-                                    Dibuka
+                                    Aktif
                                 </option>
-                                <option value="0">Ditutup</option>
+                                <option value="0">Nonaktif</option>
                                 @else
-                                <option value="0" selected>Ditutup</option>
-                                <option value="1" selected>Dibuka</option>
+                                <option value="0" selected>Nonaktif</option>
+                                <option value="1">Aktif</option>
+                                
                                 @endif
                             </select>
                         </div>

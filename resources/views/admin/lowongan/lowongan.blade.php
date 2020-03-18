@@ -79,8 +79,8 @@ kt-menu__item--open kt-menu__item--here
                                     <div class="form-group">
                                         <label for="Status">Status Lowongan</label>
                                         <select class="form-control" name="status">
-                                            <option value="1">Dibuka</option>
-                                            <option value="0">Ditutup</option>
+                                            <option value="1">Aktif</option>
+                                            <option value="0">Nonaktif</option>
                                         </select>
                                     </div>
                   </div>

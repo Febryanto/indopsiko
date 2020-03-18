@@ -16,7 +16,7 @@ Indopsiko- Dashboard
         <div class="row text-center pt-3">
             <div class="col-md">
                 <h2 class="wow bounce fast judul-profil" style="color:#42F0CD"><b>Last Updates</b></h2>
-            </div>
+            </div> 
         </div>
         <div class="d-flex flex-row-reverse bg-light">
             <div class="p-2">
@@ -47,6 +47,8 @@ Indopsiko- Dashboard
                 </div>
             </div>
             @empty
+
+          <div class="col-md-3 py-3">
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
                 <strong>Berita Kosong!</strong> 
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -55,6 +57,7 @@ Indopsiko- Dashboard
               </div>
               <br>
               <div class="clearfix"></div>
+            </div>
             @endforelse
             
         </div>

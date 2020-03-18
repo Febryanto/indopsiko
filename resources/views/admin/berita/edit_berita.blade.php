@@ -46,20 +46,21 @@ kt-menu__item--open kt-menu__item--here
                         <label for="isi">isi</label>
                         <textarea id="editor1" name="isi" id="" cols="70" rows="7">{{ $u->isi }}</textarea>
                 </div>
-                    <div class="form-group">
-                        <label for="Status">Status Berita</label>
-                        <select class="form-control" name="status">
-                            <option value="1" @if ($u->status === 1 )
-                                selected>
-                                Aktif
-                            </option>
-                            <option value="0">Nonaktif</option>
-                            @else
-                            <option value="0" selected>Nonaktif</option>
-                            <option value="1" selected>Aktif</option>
-                            @endif
-                        </select>
-                    </div>
+                <div class="form-group">
+                    <label for="Status">Status Berita</label>
+                    <select class="form-control" name="status">
+                        <option value="1" @if ($u->status == 1 )
+                            selected>
+                            Aktif
+                        </option>
+                        <option value="0">Nonaktif</option>
+                        @else
+                        <option value="0" selected>Nonaktif</option>
+                        <option value="1">Aktif</option>
+                        
+                        @endif
+                    </select>
+                </div>
                       <div class="kt-portlet__foot">
                         <button type="submit" class="btn btn-primary">Submit</button>
                         <a href="{{ route('berita.index') }}" class=" btn btn-danger">Batal</a>

@@ -95,14 +95,14 @@ class LowonganController extends Controller
     public function update(Request $request, $id)
     {
         $nama = Auth::user()->name;
-        $data = Lowongan::where('id_lowongan',$id)
-        ->update([
+        $data = Lowongan::where('id_lowongan',$id)->update([
             'perusahaan' => $request->perusahaan,
-            'jabatan' => $request->jabatan,
+             'jabatan' => $request->jabatan,
             'deskripsi' =>$request->deskripsi,
             'status' => $request->status,
             'updated_by' => $nama
         ]);
+        // dd($data);
         return redirect()->route('lowongan.index')->with('alert alert-success','Data Berhasil Diubah');
     }
 
