@@ -69,7 +69,7 @@ Indopsiko- Dashboard
                             </tr>
                         </thead>
                         <tbody id="myTable">
-                            @foreach ($data as $i)
+                            @forelse ($data as $i)
                                 <tr class="wow bounce fast">
                                     <td>
                                         {{ $i->perusahaan }}
@@ -81,8 +81,20 @@ Indopsiko- Dashboard
                                         {!! $i->deskripsi !!}
                                     </td>
                                 </tr>          
-                            @endforeach
-            
+                            @empty
+                            <tr>
+                                <td>
+                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <strong>Lamaran Kosong!</strong> 
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <br>
+                                      <div class="clearfix"></div>
+                                </td>
+                            </tr>
+                            @endforelse
                         </tbody>
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
