@@ -5,9 +5,18 @@ namespace App\Exports;
 use App\Pelamar;
 use DB;
 use Maatwebsite\Excel\Concerns\FromCollection;
+use Maatwebsite\Excel\Concerns\WithEvents;
+use Maatwebsite\Excel\Events\AfterSheet;
 use Maatwebsite\Excel\Concerns\WithHeadings;
+use Maatwebsite\Excel\Concerns\ShouldAutoSize;
 
-class PelamarExport implements FromCollection, WithHeadings
+use PhpOffice\PhpSpreadsheet\Cell\Cell;
+use Maatwebsite\Excel\Concerns\ToModel;
+use PhpOffice\PhpSpreadsheet\Cell\DataType;
+use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
+use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
+
+class PelamarExport extends DefaultValueBinder implements FromCollection, WithHeadings , WithEvents ,  WithCustomValueBinder
 {
     /** 
     * @return \Illuminate\Support\Collection
@@ -44,4 +53,30 @@ class PelamarExport implements FromCollection, WithHeadings
                 ];
     }
 
+    public function registerEvents(): array
+    {
+        return [
+            AfterSheet::class    => function(AfterSheet $event) {
+                $cellRange = 'A1:W1'; // All headers
+                $event->sheet->getDelegate()->getStyle($cellRange)->getFont()->setSize(14);
+            },
+        ];
+    }
+
+    public function bindValue(Cell $cell, $value)
+    {
+        if (is_numeric($value)) {
+            $cell->setValueExplicit($value, DataType::TYPE_STRING);
+
+            return true;
+        }
+        else{
+            $cell->setValueExplicit($value, DataType::TYPE_STRING);
+
+            return true;
+        }
+
+        // else return default behavior
+        return parent::bindValue($cell, $value);
+    }
 }
