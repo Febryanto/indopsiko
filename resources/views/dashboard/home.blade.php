@@ -1,6 +1,6 @@
 @extends('beranda')
 @section('title')
-Indopsiko- Dashboard    
+MyBlog-Dashboard    
 @endsection
 @section('content')
   <style> 

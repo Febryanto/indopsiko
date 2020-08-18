@@ -104,6 +104,7 @@ kt-menu__item--open kt-menu__item--here
                 {{-- <table class="kt-datatable" id="html_table" width="100%"> --}}
                     <thead>
                         <tr>
+                            <th title="Field #1">Tanggal</th>
                             <th title="Field #1">Nama Pelamar</th>
                             <th title="Field #2">Posisi</th>
                             <th title="Field #3">Pendidikan</th>
@@ -114,6 +115,9 @@ kt-menu__item--open kt-menu__item--here
                     <tbody id="myTable">
                         @foreach ($data as $i)
                             <tr>
+                                <td>
+                                   {{ $i->created_at ?  \Carbon\Carbon::parse($i->created_at)->format('d/m/Y') : null }}
+                                </td>
                                 <td>
                                     {{ $i->nama_lengkap }}
                                 </td>

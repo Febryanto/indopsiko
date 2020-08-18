@@ -21,6 +21,7 @@ class PelamarController extends Controller
     public function index()
     {
         $data = DB::table('pelamar as a')
+        ->orderBy('created_at', 'DESC')
         ->paginate(15);
 
         return view('admin.pelamar.pelamar',compact('data'));
@@ -120,6 +121,7 @@ class PelamarController extends Controller
     {
         $data = DB::table('pelamar as a')
         ->select('a.id_pelamar','a.posisi','a.nama_lengkap','a.nik','a.npwp','a.pendidikan','a.email','a.no_hp','a.sim','a.tempat_lahir','a.tanggal_lahir','a.jenis_kelamin','a.nama_ibu_kandung','a.cv','a.alamat','a.created_at','a.updated_at')
+        ->orderBy('created_at', 'DESC')
         ->get();
         $pdf = PDF::loadview('admin.pelamar.data_pelamar',['data'=>$data])->setPaper('legal', 'landscape');;
     	return $pdf->stream();
