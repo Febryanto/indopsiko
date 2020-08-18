@@ -12,4 +12,5 @@ class Pengumuman extends Model
         'foto','judul','subjudul','isi','status',
         'created_at','updated_at','created_by','updated_by'
     ];
+    public $timestamps = true;
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
+use Carbon\Carbon;
 use DB;
 use App\Lowongan;
 use App\Kontak;
@@ -71,6 +72,7 @@ class FrontController extends Controller
         $sim = implode(',',$request->sim);
         $id_lowongan = $request->id_lowongan;
         $posisi2 = $request->posisi2;
+        $time = Carbon::now();
         if ($posisi2!='') {
             $file = $request->file('cv');
             $extension=$file->getClientOriginalExtension();
@@ -92,6 +94,8 @@ class FrontController extends Controller
                 'no_hp' => $request->no_hp,
                 'email' => $request->email,
                 'alamat' => $request->alamat,
+                'created_at' => $time ,
+                'updated_at' => $time,
                 'created_by' => $request->nama,
             ]);
         }else{
@@ -115,6 +119,8 @@ class FrontController extends Controller
                 'no_hp' => $request->no_hp,
                 'email' => $request->email,
                 'alamat' => $request->alamat,
+                'created_at' => $time ,
+                'updated_at' => $time,
                 'created_by' => $request->nama,
             ]);
         }

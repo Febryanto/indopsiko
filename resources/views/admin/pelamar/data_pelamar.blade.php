@@ -20,6 +20,7 @@
 		<thead>
 			<tr>
 				<th>No</th>
+				<th>Tanggal</th>
 				<th>Posisi</th>
 				<th>nama_lengkap</th>
                 <th>nik</th>
@@ -39,6 +40,7 @@
 			@foreach($data as $p)
 			<tr>
 				<td>{{ $i++ }}</td>
+				<td>{{$p->created_at}}</td>
 				<td>{{$p->posisi}}</td>
 				<td>{{$p->nama_lengkap}}</td>
 				<td>{{$p->nik}}</td>

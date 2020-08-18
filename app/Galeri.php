@@ -11,4 +11,5 @@ class Galeri extends Model
         'desc', 'logo',
         'created_at','updated_at','created_by','updated_by'
     ];
+    public $timestamps = true;
 }
